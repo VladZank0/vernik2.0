@@ -1115,6 +1115,9 @@ p {
   left: 15px;
   top: 25px;
 }
+.category-card__img-wrapper_pink {
+  background-color: rgb(255, 235, 229);
+}
 
 .category-card__img {
   position: absolute;
