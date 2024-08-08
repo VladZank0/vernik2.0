@@ -13,12 +13,9 @@
 
     function toggleMenu(){
         burger_menu.classList.toggle('header__burger-menu_active');
-        if(body.style.overflow != 'hidden'){
-            body.style.overflow = 'hidden';
-        }else{
-            body.style.overflow = null;
-        }
-        
+        body.classList.contains('no-scroll') 
+        ? body.classList.remove('no-scroll') 
+        : body.classList.add('no-scroll');
     }
     function toggleCatalog(){
         menu_catalog.classList.toggle('menu-catalog_active');
@@ -27,23 +24,11 @@
         return window.innerWidth < 1100 ;
     }
     function stickHeader(isMobile){ 
-        if(!isMobile()){
-            if(window.scrollY >= 100){
-                header.classList.add('header_sticky');
-            }else if(window.scrollY == 0){
-                header.classList.remove('header_sticky');
-            }
-        }else{
-            if(header.classList.contains('header_sticky')){
-                header.classList.remove('header_sticky');
-            }
-        }
+         
+            window.scrollY >= 100 ? header.classList.add('header_sticky') : 
+            header.classList.remove('header_sticky');
+         
     }
-    // function checkCatalogArea(event){
-    //     return event.target.closest('.menu-catalog') ? true : false;
-    // }
-   
-   
     
     stickHeader(isMobile);
 
