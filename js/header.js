@@ -24,10 +24,12 @@
         return window.innerWidth < 1100 ;
     }
     function stickHeader(isMobile){ 
-         
+        if(!isMobile()){
             window.scrollY >= 100 ? header.classList.add('header_sticky') : 
             header.classList.remove('header_sticky');
-         
+        }else{
+            header.classList.remove('header_sticky');
+        }
     }
     
     stickHeader(isMobile);
