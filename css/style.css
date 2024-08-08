@@ -630,13 +630,13 @@ body {
   top: -4px;
   right: -8px;
   display: none;
-  align-items: center;
+  line-height: 100%;
   justify-content: center;
   min-width: 14px;
   padding: 2px;
   max-height: 13px;
   border-radius: 50%;
-  height: auto;
+  height: 100%;
   box-sizing: content-box;
   background-color: #FF003D;
   font-weight: 500;
