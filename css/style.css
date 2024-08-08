@@ -6,6 +6,8 @@
   --main-blue-hover: #006fe3;
   --main-purple: #AF41FC;
   --main-purple-hover: #932CDB;
+  --red: #ff003d;
+  --orange: #ff6f42;
   --transition: .3s;
   --main-font: "ALS Hauss";
   --alt-font: "ALS Gorizont";
@@ -626,15 +628,15 @@ body {
 }
 
 .customer-btn__count {
+  display: none;
   position: absolute;
   top: -4px;
   right: -8px;
-  display: none;
-  line-height: 100%;
-  justify-content: center;
-  min-width: 14px;
+  line-height: 12px;
+  min-width: 12px;
   padding: 2px;
-  max-height: 13px;
+  max-height: 11px;
+  text-align: center;
   border-radius: 50%;
   box-sizing: content-box;
   background-color: #FF003D;
@@ -642,7 +644,7 @@ body {
   font-size: 12px;
 }
 .customer-btn__count_active {
-  display: flex;
+  display: block;
 }
 
 .customer-btn__text {
@@ -958,6 +960,22 @@ body {
 .sticker_green {
   background-color: #D1F0B1;
   color: #33860F;
+}
+.sticker_red {
+  color: var(--red);
+  background: rgb(255, 229, 236);
+}
+.sticker_purple {
+  color: var(--main-purple);
+  background: rgb(247, 236, 255);
+}
+.sticker_orange {
+  color: var(--orange);
+  background: rgb(255, 235, 229);
+}
+.sticker_blue {
+  color: var(--main-blue);
+  background: rgb(230, 242, 255);
 }
 
 .menu-catalog {
