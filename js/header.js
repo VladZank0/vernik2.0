@@ -13,9 +13,7 @@
 
     function toggleMenu(){
         burger_menu.classList.toggle('header__burger-menu_active');
-        body.classList.contains('no-scroll') 
-        ? body.classList.remove('no-scroll') 
-        : body.classList.add('no-scroll');
+        body.classList.toggle('no-scroll');
     }
     function toggleCatalog(){
         menu_catalog.classList.toggle('menu-catalog_active');
