@@ -14,7 +14,6 @@
 @keyframes tabContent {
   0% {
     opacity: 0;
-    transform: translateX(-20px);
     display: none;
   }
   30% {
@@ -22,7 +21,6 @@
   }
   100% {
     display: flex;
-    transform: translateX(0px);
   }
 }
 @keyframes tabContentOut {

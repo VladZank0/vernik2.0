@@ -14,7 +14,6 @@ if(document.querySelector('.result-slider')){
         },
     })
 }
-
 if(document.querySelector('.categories-slider')){
     let categories_slider = new Swiper('.categories-slider', {
         watchOverflow: true,
@@ -26,7 +25,7 @@ if(document.querySelector('.categories-slider')){
         speed: 1000,
         spaceBetween: 8,
         pagination: {
-            el: '.swiper-pagination',
+            el: '.categories-slider-pagination',
             clickable: true,
             type: 'bullets',
             bullets: true,
@@ -61,7 +60,7 @@ if(document.querySelector('.review-slider')){
         speed: 1000,
         spaceBetween: 8,
         pagination: {
-            el: '.swiper-pagination',
+            el: '.review-slider-pagination',
             clickable: true,
             type: 'bullets',
             bullets: true,
@@ -87,6 +86,30 @@ if(document.querySelector('.review-slider')){
         
     })
 }
+if(document.querySelector('.journal-slider')){
+    let journal_slider = new Swiper('.journal-slider', {
+        watchOverflow: true,
+        centeredSlidesBounds:true,
+        centredSlides: true,
+        slidesPerView: 'auto',
+        observer: true,
+        observeParents: true,
+        speed: 1000,
+        spaceBetween: 24,
+        pagination: {
+            el: '.journal-slider-pagination',
+            clickable: true,
+            type: 'bullets',
+            bullets: true,
+        },
+        navigation: {
+            nextEl: '.journal-slider__btn-next',
+            prevEl: '.journal-slider__btn-prev',
+        },
+         
+        
+    })
+}
 if(document.querySelector('.product-slider')){
     let product_slider = new Swiper('.product-slider', {
         watchOverflow: true,
@@ -97,10 +120,10 @@ if(document.querySelector('.product-slider')){
         observeParents: true,
         speed: 1000,
         spaceBetween: 8,
-        
+        freeMode: true,
         slidesOffsetAfter: -20, 
         pagination: {
-            el: '.swiper-pagination',
+            el: '.product-slider-pagination',
             clickable: true,
             type: 'bullets',
             bullets: true,
@@ -148,20 +171,17 @@ if(document.querySelector('.product-slider')){
 }
 
 if(document.querySelector('.videos-slider')){
+    let numSlides = document.querySelectorAll('.videos-slider .swiper-slide').length;
+    let initialSlide = Math.floor(numSlides / 2);
+
     let videos_slider;
     videos_slider = new Swiper('.videos-slider', {
-        centeredSlidesBounds: true,
-        slidesPerView: 'auto',
-        observer: true,
-        loop: true,
-        centeredSlides: true,
-        observeParents: true,
-        clickable: true,
-        watchSlidesProgress: true,
+    
+        slidesPerView: 4.95,
+        slideToClickedSlide: true,
+        centeredSlides: true,   
+        initialSlide: initialSlide,
         spaceBetween: 24,   
-        speed: 800,
-        slidesOffsetBefore: 30, // отступ перед первым слайдом
-        slidesOffsetAfter: 0, 
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
@@ -171,22 +191,17 @@ if(document.querySelector('.videos-slider')){
             nextEl: '.video-slider__btn-next',
             prevEl: '.video-slider__btn-prev',
         },
-        loopedSlides: 10,
         breakpoints: {
-            320: {
-                slidesPerView: 1.5,
+            0: {
+                slidesPerView: 1.75,
             },
-            768: {
-                slidesPerView: 2.5,
+            500:{
+                slidesPerView: 'auto',
             },
-            1024: {
-                slidesPerView: 3.5,
-            },
-            1200: {
-                slidesPerView: 5.23,
-            },
+            1100:{
+                slidesPerView: 4.95,
+            }
         },
-    
+        
     })
-    
 }
