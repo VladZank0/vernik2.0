@@ -59,6 +59,7 @@ if(document.querySelector('.review-slider')){
         observeParents: true,
         speed: 1000,
         spaceBetween: 8,
+        watchSlidesProgress: true,
         pagination: {
             el: '.review-slider-pagination',
             clickable: true,
@@ -181,7 +182,7 @@ if(document.querySelector('.videos-slider')){
         slidesPerView: 'auto',
         slideToClickedSlide: true,
         centeredSlides: true, 
-       
+        speed: 200,
         loop: true,
         pagination: {
             el: '.swiper-pagination',
