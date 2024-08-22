@@ -261,6 +261,10 @@ if(document.querySelector('.comparison-slider')){
         spaceBetween: 6,
         observer: true,
         observeParents: true,
+        navigation: {
+            nextEl: '.comparison-slider__btn-next',
+            prevEl: '.comparison-slider__btn-prev',
+        },
         breakpoints: {
             0: {
                 spaceBetween: 8,
