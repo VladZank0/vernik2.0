@@ -113,10 +113,10 @@ if(document.querySelector('.journal-slider')){
 }
 if(document.querySelector('.product-slider')){
     let product_slider = new Swiper('.product-slider', {
-        watchOverflow: true,
         centeredSlidesBounds:true,
         centredSlides: true,
         slidesPerView: 'auto',
+        watchOverflow: true,
         observer: true,
         observeParents: true,
         speed: 1000,
@@ -228,3 +228,99 @@ if(document.querySelector('.banner-slider')){
         
     })
 }
+let product_page_slider_thumbs = null;
+if(document.querySelector('.product-page-slider-thumbs')){
+    product_page_slider_thumbs = new Swiper('.product-page-slider-thumbs', {
+        slidesPerView: 'auto', 
+        spaceBetween: 2,
+        observer: true,
+        observeParents: true,
+    })
+}
+if(document.querySelector('.product-page-slider') && product_page_slider_thumbs != null){
+    let product_page_slider = new Swiper('.product-page-slider', {
+        slidesPerView: 'auto', 
+        spaceBetween: 6,
+        observer: true,
+        observeParents: true,
+        thumbs: {
+            swiper: product_page_slider_thumbs,
+        },
+        on:{
+            slideChange(){
+                const activeSlideIndex = this.activeIndex;
+                product_page_slider_thumbs.slideTo(activeSlideIndex - 1);
+            }
+        }
+    })
+} 
+
+if(document.querySelector('.comparison-slider')){
+    let comparison_slider = new Swiper('.comparison-slider', {
+        slidesPerView: 'auto', 
+        spaceBetween: 6,
+        observer: true,
+        observeParents: true,
+        breakpoints: {
+            0: {
+                spaceBetween: 8,
+            },
+            700: {
+                spaceBetween: 20
+            },
+            1100: {
+                spaceBetween: 36,
+            }
+        },
+        
+    })
+    let dataSliders = document.querySelectorAll('.comparison-row-slider');
+    if(dataSliders.length){
+        const childSliders = [];
+        dataSliders.forEach( el => {
+            let data_slider = new Swiper( el, {
+                slidesPerView: 'auto', 
+                spaceBetween: 8,
+                observer: true,
+                observeParents: true,
+                allowSlideNext: false,
+                allowSlidePrev: false,
+                breakpoints: {
+                    0: {
+                        spaceBetween: 8,
+                    },
+                    700: {
+                        spaceBetween: 20
+                    },
+                    1100: {
+                        spaceBetween: 36,
+                    }
+                },
+                
+            })
+            childSliders.push(data_slider);
+        }) 
+        comparison_slider.controller.control = childSliders;
+         
+     
+    }
+}
+ 
+if(document.querySelector('.breadcrumbs-slider') && product_page_slider_thumbs != null){
+    let breadcrumbs_slider = new Swiper('.breadcrumbs-slider', {
+        slidesPerView: 'auto', 
+        centeredSlidesBounds: true,
+        spaceBetween: 16,
+        watchOverflow: true,
+        observer: true,
+        observeParents: true,
+        breakpoints: {
+            0: {
+                spaceBetween: 16,
+            },
+            1100: {
+                spaceBetween: 32,
+            }
+        },
+    })
+} 
