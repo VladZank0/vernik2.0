@@ -310,7 +310,7 @@ if(document.querySelector('.comparison-slider')){
     }
 }
  
-if(document.querySelector('.breadcrumbs-slider') && product_page_slider_thumbs != null){
+if(document.querySelector('.breadcrumbs-slider')){
     let breadcrumbs_slider = new Swiper('.breadcrumbs-slider', {
         slidesPerView: 'auto', 
         centeredSlidesBounds: true,
