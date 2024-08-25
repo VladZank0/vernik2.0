@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>fewfw</title>
+    <link rel="stylesheet" href="css/fonts.css"> 
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lib/tabs.css">
+    <link rel="stylesheet" href="css/lib/fancybox.css">
+    <link rel="stylesheet" href="css/lib/accordion.css">
 </head>
 <body>
+    
     <header class="header">
         <div class="container">
             <div class="header__inner">
@@ -1719,5 +1725,398 @@
     </header>
 
     
+
+    <main class="main">
+        <div class="breadcrumbs">
+            <div class="container">
+                <div class="breadcrumbs-slider">
+                    <div class="breadcrumbs-list swiper-wrapper">
+                        <a class="breadcrumbs-list__item swiper-slide" href="">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.8285 2.79647C6.59424 2.08903 6.97711 1.73531 7.41214 1.60153C7.79519 1.48373 8.20481 1.48373 8.58786 1.60153C9.02289 1.73531 9.40576 2.08903 10.1715 2.79647L12.6287 5.06656C13.1339 5.53334 13.3865 5.76673 13.5676 6.04463C13.7281 6.29094 13.8467 6.5621 13.9188 6.84712C14 7.16869 14 7.51263 14 8.20049V10.8001C14 11.9202 14 12.4803 13.782 12.9081C13.5903 13.2844 13.2843 13.5904 12.908 13.7821C12.4802 14.0001 11.9201 14.0001 10.8 14.0001H5.2C4.0799 14.0001 3.51984 14.0001 3.09202 13.7821C2.71569 13.5904 2.40973 13.2844 2.21799 12.9081C2 12.4803 2 11.9202 2 10.8001L2 8.20049C2 7.51263 2 7.16869 2.08125 6.84712C2.15327 6.5621 2.27192 6.29094 2.4324 6.04463C2.61347 5.76673 2.86609 5.53334 3.37134 5.06656L5.8285 2.79647Z" stroke="#9B9EB6" stroke-width="1.5" stroke-linecap="round"/>
+                                <path d="M6 10.6668C6 10.0455 6 9.73491 6.10149 9.48988C6.23682 9.16317 6.49638 8.90361 6.82309 8.76828C7.06812 8.66679 7.37874 8.66679 8 8.66679C8.62126 8.66679 8.93188 8.66679 9.17691 8.76828C9.50362 8.90361 9.76318 9.16317 9.89851 9.48988C10 9.73491 10 10.0455 10 10.6668V14.0001H6V10.6668Z" stroke="#9B9EB6" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                        </a>     
+                        <span class="breadcrumbs-list__item swiper-slide">
+                            Личный кабинет
+                        </span>    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="section m-t">
+            <div class="container section__container">
+                <div class="layout">
+                    <aside class="aside">
+                        <div class="aside__title">Личный кабинет</div>
+                        <div class="aside__dropdown dropdown">
+                            <div class="btn aside-menu-btn dropdown__btn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 12L21 12M3 6L21 6M3 18L15 18" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                                </svg>
+                                Меню
+                            </div>
+                            <div class="aside__list dropdown__menu">
+                                <a href="account.html" class="aside-btn">
+                                    <svg class="aside-btn__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20 21V20.5714C20 17.4944 17.5056 15 14.4286 15H9.57142C6.49441 15 4 17.4944 4 20.5714V21M16.5 7.5C16.5 9.98528 14.4853 12 12 12C9.51472 12 7.5 9.98528 7.5 7.5C7.5 5.01472 9.51472 3 12 3C14.4853 3 16.5 5.01472 16.5 7.5Z" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                                    </svg>
+                                    Мой профиль
+                                </a>
+                                <a href="account_favorites.html" class="aside-btn">
+                                    <svg class="aside-btn__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.1345 5.08988C12.0895 5.141 12.067 5.16656 12.0425 5.17523C12.0202 5.1831 11.9981 5.18311 11.9758 5.17524C11.9513 5.16657 11.9288 5.14102 11.8838 5.08992C9.87593 2.80966 6.63276 2.23459 4.18342 4.38805C1.68244 6.58692 1.33034 10.2633 3.29437 12.8639C4.65195 14.6615 8.29652 18.1165 10.4178 20.0788C10.9669 20.5867 11.2414 20.8406 11.5679 20.9411C11.8499 21.0279 12.1684 21.0279 12.4504 20.9411C12.7769 20.8406 13.0514 20.5867 13.6005 20.0788C15.7218 18.1165 19.3664 14.6615 20.7239 12.8639C22.688 10.2633 22.3788 6.56379 19.8349 4.38805C17.3435 2.25726 14.1407 2.81059 12.1345 5.08988Z" stroke="#1A1C1E" stroke-width="2" stroke-linecap="round"/>
+                                    </svg>
+                                    Избранное
+                                </a>
+                                <a href="account_orders.html" class="aside-btn aside-btn_active">
+                                    <svg class="aside-btn__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16.0006 9.40417V6C16.0006 3.79086 14.2097 2 12.0006 2C9.79145 2 8.00059 3.79086 8.00059 6V9.40417M7.96785 22H16.0333C17.9217 22 18.8659 22 19.5485 21.618C20.148 21.2826 20.6141 20.7516 20.8691 20.1138C21.1596 19.3874 21.0374 18.4512 20.793 16.5787L20.046 10.8566C19.8528 9.37643 19.7562 8.63636 19.4052 8.07897C19.0958 7.58785 18.6506 7.19702 18.1236 6.95384C17.5255 6.67786 16.7791 6.67786 15.2864 6.67786H8.71477C7.22206 6.67786 6.47571 6.67786 5.87757 6.95384C5.35054 7.19702 4.90538 7.58785 4.59603 8.07897C4.24495 8.63636 4.14835 9.37643 3.95514 10.8566L3.20823 16.5787C2.96382 18.4512 2.84161 19.3874 3.13206 20.1138C3.38708 20.7516 3.85323 21.2826 4.45263 21.618C5.13532 22 6.0795 22 7.96785 22Z" stroke="#1A1C1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    История заказов
+                                </a>
+                                <a href="" class="aside-btn">
+                                    <svg class="aside-btn__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.0213 8V7.8C14.0213 6.11984 14.0213 5.27976 13.6943 4.63803C13.4067 4.07354 12.9477 3.6146 12.3832 3.32698C11.7415 3 10.9014 3 9.22125 3H7.81856C6.1384 3 5.29832 3 4.65658 3.32698C4.0921 3.6146 3.63315 4.07354 3.34554 4.63803C3.01855 5.27976 3.01855 6.11984 3.01855 7.8V16.2C3.01855 17.8802 3.01855 18.7202 3.34554 19.362C3.63315 19.9265 4.0921 20.3854 4.65658 20.673C5.29832 21 6.1384 21 7.81855 21H9.22125C10.9014 21 11.7415 21 12.3832 20.673C12.9477 20.3854 13.4067 19.9265 13.6943 19.362C14.0213 18.7202 14.0213 17.8802 14.0213 16.2V16M8.52335 12L21.0005 12" stroke="#1A1C1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M18.0004 7.73082L22.2695 11.9999L18.0004 16.269" stroke="#1A1C1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    Выход
+                                </a>
+                            </div>
+                        </div>
+                       
+                    </aside>
+                    <div class="layout-main">
+                        <h1 class="section-title layout-main__title">Вы покупали</h1>
+                        <div class="orders">
+                            <div class="order-item">
+                                <div class="order-item__header">
+                                    <div class="order-title">Заказ №35740</div>
+                                    <div class="status status_success">Выполнен</div>
+                                    <div class="order-text-box">
+                                        <div class="order-label">Дата заказа:</div>
+                                        <div class="order-value">18 января 2024</div>
+                                    </div>
+                                </div>
+                                <div class="order-item__list">
+                                    <div class="order-card">
+                                        <a href="" class="order-card__img-wrapper">
+                                            <img class="order-card__img" src="images/products/search_product.png" alt="Фото товара">
+                                        </a>
+                                        <div class="order-card__content">
+                                            <div class="stickers">
+                                                <div class="sticker sticker_green">
+                                                    Новый
+                                                </div>
+                                            </div>
+                                            <a href="" class="order-title">iPhone 15 Pro Max 256Gb Natural Titanium</a>
+                                            <div class="order-card__data">
+                                                <div class="order-text-box">
+                                                    <div class="order-label">Стоимость:</div>
+                                                    <div class="order-value">120 990 ₽</div>
+                                                </div>
+                                                <div class="order-text-box">
+                                                    <div class="order-label">Способ оплаты:</div>
+                                                    <div class="order-value">Наличные</div>
+                                                </div>
+                                                <div class="order-text-box">
+                                                    <div class="order-label">Количество:</div>
+                                                    <div class="order-value">1</div>
+                                                </div>
+                                                <div class="order-text-box">
+                                                    <div class="order-label">Гарантия на этот товар уже истекла</div>
+                                                    <div class="order-value"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="order-card">
+                                        <a href="" class="order-card__img-wrapper">
+                                            <img class="order-card__img" src="images/products/search_product.png" alt="Фото товара">
+                                        </a>
+                                        <div class="order-card__content">
+                                            <div class="stickers">
+                                                <div class="sticker sticker_green">
+                                                    Новый
+                                                </div>
+                                            </div>
+                                            <a href="" class="order-title">iPhone 15 Pro Max 256Gb Natural Titanium</a>
+                                            <div class="order-card__data">
+                                                <div class="order-text-box">
+                                                    <div class="order-label">Стоимость:</div>
+                                                    <div class="order-value">120 990 ₽</div>
+                                                </div>
+                                                <div class="order-text-box">
+                                                    <div class="order-label">Способ оплаты:</div>
+                                                    <div class="order-value">Наличные</div>
+                                                </div>
+                                                <div class="order-text-box">
+                                                    <div class="order-label">Количество:</div>
+                                                    <div class="order-value">1</div>
+                                                </div>
+                                                <div class="order-text-box">
+                                                    <div class="order-label">Гарантия на этот действет еще:</div>
+                                                    <div class="order-value">245 дней</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-item">
+                                <div class="order-item__header">
+                                    <div class="order-title">Заказ №35741</div>
+                                    <div class="status status_cancel">Отменён</div>
+                                    <div class="order-text-box">
+                                        <div class="order-label">Дата заказа:</div>
+                                        <div class="order-value">18 января 2024</div>
+                                    </div>
+                                </div>
+                                <div class="order-item__list">
+                                    <div class="order-card">
+                                        <a href="" class="order-card__img-wrapper">
+                                            <img class="order-card__img" src="images/products/search_product.png" alt="Фото товара">
+                                        </a>
+                                        <div class="order-card__content">
+                                            <div class="stickers">
+                                                <div class="sticker sticker_green">
+                                                    Новый
+                                                </div>
+                                            </div>
+                                            <a href="" class="order-title">iPhone 15 Pro Max 256Gb Natural Titanium</a>
+                                            <div class="order-card__data">
+                                                <div class="order-text-box">
+                                                    <div class="order-label">Стоимость:</div>
+                                                    <div class="order-value">120 990 ₽</div>
+                                                </div>
+                                                <div class="order-text-box">
+                                                    <div class="order-label">Способ оплаты:</div>
+                                                    <div class="order-value">Наличные</div>
+                                                </div>
+                                                <div class="order-text-box">
+                                                    <div class="order-label">Количество:</div>
+                                                    <div class="order-value">1</div>
+                                                </div>
+                                                <div class="order-text-box">
+                                                    <div class="order-label">Гарантия на этот действет еще:</div>
+                                                    <div class="order-value">245 дней</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-item">
+                                <div class="order-item__header">
+                                    <div class="order-title">Заказ №35741</div>
+                                    <div class="status status_return">Возврат</div>
+                                    <div class="order-text-box">
+                                        <div class="order-label">Дата заказа:</div>
+                                        <div class="order-value">18 января 2024</div>
+                                    </div>
+                                </div>
+                                <div class="order-item__list">
+                                    <div class="order-card">
+                                        <a href="" class="order-card__img-wrapper">
+                                            <img class="order-card__img" src="images/products/search_product.png" alt="Фото товара">
+                                        </a>
+                                        <div class="order-card__content">
+                                            <div class="stickers">
+                                                <div class="sticker sticker_green">
+                                                    Новый
+                                                </div>
+                                            </div>
+                                            <a href="" class="order-title">iPhone 15 Pro Max 256Gb Natural Titanium</a>
+                                            <div class="order-card__data">
+                                                <div class="order-text-box">
+                                                    <div class="order-label">Стоимость:</div>
+                                                    <div class="order-value">120 990 ₽</div>
+                                                </div>
+                                                <div class="order-text-box">
+                                                    <div class="order-label">Способ оплаты:</div>
+                                                    <div class="order-value">Наличные</div>
+                                                </div>
+                                                <div class="order-text-box">
+                                                    <div class="order-label">Количество:</div>
+                                                    <div class="order-value">1</div>
+                                                </div>
+                                                <div class="order-text-box">
+                                                    <div class="order-label">Гарантия на этот действет еще:</div>
+                                                    <div class="order-value">245 дней</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-top__inner">
+                    <a class="footer-yandex-link footer-yandex-link_desktop" href="">
+                        <img class="footer-yandex-img" width="105" height="200" src="images/footer/yandex.svg" alt="Яндекс">
+                    </a>
+                    <div class="footer-top__main">
+                        <div class="footer__column">
+                            <nav class="footer-nav">
+                                <div class="footer-nav__title">ЛЮБИМЫМ ПОКУПАТЕЛЯМ</div>
+                                <a class="footer-nav__link" href="">Оплата и доставка</a>
+                                <a class="footer-nav__link" href="">Выкуп техники</a>
+                                <a class="footer-nav__link" href="">Гарантия</a>
+                                <a class="footer-nav__link" href="">Контакты</a>
+                                <a class="footer-nav__link" href="">Правовая информация</a>
+                                <a class="footer-nav__link" href="">Оплата</a>
+                            </nav>
+                            <nav class="footer-nav">
+                                <div class="footer-nav__title">ПАРУ СЛОВ ЗА ЛАВКУ</div>
+                                <a class="footer-nav__link" href="">Журнал Макса Верника</a>
+                            </nav>
+                        </div>
+                        <div class="footer__column">
+                            <nav class="footer-nav">
+                                <div class="footer-nav__title">КАТЕГОРИИ</div>
+                                <a class="footer-nav__link" href="">Компьютеры</a>
+                                <a class="footer-nav__link" href="">Телефоны</a>
+                                <a class="footer-nav__link" href="">Планшеты</a>
+                                <a class="footer-nav__link" href="">VR Очки</a>
+                                <a class="footer-nav__link" href="">Аудио, TV и игры</a>
+                                <a class="footer-nav__link" href="">Часы и трекеры</a>
+                                <a class="footer-nav__link" href="">Фото и видеотехника</a>
+                                <a class="footer-nav__link" href="">Бытовая техника</a>
+                                <a class="footer-nav__link" href="">Аксессуары</a>
+                            </nav>
+                        </div>
+                        <div class="footer__column">
+                            <nav class="footer-social">
+                                <div class="footer-social__title">Я В СОЦПОЛЕ</div>
+                                <a class="footer-social__item" href="">
+                                    <div class="contact-icon contact-icon_red">
+                                        <svg class="contact-icon__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.89 10.48L11.89 8.74C11.6235 8.58253 11.3196 8.49946 11.01 8.49946C10.7004 8.49946 10.3965 8.58253 10.13 8.74C9.86143 8.8914 9.63879 9.11259 9.48564 9.38017C9.33248 9.64774 9.25452 9.95174 9.26 10.26V13.74C9.25452 14.0483 9.33248 14.3523 9.48564 14.6198C9.63879 14.8874 9.86143 15.1086 10.13 15.26C10.3965 15.4175 10.7004 15.5005 11.01 15.5005C11.3196 15.5005 11.6235 15.4175 11.89 15.26L14.89 13.52C15.1465 13.3626 15.3583 13.142 15.5052 12.8794C15.6522 12.6168 15.7293 12.3209 15.7293 12.02C15.7293 11.7191 15.6522 11.4232 15.5052 11.1606C15.3583 10.898 15.1465 10.6774 14.89 10.52V10.48ZM11.24 13.32V10.68L13.52 12L11.24 13.32ZM19 4H5C4.20435 4 3.44129 4.31607 2.87868 4.87868C2.31607 5.44129 2 6.20435 2 7V17C2 17.7956 2.31607 18.5587 2.87868 19.1213C3.44129 19.6839 4.20435 20 5 20H19C19.7956 20 20.5587 19.6839 21.1213 19.1213C21.6839 18.5587 22 17.7956 22 17V7C22 6.20435 21.6839 5.44129 21.1213 4.87868C20.5587 4.31607 19.7956 4 19 4ZM20 17C20 17.2652 19.8946 17.5196 19.7071 17.7071C19.5196 17.8946 19.2652 18 19 18H5C4.73478 18 4.48043 17.8946 4.29289 17.7071C4.10536 17.5196 4 17.2652 4 17V7C4 6.73478 4.10536 6.48043 4.29289 6.29289C4.48043 6.10536 4.73478 6 5 6H19C19.2652 6 19.5196 6.10536 19.7071 6.29289C19.8946 6.48043 20 6.73478 20 7V17Z" fill="#FF4242"/>
+                                        </svg> 
+                                    </div> 
+                                    <div class="footer-social__item-content">
+                                        <span class="footer-social__item-title">МАКС ВЕРНИК</span>
+                                        <span class="footer-social__item-description">22 тыс. подписчиков</span>
+                                    </div>
+                                </a>
+                                <a class="footer-social__item" href="">
+                                    <div class="contact-icon contact-icon_purple">
+                                        <svg class="contact-icon__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 7C11.0111 7 10.0444 7.29324 9.22215 7.84265C8.3999 8.39206 7.75904 9.17295 7.3806 10.0866C7.00216 11.0002 6.90315 12.0055 7.09607 12.9755C7.289 13.9454 7.7652 14.8363 8.46447 15.5355C9.16373 16.2348 10.0546 16.711 11.0245 16.9039C11.9945 17.0969 12.9998 16.9978 13.9134 16.6194C14.827 16.241 15.6079 15.6001 16.1573 14.7779C16.7068 13.9556 17 12.9889 17 12C17 10.6739 16.4732 9.40215 15.5355 8.46447C14.5979 7.52678 13.3261 7 12 7ZM12 15C11.4067 15 10.8266 14.8241 10.3333 14.4944C9.83994 14.1648 9.45542 13.6962 9.22836 13.1481C9.0013 12.5999 8.94189 11.9967 9.05764 11.4147C9.1734 10.8328 9.45912 10.2982 9.87868 9.87868C10.2982 9.45912 10.8328 9.1734 11.4147 9.05764C11.9967 8.94189 12.5999 9.0013 13.1481 9.22836C13.6962 9.45542 14.1648 9.83994 14.4944 10.3333C14.8241 10.8266 15 11.4067 15 12C15 12.7956 14.6839 13.5587 14.1213 14.1213C13.5587 14.6839 12.7956 15 12 15ZM17 6C16.8022 6 16.6089 6.05865 16.4444 6.16853C16.28 6.27841 16.1518 6.43459 16.0761 6.61732C16.0004 6.80004 15.9806 7.00111 16.0192 7.19509C16.0578 7.38907 16.153 7.56725 16.2929 7.70711C16.4327 7.84696 16.6109 7.9422 16.8049 7.98079C16.9989 8.01937 17.2 7.99957 17.3827 7.92388C17.5654 7.84819 17.7216 7.72002 17.8315 7.55557C17.9414 7.39112 18 7.19778 18 7C18 6.73478 17.8946 6.48043 17.7071 6.29289C17.5196 6.10536 17.2652 6 17 6ZM21.94 8.24C21.9234 7.38542 21.7611 6.53995 21.46 5.74C21.1808 5.01207 20.7516 4.35099 20.2003 3.7997C19.649 3.2484 18.9879 2.81922 18.26 2.54C17.4601 2.2389 16.6146 2.07657 15.76 2.06C14.79 2 14.47 2 12 2C9.53 2 9.21 2 8.24 2.06C7.38542 2.07657 6.53995 2.2389 5.74 2.54C5.01207 2.81922 4.35099 3.2484 3.7997 3.7997C3.2484 4.35099 2.81922 5.01207 2.54 5.74C2.2389 6.53995 2.07657 7.38542 2.06 8.24C2 9.22 2 9.54 2 12C2 14.46 2 14.78 2.06 15.76C2.07657 16.6146 2.2389 17.4601 2.54 18.26C2.81922 18.9879 3.2484 19.649 3.7997 20.2003C4.35099 20.7516 5.01207 21.1808 5.74 21.46C6.53995 21.7611 7.38542 21.9234 8.24 21.94C9.24 21.94 9.53 22 12 22C14.47 22 14.79 22 15.76 21.94C16.6146 21.9234 17.4601 21.7611 18.26 21.46C18.9879 21.1808 19.649 20.7516 20.2003 20.2003C20.7516 19.649 21.1808 18.9879 21.46 18.26C21.7611 17.4601 21.9234 16.6146 21.94 15.76C21.94 14.76 22 14.46 22 12C22 9.54 22 9.22 21.94 8.24ZM19.94 15.67C19.9225 16.3046 19.8043 16.9324 19.59 17.53C19.4128 18.0023 19.1327 18.4293 18.77 18.78C18.4214 19.1428 17.9936 19.4201 17.52 19.59C16.921 19.8131 16.289 19.9348 15.65 19.95C14.71 19.95 14.42 20 11.99 20C9.56 20 9.28 20 8.34 20C7.70202 19.9835 7.07075 19.8654 6.47 19.65C5.99766 19.4728 5.57067 19.1927 5.22 18.83C4.85715 18.4814 4.57992 18.0536 4.41 17.58C4.1878 16.9842 4.06615 16.3557 4.05 15.72C4.05 14.72 4.05 14.47 4.05 12.05C4.05 9.63 4.05 9.34 4.05 8.38C4.06724 7.74121 4.18884 7.10954 4.41 6.51C4.58256 6.04063 4.85953 5.61662 5.22 5.27C5.56858 4.90715 5.99641 4.62992 6.47 4.46C7.06899 4.2369 7.70099 4.11523 8.34 4.1C9.28 4 9.57 4 12 4C14.43 4 14.72 4 15.66 4C16.3021 4.01633 16.9373 4.13794 17.54 4.36C18.0094 4.53256 18.4334 4.80953 18.78 5.17C19.1428 5.51858 19.4201 5.94641 19.59 6.42C19.8348 7.02856 19.9735 7.67458 20 8.33C20 9.33 20.05 9.58 20.05 12C20.05 14.42 20 14.71 20 15.67H19.94Z" fill="#AF41FC"/>
+                                        </svg>
+                                    </div> 
+                                    <div class="footer-social__item-content">
+                                        <span class="footer-social__item-title">@maxvernik</span>
+                                        <span class="footer-social__item-description">38,5 тыс. подписчиков</span>
+                                    </div>
+                                </a>
+                                <a class="footer-social__item" href="">
+                                    <div class="contact-icon contact-icon_blue">
+                                        <svg class="contact-icon__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_178_6554)">
+                                            <path d="M15.5 10.5L11 14L17 20L21 4L3 11L7 13L9 19L12.5 16" stroke="#047FFF" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_178_6554">
+                                            <rect width="24" height="24" fill="white"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </div> 
+                                    <div class="footer-social__item-content">
+                                        <span class="footer-social__item-title">Заметки Макса Верника</span>
+                                        <span class="footer-social__item-description">@vernikmax</span>
+                                    </div>
+                                </a>
+                                <a class="footer-social__item" href="">
+                                    <div class="contact-icon contact-icon_blue">
+                                        <svg class="contact-icon__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_178_6553)">
+                                            <path d="M15.5 10.5L11 14L17 20L21 4L3 11L7 13L9 19L12.5 16" stroke="#047FFF" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_178_6553">
+                                            <rect width="24" height="24" fill="white"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>  
+                                    </div> 
+                                    <div class="footer-social__item-content">
+                                        <span class="footer-social__item-title">Связаться напрямую</span>
+                                        <span class="footer-social__item-description">@vernik</span>
+                                    </div>
+                                </a>
+                                
+                            </nav>
+                        </div>
+                        <div class="footer__column">
+                            <div class="footer-info">
+                                <div class="footer-info__title">АДРЕС</div>
+                                <span class="footer-info__text">Город-герой Москва, <br> Глинищевский переулок дом 3, <br> подъезд 4, офис 102</span>
+                                <a class="footer-info__link" href="tel:+79151550515">+7 915 155-05-15</a>
+                            </div>
+                            <a class="footer-yandex-link footer-yandex-link_tablet" href="">
+                                <img class="footer-yandex-img" width="105" height="200" src="images/footer/yandex.svg" alt="Яндекс">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom__inner">
+                    <div class="footer-bottom__info">
+                        <a href="https://vernik.me/magic/">
+                            <img class="footer-bottom__star" width="48" height="48" src="images/footer/3d-star.png" alt="Звезда">
+                        </a>
+                        <p> 
+                            Фельдмаршал столичной торговли, мануфактур-советник лавок, прилавков и ларей @ Макс Верник 1878—2024 <br>
+                            <span class="footer__bottom-copyright footer-bottom__copyright_desktop">Все права защищены © 2024</span>
+                        </p>
+                    </div>
+                    <div class="footer-bottom__block">
+                        <div class="footer-bottom__logo-info">
+                            <a href="https://www.artlebedev.com/" target="_blank">
+                                <img class="footer-bottom__logo-designer" width="121" height="40" src="images/footer/lebedev_logo.svg" alt="Логотип дизайнера">
+                            </a>
+                            <span>
+                                Наш логотип и фирменный стиль были <br>
+                                задизайнены в Студии Артемия Лебедева
+                            </span>
+                        </div>
+                        <a class="footer-bottom__link" href="">Продвижение — Xplaner</a>
+                        <a class="footer-bottom__link" href="">Карта сайта</a>
+                        <span class="footer-bottom__copyright footer-bottom__copyright_mobile">Все права защищены © 2024</span>
+                    </div>
+                    <a class="footer-yandex-link footer-yandex-link_mobile" href="">
+                        <img class="footer-yandex-img" width="64" height="119" src="images/footer/yandex_mobile.svg" alt="Яндекс">
+                    </a>
+                </div>
+            </div>
+        </div>
+</footer>
+    
+    <script src="js/header.js"></script>
+    <script src="js/lib/tabs.js"></script>
+    <script src="js/lib/swiper.min.js"></script>
+    <script src="js/sliders.js"></script>
+    <script src="js/product-card-preview.js"></script>
+    <script src="js/show-more.js"></script>
+    <script src="js/lib/fancybox.umd.js"></script>
+    <script src="js/fancybox.js"></script>
+    <script src="js/accordion.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/view-mode.js"></script>
+    <script src="js/filter.js"></script>
 </body>
 </html>
