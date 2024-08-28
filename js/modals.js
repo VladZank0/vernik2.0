@@ -50,14 +50,14 @@ function close_window(event){
     modal_container.classList.remove('modal__container_active');
     // modal.style.opacity = 0;
     // modal_container.style.animation = 'modal_close_animation .5s';
-    // setTimeout(()=>{
-    //     event.target.closest('.modal').style.display = "none";
-    //     modal_container.style.animation = null;
-    //     modal.style.opacity = null;
-    //     if(document.querySelector('body').style.overflow == 'hidden'){
-    //         document.querySelector('body').style.overflow = null;
-    //     }
-    // }, 450)
+    setTimeout(()=>{
+        event.target.closest('.modal').style.display = "none";
+        modal_container.style.animation = null;
+        modal.style.opacity = null;
+        if(document.querySelector('body').style.overflow == 'hidden'){
+            document.querySelector('body').style.overflow = null;
+        }
+    }, 450)
 }
 
 }())
