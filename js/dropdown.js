@@ -26,10 +26,16 @@
             dropdown_menu.addEventListener('click', (e) => {
                 if(e.target.closest('.dropdown__item')){
                     dropdown_btn.textContent = e.target.textContent;
+                    if(el.classList.contains('.select')){
+                        let input = el.querySelector('.select__input').value = e.target.textContent;
+                        console.log(el.querySelector('.select__input').value)
+                    }
+                    clear();
                 }
             })
         })
         window.addEventListener('click', handleOutClick);
     }
+    
 
 }())

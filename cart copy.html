@@ -1727,208 +1727,1055 @@
     
 
     <main class="main">
-
-        <section class="section m-t">
-            <div class="section__container container">
-                <div class="section-heading section-heading_m-min">
-                    <h1 class="section-title">Сравнение товаров</h1>
-                </div>
-            
-                <div class="comparison-page">
-                    
-                        <div class="comparison-settings">
-                            <div class="comparison-settings__radios">
-                                <label class="radio">
-                                    <input class="radio-input" checked type="radio" name="comparison-sort">
-                                    Все товары
-                                </label>
-                                <label class="radio">
-                                    <input class="radio-input" type="radio" name="comparison-sort">
-                                    Только различия
-                                </label>
-                            </div>
-                            <div class="comparison-settings__buttons">
-                                <button class="comparison-settings__btn">Добавить товары</button>
-                                <button class="comparison-settings__btn">Очистить список</button>
+        <section class="section">
+            <div class="container section__container">
+                <div class="layout layout_late-wrap m-t">
+                    <div class="cart-page">
+                        <div class="section-title">
+                            Корзина
+                        </div>
+                        <div class="cart-page__title">
+                            Товары
+                        </div>
+                        <div class="cart-page__top-buttons">
+                            <label class="checkbox">
+                                <input class="checkbox__input" name="Apple" type="checkbox">
+                                Выбрать все
+                            </label>
+                            <div class="cart-page__clear">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 6L12 12M12 12L18 18M12 12L18 6M12 12L6 18" stroke="#9B9EB6" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                                Убрать выбранные
                             </div>
                         </div>
-                        <div class="comparison-slider">
-                            <div class="swiper-wrapper comparison-slider__wrapper">
-                                <div class="swiper-slide">
-                                    <div class="mini-product-card">
-                                        <div class="mini-product-card__main">
-                                            <a href="">
-                                                <img src="images/products/search_product.png" alt="" class="mini-product-card__img">
-                                            </a>
-                                            <div class="mini-product-card__content">
-                                                <a href="" class="mini-product-card__title">iPhone 15 Pro Max 256Gb Natural Titanium</a>
-                                                <div class="mini-product-card__prices">
-                                                    <span class="mini-product-card__price">2 490 ₽</span>
-                                                    <span class="mini-product-card__price mini-product-card__price_old">3 490 ₽</span>
+                        <div class="cart-products">
+                            <div class="cart-product">
+                                <label class="checkbox cart-product__checkbox">
+                                    <input class="checkbox__input" name="Apple" type="checkbox">
+                                </label>
+                                <a href="">
+                                    <img class="cart-product__img" src="images/products/search_product.png" alt="Фото товара">
+                                </a>
+                                <div class="cart-product__content">
+                                    <div class="cart-product__top">
+                                        <div class="cart-product__title-wrapper">
+                                            <div class="stickers">
+                                                <div class="sticker sticker_green">
+                                                    Новый
                                                 </div>
                                             </div>
+                                            <a class="cart-product__title" href="">iPhone 15 Pro Max 256Gb Natural Titanium</a>
                                         </div>
-                                        <div class="mini-product-card__buttons">
-                                            <button class="btn btn_min" aria-label="Кнопка добавить в корзину">
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M5 5L18.5136 4.88936C19.8468 4.87845 20.5134 4.87299 20.9835 5.14281C21.3958 5.37949 21.7103 5.7553 21.8707 6.20287C22.0534 6.71311 21.9306 7.36834 21.685 8.67881L20.9894 12.3896C20.8153 13.3185 20.7282 13.783 20.4898 14.1308C20.2795 14.4375 19.9879 14.6796 19.6477 14.8297C19.2619 15 18.7893 15 17.8442 15H6.5M5 5L6.5 15M5 5L4.5 2H2M6.5 15L6.67123 16.0036C6.79228 16.7131 6.85281 17.0678 7.0308 17.3339C7.1877 17.5685 7.40759 17.754 7.66521 17.8693C7.95746 18 8.31732 18 9.03705 18H18.5001M16.5 21.5H16.51M8.5 21.5H8.51M17 21.5C17 21.7761 16.7761 22 16.5 22C16.2239 22 16 21.7761 16 21.5C16 21.2239 16.2239 21 16.5 21C16.7761 21 17 21.2239 17 21.5ZM9 21.5C9 21.7761 8.77614 22 8.5 22C8.22386 22 8 21.7761 8 21.5C8 21.2239 8.22386 21 8.5 21C8.77614 21 9 21.2239 9 21.5Z" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                                        <div class="cart-product__price-block">
+                                            <div class="cart-product__price">
+                                                109 990 ₽
+                                                <span class="cart-product__price-description">
+                                                    Наличными
+                                                </span>
+                                            </div>
+                                            <div class="cart-product__price cart-product__price_alt">
+                                                120 990 ₽
+                                                <span class="cart-product__price-description">
+                                                    Картой / СБП
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cart-product__bottom">
+                                        <div class="quantity-switch">
+                                            <div class="quantity-switch__btn quantity-switch__btn_disabled">-</div>
+                                            <input class="quantity-switch__input" type="text" value="1">
+                                            <div class="quantity-switch__btn">+</div>
+                                        </div>
+                                        <div class="cart-product__mini-buttons">
+                                            <button class="product-mini-btn" aria-label="Кнопка добавить в избранное">
+                                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.1335 5.58988C12.0885 5.641 12.066 5.66656 12.0415 5.67523C12.0192 5.6831 11.9972 5.68311 11.9749 5.67524C11.9503 5.66657 11.9278 5.64102 11.8828 5.58992C9.87495 3.30966 6.63178 2.73459 4.18245 4.88805C1.68146 7.08692 1.32936 10.7633 3.29339 13.3639C4.65097 15.1615 8.29555 18.6165 10.4169 20.5788C10.9659 21.0867 11.2404 21.3406 11.5669 21.4411C11.8489 21.5279 12.1674 21.5279 12.4494 21.4411C12.776 21.3406 13.0505 21.0867 13.5995 20.5788C15.7208 18.6165 19.3654 15.1615 20.723 13.3639C22.687 10.7633 22.3779 7.06379 19.8339 4.88805C17.3425 2.75726 14.1397 3.31059 12.1335 5.58988Z" stroke="#9B9EB6" stroke-width="2" stroke-linecap="round"/>
                                                 </svg>
                                             </button>
-                                            <div class="mini-product-card__mini-buttons">
-                                                <button class="product-mini-btn product-mini-btn_delete" aria-label="Кнопка добавить в избранное">
-                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M3 6H21M10 11.6319V16.3681M14 11.6319V16.3681M5 6H19V17.2C19 18.8802 19 19.7202 18.673 20.362C18.3854 20.9265 17.9265 21.3854 17.362 21.673C16.7202 22 15.8802 22 14.2 22H9.8C8.11984 22 7.27976 22 6.63803 21.673C6.07354 21.3854 5.6146 20.9265 5.32698 20.362C5 19.7202 5 18.8802 5 17.2V6ZM16 6L8 6C8 5.07003 8 4.60504 8.10222 4.22354C8.37962 3.18827 9.18827 2.37962 10.2235 2.10222C10.605 2 11.07 2 12 2C12.93 2 13.395 2 13.7765 2.10222C14.8117 2.37962 15.6204 3.18827 15.8978 4.22354C16 4.60504 16 5.07003 16 6Z" stroke="#C8C9D2" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
-                                                    </svg>
-                                                </button>
-                                                <button class="product-mini-btn" aria-label="Кнопка добавить в избранное">
-                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.1345 5.09013C12.0895 5.14124 12.067 5.1668 12.0425 5.17547C12.0202 5.18335 11.9981 5.18335 11.9758 5.17548C11.9513 5.16681 11.9288 5.14126 11.8838 5.09016C9.87593 2.80991 6.63276 2.23484 4.18342 4.3883C1.68244 6.58716 1.33034 10.2636 3.29437 12.8642C4.65195 14.6617 8.29652 18.1168 10.4178 20.0791C10.9669 20.5869 11.2414 20.8409 11.5679 20.9414C11.8499 21.0282 12.1684 21.0282 12.4504 20.9414C12.7769 20.8409 13.0514 20.5869 13.6005 20.0791C15.7218 18.1168 19.3664 14.6617 20.7239 12.8642C22.688 10.2636 22.3788 6.56403 19.8349 4.3883C17.3435 2.25751 14.1407 2.81083 12.1345 5.09013Z" stroke="#C8C9D2" stroke-width="2" stroke-linecap="round"/>
-                                                    </svg>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="mini-product-card">
-                                        <div class="mini-product-card__main">
-                                            <a href="">
-                                                <img src="images/products/search_product.png" alt="" class="mini-product-card__img">
-                                            </a>
-                                            <div class="mini-product-card__content">
-                                                <a href="" class="mini-product-card__title">iPhone 15 Pro Max 256Gb Natural Titanium</a>
-                                                <div class="mini-product-card__prices">
-                                                    <span class="mini-product-card__price">2 490 ₽</span>
-                                                    <span class="mini-product-card__price mini-product-card__price_old">3 490 ₽</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="mini-product-card__buttons">
-                                            <button class="btn btn_min" aria-label="Кнопка добавить в корзину">
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M5 5L18.5136 4.88936C19.8468 4.87845 20.5134 4.87299 20.9835 5.14281C21.3958 5.37949 21.7103 5.7553 21.8707 6.20287C22.0534 6.71311 21.9306 7.36834 21.685 8.67881L20.9894 12.3896C20.8153 13.3185 20.7282 13.783 20.4898 14.1308C20.2795 14.4375 19.9879 14.6796 19.6477 14.8297C19.2619 15 18.7893 15 17.8442 15H6.5M5 5L6.5 15M5 5L4.5 2H2M6.5 15L6.67123 16.0036C6.79228 16.7131 6.85281 17.0678 7.0308 17.3339C7.1877 17.5685 7.40759 17.754 7.66521 17.8693C7.95746 18 8.31732 18 9.03705 18H18.5001M16.5 21.5H16.51M8.5 21.5H8.51M17 21.5C17 21.7761 16.7761 22 16.5 22C16.2239 22 16 21.7761 16 21.5C16 21.2239 16.2239 21 16.5 21C16.7761 21 17 21.2239 17 21.5ZM9 21.5C9 21.7761 8.77614 22 8.5 22C8.22386 22 8 21.7761 8 21.5C8 21.2239 8.22386 21 8.5 21C8.77614 21 9 21.2239 9 21.5Z" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                                            <button class="product-mini-btn product-mini-btn_delete" aria-label="Кнопка добавить в избранное">
+                                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M6 6.5L12 12.5M12 12.5L18 18.5M12 12.5L18 6.5M12 12.5L6 18.5" stroke="#9B9EB6" stroke-width="2" stroke-linecap="round"/>
                                                 </svg>
                                             </button>
-                                            <div class="mini-product-card__mini-buttons">
-                                                <button class="product-mini-btn product-mini-btn_delete" aria-label="Кнопка добавить в избранное">
-                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M3 6H21M10 11.6319V16.3681M14 11.6319V16.3681M5 6H19V17.2C19 18.8802 19 19.7202 18.673 20.362C18.3854 20.9265 17.9265 21.3854 17.362 21.673C16.7202 22 15.8802 22 14.2 22H9.8C8.11984 22 7.27976 22 6.63803 21.673C6.07354 21.3854 5.6146 20.9265 5.32698 20.362C5 19.7202 5 18.8802 5 17.2V6ZM16 6L8 6C8 5.07003 8 4.60504 8.10222 4.22354C8.37962 3.18827 9.18827 2.37962 10.2235 2.10222C10.605 2 11.07 2 12 2C12.93 2 13.395 2 13.7765 2.10222C14.8117 2.37962 15.6204 3.18827 15.8978 4.22354C16 4.60504 16 5.07003 16 6Z" stroke="#C8C9D2" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
-                                                    </svg>
-                                                </button>
-                                                <button class="product-mini-btn" aria-label="Кнопка добавить в избранное">
-                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.1345 5.09013C12.0895 5.14124 12.067 5.1668 12.0425 5.17547C12.0202 5.18335 11.9981 5.18335 11.9758 5.17548C11.9513 5.16681 11.9288 5.14126 11.8838 5.09016C9.87593 2.80991 6.63276 2.23484 4.18342 4.3883C1.68244 6.58716 1.33034 10.2636 3.29437 12.8642C4.65195 14.6617 8.29652 18.1168 10.4178 20.0791C10.9669 20.5869 11.2414 20.8409 11.5679 20.9414C11.8499 21.0282 12.1684 21.0282 12.4504 20.9414C12.7769 20.8409 13.0514 20.5869 13.6005 20.0791C15.7218 18.1168 19.3664 14.6617 20.7239 12.8642C22.688 10.2636 22.3788 6.56403 19.8349 4.3883C17.3435 2.25751 14.1407 2.81083 12.1345 5.09013Z" stroke="#C8C9D2" stroke-width="2" stroke-linecap="round"/>
-                                                    </svg>
-                                                </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <div class="totals-wrapper totals-wrapper_not-sticky">
+                        <div class="totals-wrapper__block">
+                            <div class="totals">
+                                <div class="totals__inner">
+                                    <button class="btn btn_big totals__btn">Перейти к оформлению</button>
+                                    <div class="form-warning-text form-warning-text_black">Доступные способы и время доставки можно выбрать при оформлении заказа</div>
+                                    <div class="promocode">
+                                        <div class="form-item promocode__form-item">
+                                            <label class="input-label">
+                                                Промокод
+                                                <input class="input phone-input" type="text">
+                                            </label>
+                                        </div>
+                                        <button class="btn btn_big">Применить</button>
+                                    </div>
+                                    <div class="totals__line"></div>
+                                    <div class="totals__title">
+                                        Ваша корзина
+                                        <div class="totals-text totals-text_gray totals-text_min">3 товара • 620 гр</div>
+                                    </div>
+                                    <div class="totals-list">
+                                        <div class="totals-item">
+                                            <div class="totals-text">Товары (3)</div>
+                                            <div class="totals-text totals-text_min">362 970 ₽</div>
+                                        </div>
+                                        <div class="totals-item">
+                                            <div class="totals-text">Установка защитного стекла</div>
+                                            <div class="totals-text totals-text_red totals-text_min">Бесплатно</div>
+                                        </div>
+                                        <div class="totals-item">
+                                            <div class="totals-text">Перенос данных на новое устройство</div>
+                                            <div class="totals-text totals-text_red totals-text_min">Бесплатно</div>
+                                        </div>
+                                        <div class="totals-item">
+                                            <div class="totals-text">Доставка по Москве</div>
+                                            <div class="totals-text totals-text_min">500 ₽</div>
+                                        </div>
+                                    </div>
+                                    <div class="totals__title">
+                                        Общая стоимость
+                                        <div class="totals-price">
+                                            <div class="totals-text totals-text_price">
+                                                363 470 ₽
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="totals__line"></div>
+                                    <div class="split-block">
+                                        <div class="split-block__top">
+                                            <div class="split-block__title">27 500 ₽×4 <span class="split-block__text">платежа в сплит</span></div>
+                                            <div class="split-block__description">на 4 месяца, включая комиссию 249 ₽</div>
+                                        </div>
+                                        <div class="split-block__parts">
+                                            <div class="split-part">
+                                                <span class="split-part__indicator split-part__indicator_active"></span>
+                                                <span class="split-part__name split-part__name_active">Сегодня</span>
+                                            </div>
+                                            <div class="split-part">
+                                                <span class="split-part__indicator"></span>
+                                                <span class="split-part__name">14 авг</span>
+                                            </div>
+                                            <div class="split-part">
+                                                <span class="split-part__indicator"></span>
+                                                <span class="split-part__name">14 сен</span>
+                                            </div>
+                                            <div class="split-part">
+                                                <span class="split-part__indicator"></span>
+                                                <span class="split-part__name">14 окт</span>
+                                            </div>
+                                        </div>
+                                        <div class="split-block__bottom">
+                                            <button class="btn btn_light split-block__btn">Оформить сплит</button>
+                                            <div class="split-block__tooltip-icon">
+                                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M9.81537 10.2522C9.90621 9.994 10.0427 9.75664 10.2163 9.55041C10.3794 9.35662 10.5753 9.1903 10.7971 9.05998C11.2549 8.79095 11.7931 8.6926 12.3164 8.78237C12.8397 8.87213 13.3144 9.14421 13.6563 9.55041C13.9983 9.95661 14.1854 10.4707 14.1846 11.0017C14.1846 12.5006 11.9363 13.25 11.9363 13.25V13.457M11.9654 16.25H11.9754M22 12.5C22 18.0228 17.5228 22.5 12 22.5C6.47715 22.5 2 18.0228 2 12.5C2 6.97715 6.47715 2.5 12 2.5C17.5228 2.5 22 6.97715 22 12.5Z" stroke="#656771" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                                                </svg>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="slider-btn slider-btn_prev swiper-button-prev comparison-slider__btn-prev">
-                                <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M16 8.92893L2.92889 8.92893M8.92893 1.85786L1.85786 8.92893L8.92893 16" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
-                                </svg> 
-                            </div>
-                            <div class="slider-btn slider-btn_next swiper-button-next comparison-slider__btn-next">
-                                <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 9.07107H14.0711M8.07107 16.1421L15.1421 9.07107L8.07107 2" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
-                                </svg>  
+                            <div class="switch switch_reverse">
+                                <span class="switch__text switch__text_min">Сохранить мои данные в личном кабинете, чтобы отслеживать статус гарантии на товары и удобнее совершать покупки в будущем</span>
+                                <input checked="" id="new" name="новый" type="checkbox" class="switch__input">
+                                <label for="new" class="switch__label"></label>
                             </div>
                         </div>
-                   
-                    <div class="comparison-table">
-                        <div class="comparison-table__section">
-                            <div class="comparison-table__name">Акции</div>
-                            <div class="comparison-row-slider">
-                                <div class="swiper-wrapper comparison-table__row">
-                                    <div class="comparison-table_cell swiper-slide">
-                                        <div class="stickers stickers_column">
-                                            <div class="sticker sticker_red sticker_gift">Стекло в подарок!</div>
-                                            <div class="sticker sticker_red sticker_sale sticker_has-value">Распродажа!<div class="sticker__value">-20%</div></div>
-                                        </div>
-                                    </div>
-                                    <div class="comparison-table_cell swiper-slide">—</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="comparison-table__section">
-                            <div class="comparison-table__name">Диагональ экрана</div>
-                            <div class="comparison-row-slider">
-                                <div class="swiper-wrapper comparison-table__row">
-                                    <div class="comparison-table_cell swiper-slide">6.7"</div>
-                                    <div class="comparison-table_cell swiper-slide">6.7"</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="comparison-table__section">
-                            <div class="comparison-table__name">Разрешение экрана в пикселях</div>
-                            <div class="comparison-row-slider">
-                                <div class="swiper-wrapper comparison-table__row">
-                                    <div class="comparison-table_cell swiper-slide">2796x1290</div>
-                                    <div class="comparison-table_cell swiper-slide">2796x1290</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="comparison-table__section">
-                            <div class="comparison-table__name">Встроенная память</div>
-                            <div class="comparison-row-slider">
-                                <div class="swiper-wrapper comparison-table__row">
-                                    <div class="comparison-table_cell swiper-slide">256 GB</div>
-                                    <div class="comparison-table_cell swiper-slide">256 GB</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="comparison-table__section">
-                            <div class="comparison-table__name">Оперативная память</div>
-                            <div class="comparison-row-slider">
-                                <div class="swiper-wrapper comparison-table__row">
-                                    <div class="comparison-table_cell swiper-slide">8 GB</div>
-                                    <div class="comparison-table_cell swiper-slide">8 GB</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="comparison-table__section">
-                            <div class="comparison-table__name">Емкость аккумулятора</div>
-                            <div class="comparison-row-slider">
-                                <div class="swiper-wrapper comparison-table__row">
-                                    <div class="comparison-table_cell swiper-slide">4400 мА-ч</div>
-                                    <div class="comparison-table_cell swiper-slide">4400 мА-ч</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="comparison-table__section">
-                            <div class="comparison-table__name">Количество основных камер</div>
-                            <div class="comparison-row-slider">
-                                <div class="swiper-wrapper comparison-table__row">
-                                    <div class="comparison-table_cell swiper-slide">3</div>
-                                    <div class="comparison-table_cell swiper-slide">3</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="comparison-table__section">
-                            <div class="comparison-table__name">Год выхода</div>
-                            <div class="comparison-row-slider">
-                                <div class="swiper-wrapper comparison-table__row">
-                                    <div class="comparison-table_cell swiper-slide">2023</div>
-                                    <div class="comparison-table_cell swiper-slide">2023</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="comparison-table__section">
-                            <div class="comparison-table__name">Тип дисплея</div>
-                            <div class="comparison-row-slider">
-                                <div class="swiper-wrapper comparison-table__row">
-                                    <div class="comparison-table_cell swiper-slide">OLED</div>
-                                    <div class="comparison-table_cell swiper-slide">OLED</div>
-                                </div>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
-
+            </div>
         </section>
-        
+        <section class="section">
+            <div class="container section__container">
+                <div class="section-heading">
+                    <h2 class="section-title">Не забудьте купить</h2>
+                </div>
+            </div>
+            <div class="product-slider container">
+                <div class="swiper-wrapper product-slider__wrapper">
+                    <div class="product-slider__slide swiper-slide">
+                        <article class="product-card">
+                            <div class="stickers product-card__stickers">
+                                <div class="sticker sticker_green">
+                                    Новый
+                                </div>
+                                <div class="sticker sticker_purple">
+                                    Для других стран
+                                </div>
+                                <div class="sticker sticker_orange">
+                                    Б/У
+                                </div>
+                                <div class="sticker sticker_orange">
+                                    Обменный
+                                </div>
+                                <div class="sticker sticker_blue">
+                                    Ростест
+                                </div>
+                                <div class="sticker sticker_aqua">
+                                    С гравировкой
+                                </div>
+                            </div>
+                            <div class="product-card-preview">
+                                <div class="video-btn">
+                                    <div class="video-btn__icon">
+                                        <svg class="video-btn__icon-svg" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.11963 4.70917C3.11963 3.23053 3.11963 2.49122 3.42725 2.08817C3.69517 1.73714 4.10416 1.522 4.5452 1.50009C5.05161 1.47494 5.66084 1.89378 6.8793 2.73147L8.75689 4.02232C9.72245 4.68614 10.2052 5.01805 10.3747 5.43334C10.5229 5.79659 10.5229 6.20345 10.3747 6.5667C10.2052 6.98198 9.72245 7.31389 8.75689 7.97772L6.8793 9.26856C5.66084 10.1063 5.05161 10.5251 4.5452 10.4999C4.10416 10.478 3.69517 10.2629 3.42725 9.91187C3.11963 9.50882 3.11963 8.7695 3.11963 7.29086V4.70917Z" fill="white"/>
+                                        </svg>
+                                    </div>
+                                    Обзор от Макса
+                                </div>
+                                <a href="" class="product-card-preview__container">
+                                    <div class="product-card-preview__wrapper">
+                                        <div class="product-card-preview__track">
+                                            <img class="product-card-preview__slide product-card-preview__slide_active" src="images/products/search_product.png" data-image="0" alt="">
+                                            <img class="product-card-preview__slide" src="images/products/case.png" data-image="1" alt="">
+                                            <img class="product-card-preview__slide" src="images/products/search_product.png" data-image="2" alt="">
+                                        </div>
+                                        <div class="product-card-preview__separator">
+                                            <span class="product-card-preview__separator-item" data-image="0"></span>
+                                            <span class="product-card-preview__separator-item" data-image="1"></span>
+                                            <span class="product-card-preview__separator-item" data-image="2"></span>
+                                        </div>
+                                    </div>
+                                    <div class="product-card-preview__pagination">
+                                        <span class="bullet bullet_active" data-image="0"></span>
+                                        <span class="bullet" data-image="1"></span>
+                                        <span class="bullet" data-image="2"></span>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="product-card-info">
+                                <div class="product-card-info__item">
+                                    <span class="product-card-info__label">Диагональ экрана</span>
+                                    <span class="product-card-info__value">6.7"</span>
+                                </div>
+                                <div class="product-card-info__item">
+                                    <span class="product-card-info__label">Разрешение экрана в пикселях</span>
+                                    <span class="product-card-info__value">2796x1290</span>
+                                </div>
+                                <div class="product-card-info__item">
+                                    <span class="product-card-info__label">Встроенная память</span>
+                                    <span class="product-card-info__value">256 GB</span>
+                                </div>
+                                <div class="product-card-info__item">
+                                    <span class="product-card-info__label">Оперативная память</span>
+                                    <span class="product-card-info__value">8 GB</span>
+                                </div>
+                                <div class="product-card-info__item">
+                                    <span class="product-card-info__label">Емкость аккумулятора</span>
+                                    <span class="product-card-info__value">4400 мА-ч</span>
+                                </div>
+                                <div class="product-card-info__item">
+                                    <span class="product-card-info__label">Количество основных камер</span>
+                                    <span class="product-card-info__value">3</span>
+                                </div>
+                                <div class="product-card-info__item">
+                                    <span class="product-card-info__label">Год выхода</span>
+                                    <span class="product-card-info__value">2023</span>
+                                </div>
+                                <div class="product-card-info__item">
+                                    <span class="product-card-info__label">Тип дисплея</span>
+                                    <span class="product-card-info__value">OLED</span>
+                                </div>
+                                <a class="product-card-info__link" href="">
+                                    Все характеристики
+                                </a>
+                            </div>
+                            <div class="product-card__price-block">
+                                <div class="product-card__price-wrapper">
+                                    <span class="product-card__price">2 490 ₽</span>
+                                    <span class="product-card__price product-card__price_old">3 490 ₽</span>
+                                </div>
+                                <div class="stickers product-card__stickers product-card__stickers_in-price">
+                                    <div class="sticker sticker_aqua sticker_rec">
+                                        Макс рекомендует!
+                                    </div>
+                                    <div class="sticker sticker_gift sticker_red">
+                                        Стекло в подарок!
+                                    </div>
+                                    <div class="sticker-wrapper">
+                                        <div class="sticker sticker_gray">
+                                            630 ₽×4
+                                        </div>
+                                        в сплит
+                                    </div>
+                                    <div class="sticker sticker_sale sticker_red">
+                                        Распродажа!
+                                        <svg width="42" height="20" viewBox="0 0 42 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="42" height="20" rx="2" fill="white"/>
+                                            <path d="M10.54 10.112V11.372H4.984V10.112H10.54ZM16.4794 10.712L14.2474 12.728H18.2554V14H12.2914V12.812L15.4834 9.872C16.2034 9.212 16.6354 8.732 16.6354 7.964C16.6354 7.232 16.0714 6.68 15.2194 6.68C14.3314 6.68 13.7914 7.184 13.6354 7.928H12.2554C12.4114 6.464 13.5274 5.408 15.2554 5.408C17.0074 5.408 18.0874 6.548 18.0874 7.94C18.0874 9.176 17.3314 9.944 16.4794 10.712ZM22.8897 5.408C24.9537 5.408 26.1897 7.208 26.1897 9.776C26.1897 12.344 24.9537 14.144 22.8897 14.144C20.8377 14.144 19.5897 12.344 19.5897 9.776C19.5897 7.208 20.8377 5.408 22.8897 5.408ZM22.8897 12.872C24.1377 12.872 24.7497 11.516 24.7497 9.776C24.7497 8.036 24.1377 6.68 22.8897 6.68C21.6537 6.68 21.0297 8.036 21.0297 9.776C21.0297 11.516 21.6537 12.872 22.8897 12.872ZM27.3073 7.616C27.3073 6.356 28.1833 5.408 29.4073 5.408C30.6313 5.408 31.5073 6.356 31.5073 7.616C31.5073 8.888 30.6313 9.824 29.4073 9.824C28.1833 9.824 27.3073 8.888 27.3073 7.616ZM29.9713 14H28.6153L34.6513 5.552H35.9953L29.9713 14ZM29.4073 6.452C28.8193 6.452 28.4713 6.956 28.4713 7.616C28.4713 8.276 28.8193 8.792 29.4073 8.792C29.9953 8.792 30.3433 8.276 30.3433 7.616C30.3433 6.956 29.9953 6.452 29.4073 6.452ZM33.1033 11.936C33.1033 10.664 33.9793 9.728 35.2033 9.728C36.4393 9.728 37.3153 10.664 37.3153 11.936C37.3153 13.196 36.4393 14.144 35.2033 14.144C33.9793 14.144 33.1033 13.196 33.1033 11.936ZM35.2033 10.76C34.6153 10.76 34.2673 11.276 34.2673 11.936C34.2673 12.596 34.6153 13.1 35.2033 13.1C35.7913 13.1 36.1393 12.596 36.1393 11.936C36.1393 11.276 35.7913 10.76 35.2033 10.76Z" fill="#FF003D"/>
+                                        </svg>  
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="product-card__warning">Присутствуют следы экслуатации</span>
+                            <a class="product-card__name-link" href="">
+                                <h3 class="product-card__name">iPhone 15 Pro Max 256Gb Natural Titanium</h3>
+                            </a>
+                            <div class="product-card-buttons">
+                                <div class="product-card-buttons__left">
+                                    <button class="btn btn_min" aria-label="Кнопка добавить в корзину">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5 5L18.5136 4.88936C19.8468 4.87845 20.5134 4.87299 20.9835 5.14281C21.3958 5.37949 21.7103 5.7553 21.8707 6.20287C22.0534 6.71311 21.9306 7.36834 21.685 8.67881L20.9894 12.3896C20.8153 13.3185 20.7282 13.783 20.4898 14.1308C20.2795 14.4375 19.9879 14.6796 19.6477 14.8297C19.2619 15 18.7893 15 17.8442 15H6.5M5 5L6.5 15M5 5L4.5 2H2M6.5 15L6.67123 16.0036C6.79228 16.7131 6.85281 17.0678 7.0308 17.3339C7.1877 17.5685 7.40759 17.754 7.66521 17.8693C7.95746 18 8.31732 18 9.03705 18H18.5001M16.5 21.5H16.51M8.5 21.5H8.51M17 21.5C17 21.7761 16.7761 22 16.5 22C16.2239 22 16 21.7761 16 21.5C16 21.2239 16.2239 21 16.5 21C16.7761 21 17 21.2239 17 21.5ZM9 21.5C9 21.7761 8.77614 22 8.5 22C8.22386 22 8 21.7761 8 21.5C8 21.2239 8.22386 21 8.5 21C8.77614 21 9 21.2239 9 21.5Z" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                                        </svg>
+                                        <span class="btn__text btn__text_big-card">Добавить в корзину</span>
+                                    </button>
+                                    <a href="" class="btn btn_light product-card-buttons_light-btn">
+                                        <span class="btn__text">Подробнее</span>
+                                    </a>
+                                </div>
+                                <div class="product-card-buttons__right">
+                                    <button class="product-mini-btn" aria-label="Кнопка добавить в сравнение">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6 19L6 12M12 19L12 5M18 19L18 8" stroke="#C8C9D2" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                    <button class="product-mini-btn product-mini-btn_active" aria-label="Кнопка добавить в избранное">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.1345 5.09013C12.0895 5.14124 12.067 5.1668 12.0425 5.17547C12.0202 5.18335 11.9981 5.18335 11.9758 5.17548C11.9513 5.16681 11.9288 5.14126 11.8838 5.09016C9.87593 2.80991 6.63276 2.23484 4.18342 4.3883C1.68244 6.58716 1.33034 10.2636 3.29437 12.8642C4.65195 14.6617 8.29652 18.1168 10.4178 20.0791C10.9669 20.5869 11.2414 20.8409 11.5679 20.9414C11.8499 21.0282 12.1684 21.0282 12.4504 20.9414C12.7769 20.8409 13.0514 20.5869 13.6005 20.0791C15.7218 18.1168 19.3664 14.6617 20.7239 12.8642C22.688 10.2636 22.3788 6.56403 19.8349 4.3883C17.3435 2.25751 14.1407 2.81083 12.1345 5.09013Z" stroke="#C8C9D2" stroke-width="2" stroke-linecap="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="product-slider__slide swiper-slide">
+                        <article class="product-card">
+                            <div class="stickers product-card__stickers">
+                                <div class="sticker sticker_green">
+                                    Новый
+                                </div>
+                            </div>
+                            <div class="product-card-preview">
+                                <div class="video-btn">
+                                    <div class="video-btn__icon">
+                                        <svg class="video-btn__icon-svg" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.11963 4.70917C3.11963 3.23053 3.11963 2.49122 3.42725 2.08817C3.69517 1.73714 4.10416 1.522 4.5452 1.50009C5.05161 1.47494 5.66084 1.89378 6.8793 2.73147L8.75689 4.02232C9.72245 4.68614 10.2052 5.01805 10.3747 5.43334C10.5229 5.79659 10.5229 6.20345 10.3747 6.5667C10.2052 6.98198 9.72245 7.31389 8.75689 7.97772L6.8793 9.26856C5.66084 10.1063 5.05161 10.5251 4.5452 10.4999C4.10416 10.478 3.69517 10.2629 3.42725 9.91187C3.11963 9.50882 3.11963 8.7695 3.11963 7.29086V4.70917Z" fill="white"/>
+                                        </svg>
+                                    </div>
+                                    Обзор от Макса
+                                </div>
+                                <a href="" class="product-card-preview__container">
+                                    <div class="product-card-preview__wrapper">
+                                        <div class="product-card-preview__track">
+                                            <img class="product-card-preview__slide product-card-preview__slide_active" src="images/products/search_product.png" data-image="0" alt="">
+                                            <img class="product-card-preview__slide" src="images/products/case.png" data-image="1" alt="">
+                                            <img class="product-card-preview__slide" src="images/products/search_product.png" data-image="2" alt="">
+                                        </div>
+                                        <div class="product-card-preview__separator">
+                                            <span class="product-card-preview__separator-item" data-image="0"></span>
+                                            <span class="product-card-preview__separator-item" data-image="1"></span>
+                                            <span class="product-card-preview__separator-item" data-image="2"></span>
+                                        </div>
+                                    </div>
+                                    <div class="product-card-preview__pagination">
+                                        <span class="bullet bullet_active" data-image="0"></span>
+                                        <span class="bullet" data-image="1"></span>
+                                        <span class="bullet" data-image="2"></span>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="product-card-info">
+                                <div class="product-card-info__item">
+                                    <span class="product-card-info__label">Диагональ экрана</span>
+                                    <span class="product-card-info__value">6.7"</span>
+                                </div>
+                                <div class="product-card-info__item">
+                                    <span class="product-card-info__label">Разрешение экрана в пикселях</span>
+                                    <span class="product-card-info__value">2796x1290</span>
+                                </div>
+                                <div class="product-card-info__item">
+                                    <span class="product-card-info__label">Встроенная память</span>
+                                    <span class="product-card-info__value">256 GB</span>
+                                </div>
+                                <div class="product-card-info__item">
+                                    <span class="product-card-info__label">Оперативная память</span>
+                                    <span class="product-card-info__value">8 GB</span>
+                                </div>
+                                <div class="product-card-info__item">
+                                    <span class="product-card-info__label">Емкость аккумулятора</span>
+                                    <span class="product-card-info__value">4400 мА-ч</span>
+                                </div>
+                                <div class="product-card-info__item">
+                                    <span class="product-card-info__label">Количество основных камер</span>
+                                    <span class="product-card-info__value">3</span>
+                                </div>
+                                <div class="product-card-info__item">
+                                    <span class="product-card-info__label">Год выхода</span>
+                                    <span class="product-card-info__value">2023</span>
+                                </div>
+                                <div class="product-card-info__item">
+                                    <span class="product-card-info__label">Тип дисплея</span>
+                                    <span class="product-card-info__value">OLED</span>
+                                </div>
+                                <a class="product-card-info__link" href="">
+                                    Все характеристики
+                                </a>
+                            </div>
+                            <div class="product-card__price-block">
+                                <div class="product-card__price-wrapper">
+                                    <span class="product-card__price">2 490 ₽</span>
+                                </div>
+                                <div class="stickers product-card__stickers product-card__stickers_in-price">
+                                    <div class="sticker-wrapper">
+                                        <div class="sticker sticker_gray">
+                                            630 ₽×4
+                                        </div>
+                                        в сплит
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="product-card__warning">Присутствуют следы экслуатации</span>
+                            <a class="product-card__name-link" href="">
+                                <h3 class="product-card__name">iPhone 15 Pro Max 256Gb Natural Titanium</h3>
+                            </a>
+                            <div class="product-card-buttons">
+                                <div class="product-card-buttons__left">
+                                    <button class="btn btn_min" aria-label="Кнопка добавить в корзину">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5 5L18.5136 4.88936C19.8468 4.87845 20.5134 4.87299 20.9835 5.14281C21.3958 5.37949 21.7103 5.7553 21.8707 6.20287C22.0534 6.71311 21.9306 7.36834 21.685 8.67881L20.9894 12.3896C20.8153 13.3185 20.7282 13.783 20.4898 14.1308C20.2795 14.4375 19.9879 14.6796 19.6477 14.8297C19.2619 15 18.7893 15 17.8442 15H6.5M5 5L6.5 15M5 5L4.5 2H2M6.5 15L6.67123 16.0036C6.79228 16.7131 6.85281 17.0678 7.0308 17.3339C7.1877 17.5685 7.40759 17.754 7.66521 17.8693C7.95746 18 8.31732 18 9.03705 18H18.5001M16.5 21.5H16.51M8.5 21.5H8.51M17 21.5C17 21.7761 16.7761 22 16.5 22C16.2239 22 16 21.7761 16 21.5C16 21.2239 16.2239 21 16.5 21C16.7761 21 17 21.2239 17 21.5ZM9 21.5C9 21.7761 8.77614 22 8.5 22C8.22386 22 8 21.7761 8 21.5C8 21.2239 8.22386 21 8.5 21C8.77614 21 9 21.2239 9 21.5Z" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                                        </svg>
+                                        <span class="btn__text btn__text_big-card">Добавить в корзину</span>
+                                    </button>
+                                    <a href="" class="btn btn_light product-card-buttons_light-btn">
+                                        <span class="btn__text">Подробнее</span>
+                                    </a>
+                                </div>
+                                <div class="product-card-buttons__right">
+                                    <button class="product-mini-btn" aria-label="Кнопка добавить в сравнение">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6 19L6 12M12 19L12 5M18 19L18 8" stroke="#C8C9D2" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                    <button class="product-mini-btn product-mini-btn_active" aria-label="Кнопка добавить в избранное">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.1345 5.09013C12.0895 5.14124 12.067 5.1668 12.0425 5.17547C12.0202 5.18335 11.9981 5.18335 11.9758 5.17548C11.9513 5.16681 11.9288 5.14126 11.8838 5.09016C9.87593 2.80991 6.63276 2.23484 4.18342 4.3883C1.68244 6.58716 1.33034 10.2636 3.29437 12.8642C4.65195 14.6617 8.29652 18.1168 10.4178 20.0791C10.9669 20.5869 11.2414 20.8409 11.5679 20.9414C11.8499 21.0282 12.1684 21.0282 12.4504 20.9414C12.7769 20.8409 13.0514 20.5869 13.6005 20.0791C15.7218 18.1168 19.3664 14.6617 20.7239 12.8642C22.688 10.2636 22.3788 6.56403 19.8349 4.3883C17.3435 2.25751 14.1407 2.81083 12.1345 5.09013Z" stroke="#C8C9D2" stroke-width="2" stroke-linecap="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="product-slider__slide swiper-slide">
+                        <article class="product-card">
+                            <div class="stickers product-card__stickers">
+                                <div class="sticker sticker_green">
+                                    Новый
+                                </div>
+                            </div>
+                            <div class="product-card-preview">
+                                <div class="video-btn">
+                                    <div class="video-btn__icon">
+                                        <svg class="video-btn__icon-svg" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.11963 4.70917C3.11963 3.23053 3.11963 2.49122 3.42725 2.08817C3.69517 1.73714 4.10416 1.522 4.5452 1.50009C5.05161 1.47494 5.66084 1.89378 6.8793 2.73147L8.75689 4.02232C9.72245 4.68614 10.2052 5.01805 10.3747 5.43334C10.5229 5.79659 10.5229 6.20345 10.3747 6.5667C10.2052 6.98198 9.72245 7.31389 8.75689 7.97772L6.8793 9.26856C5.66084 10.1063 5.05161 10.5251 4.5452 10.4999C4.10416 10.478 3.69517 10.2629 3.42725 9.91187C3.11963 9.50882 3.11963 8.7695 3.11963 7.29086V4.70917Z" fill="white"/>
+                                        </svg>
+                                    </div>
+                                    Обзор от Макса
+                                </div>
+                                <a href="" class="product-card-preview__container">
+                                    <div class="product-card-preview__wrapper">
+                                        <div class="product-card-preview__track">
+                                            <img class="product-card-preview__slide product-card-preview__slide_active" src="images/products/search_product.png" data-image="0" alt="">
+                                            <img class="product-card-preview__slide" src="images/products/case.png" data-image="1" alt="">
+                                            <img class="product-card-preview__slide" src="images/products/search_product.png" data-image="2" alt="">
+                                        </div>
+                                        <div class="product-card-preview__separator">
+                                            <span class="product-card-preview__separator-item" data-image="0"></span>
+                                            <span class="product-card-preview__separator-item" data-image="1"></span>
+                                            <span class="product-card-preview__separator-item" data-image="2"></span>
+                                        </div>
+                                    </div>
+                                    <div class="product-card-preview__pagination">
+                                        <span class="bullet bullet_active" data-image="0"></span>
+                                        <span class="bullet" data-image="1"></span>
+                                        <span class="bullet" data-image="2"></span>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="product-card-info">
+                                <div class="product-card-info__item">
+                                    <span class="product-card-info__label">Диагональ экрана</span>
+                                    <span class="product-card-info__value">6.7"</span>
+                                </div>
+                                <div class="product-card-info__item">
+                                    <span class="product-card-info__label">Разрешение экрана в пикселях</span>
+                                    <span class="product-card-info__value">2796x1290</span>
+                                </div>
+                                <div class="product-card-info__item">
+                                    <span class="product-card-info__label">Встроенная память</span>
+                                    <span class="product-card-info__value">256 GB</span>
+                                </div>
+                                <div class="product-card-info__item">
+                                    <span class="product-card-info__label">Оперативная память</span>
+                                    <span class="product-card-info__value">8 GB</span>
+                                </div>
+                                <div class="product-card-info__item">
+                                    <span class="product-card-info__label">Емкость аккумулятора</span>
+                                    <span class="product-card-info__value">4400 мА-ч</span>
+                                </div>
+                                <div class="product-card-info__item">
+                                    <span class="product-card-info__label">Количество основных камер</span>
+                                    <span class="product-card-info__value">3</span>
+                                </div>
+                                <div class="product-card-info__item">
+                                    <span class="product-card-info__label">Год выхода</span>
+                                    <span class="product-card-info__value">2023</span>
+                                </div>
+                                <div class="product-card-info__item">
+                                    <span class="product-card-info__label">Тип дисплея</span>
+                                    <span class="product-card-info__value">OLED</span>
+                                </div>
+                                <a class="product-card-info__link" href="">
+                                    Все характеристики
+                                </a>
+                            </div>
+                            <div class="product-card__price-block">
+                                <div class="product-card__price-wrapper">
+                                    <span class="product-card__price">2 490 ₽</span>
+                                </div>
+                                <div class="stickers product-card__stickers product-card__stickers_in-price">
+                                    <div class="sticker-wrapper">
+                                        <div class="sticker sticker_gray">
+                                            630 ₽×4
+                                        </div>
+                                        в сплит
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="product-card__warning">Присутствуют следы экслуатации</span>
+                            <a class="product-card__name-link" href="">
+                                <h3 class="product-card__name">iPhone 15 Pro Max 256Gb Natural Titanium</h3>
+                            </a>
+                            <div class="product-card-buttons">
+                                <div class="product-card-buttons__left">
+                                    <button class="btn btn_min" aria-label="Кнопка добавить в корзину">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5 5L18.5136 4.88936C19.8468 4.87845 20.5134 4.87299 20.9835 5.14281C21.3958 5.37949 21.7103 5.7553 21.8707 6.20287C22.0534 6.71311 21.9306 7.36834 21.685 8.67881L20.9894 12.3896C20.8153 13.3185 20.7282 13.783 20.4898 14.1308C20.2795 14.4375 19.9879 14.6796 19.6477 14.8297C19.2619 15 18.7893 15 17.8442 15H6.5M5 5L6.5 15M5 5L4.5 2H2M6.5 15L6.67123 16.0036C6.79228 16.7131 6.85281 17.0678 7.0308 17.3339C7.1877 17.5685 7.40759 17.754 7.66521 17.8693C7.95746 18 8.31732 18 9.03705 18H18.5001M16.5 21.5H16.51M8.5 21.5H8.51M17 21.5C17 21.7761 16.7761 22 16.5 22C16.2239 22 16 21.7761 16 21.5C16 21.2239 16.2239 21 16.5 21C16.7761 21 17 21.2239 17 21.5ZM9 21.5C9 21.7761 8.77614 22 8.5 22C8.22386 22 8 21.7761 8 21.5C8 21.2239 8.22386 21 8.5 21C8.77614 21 9 21.2239 9 21.5Z" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                                        </svg>
+                                        <span class="btn__text btn__text_big-card">Добавить в корзину</span>
+                                    </button>
+                                    <a href="" class="btn btn_light product-card-buttons_light-btn">
+                                        <span class="btn__text">Подробнее</span>
+                                    </a>
+                                </div>
+                                <div class="product-card-buttons__right">
+                                    <button class="product-mini-btn" aria-label="Кнопка добавить в сравнение">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6 19L6 12M12 19L12 5M18 19L18 8" stroke="#C8C9D2" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                    <button class="product-mini-btn product-mini-btn_active" aria-label="Кнопка добавить в избранное">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.1345 5.09013C12.0895 5.14124 12.067 5.1668 12.0425 5.17547C12.0202 5.18335 11.9981 5.18335 11.9758 5.17548C11.9513 5.16681 11.9288 5.14126 11.8838 5.09016C9.87593 2.80991 6.63276 2.23484 4.18342 4.3883C1.68244 6.58716 1.33034 10.2636 3.29437 12.8642C4.65195 14.6617 8.29652 18.1168 10.4178 20.0791C10.9669 20.5869 11.2414 20.8409 11.5679 20.9414C11.8499 21.0282 12.1684 21.0282 12.4504 20.9414C12.7769 20.8409 13.0514 20.5869 13.6005 20.0791C15.7218 18.1168 19.3664 14.6617 20.7239 12.8642C22.688 10.2636 22.3788 6.56403 19.8349 4.3883C17.3435 2.25751 14.1407 2.81083 12.1345 5.09013Z" stroke="#C8C9D2" stroke-width="2" stroke-linecap="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="product-slider__slide swiper-slide">
+                        <article class="product-card">
+                            <div class="stickers product-card__stickers">
+                                <div class="sticker sticker_green">
+                                    Новый
+                                </div>
+                            </div>
+                            <div class="product-card-preview">
+                                <div class="video-btn">
+                                    <div class="video-btn__icon">
+                                        <svg class="video-btn__icon-svg" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.11963 4.70917C3.11963 3.23053 3.11963 2.49122 3.42725 2.08817C3.69517 1.73714 4.10416 1.522 4.5452 1.50009C5.05161 1.47494 5.66084 1.89378 6.8793 2.73147L8.75689 4.02232C9.72245 4.68614 10.2052 5.01805 10.3747 5.43334C10.5229 5.79659 10.5229 6.20345 10.3747 6.5667C10.2052 6.98198 9.72245 7.31389 8.75689 7.97772L6.8793 9.26856C5.66084 10.1063 5.05161 10.5251 4.5452 10.4999C4.10416 10.478 3.69517 10.2629 3.42725 9.91187C3.11963 9.50882 3.11963 8.7695 3.11963 7.29086V4.70917Z" fill="white"/>
+                                        </svg>
+                                    </div>
+                                    Обзор от Макса
+                                </div>
+                                <a href="" class="product-card-preview__container">
+                                    <div class="product-card-preview__wrapper">
+                                        <div class="product-card-preview__track">
+                                            <img class="product-card-preview__slide product-card-preview__slide_active" src="images/products/search_product.png" data-image="0" alt="">
+                                            <img class="product-card-preview__slide" src="images/products/case.png" data-image="1" alt="">
+                                            <img class="product-card-preview__slide" src="images/products/search_product.png" data-image="2" alt="">
+                                        </div>
+                                        <div class="product-card-preview__separator">
+                                            <span class="product-card-preview__separator-item" data-image="0"></span>
+                                            <span class="product-card-preview__separator-item" data-image="1"></span>
+                                            <span class="product-card-preview__separator-item" data-image="2"></span>
+                                        </div>
+                                    </div>
+                                    <div class="product-card-preview__pagination">
+                                        <span class="bullet bullet_active" data-image="0"></span>
+                                        <span class="bullet" data-image="1"></span>
+                                        <span class="bullet" data-image="2"></span>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="product-card-info">
+                                <div class="product-card-info__item">
+                                    <span class="product-card-info__label">Диагональ экрана</span>
+                                    <span class="product-card-info__value">6.7"</span>
+                                </div>
+                                <div class="product-card-info__item">
+                                    <span class="product-card-info__label">Разрешение экрана в пикселях</span>
+                                    <span class="product-card-info__value">2796x1290</span>
+                                </div>
+                                <div class="product-card-info__item">
+                                    <span class="product-card-info__label">Встроенная память</span>
+                                    <span class="product-card-info__value">256 GB</span>
+                                </div>
+                                <div class="product-card-info__item">
+                                    <span class="product-card-info__label">Оперативная память</span>
+                                    <span class="product-card-info__value">8 GB</span>
+                                </div>
+                                <div class="product-card-info__item">
+                                    <span class="product-card-info__label">Емкость аккумулятора</span>
+                                    <span class="product-card-info__value">4400 мА-ч</span>
+                                </div>
+                                <div class="product-card-info__item">
+                                    <span class="product-card-info__label">Количество основных камер</span>
+                                    <span class="product-card-info__value">3</span>
+                                </div>
+                                <div class="product-card-info__item">
+                                    <span class="product-card-info__label">Год выхода</span>
+                                    <span class="product-card-info__value">2023</span>
+                                </div>
+                                <div class="product-card-info__item">
+                                    <span class="product-card-info__label">Тип дисплея</span>
+                                    <span class="product-card-info__value">OLED</span>
+                                </div>
+                                <a class="product-card-info__link" href="">
+                                    Все характеристики
+                                </a>
+                            </div>
+                            <div class="product-card__price-block">
+                                <div class="product-card__price-wrapper">
+                                    <span class="product-card__price">2 490 ₽</span>
+                                </div>
+                                <div class="stickers product-card__stickers product-card__stickers_in-price">
+                                    <div class="sticker-wrapper">
+                                        <div class="sticker sticker_gray">
+                                            630 ₽×4
+                                        </div>
+                                        в сплит
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="product-card__warning">Присутствуют следы экслуатации</span>
+                            <a class="product-card__name-link" href="">
+                                <h3 class="product-card__name">iPhone 15 Pro Max 256Gb Natural Titanium</h3>
+                            </a>
+                            <div class="product-card-buttons">
+                                <div class="product-card-buttons__left">
+                                    <button class="btn btn_min" aria-label="Кнопка добавить в корзину">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5 5L18.5136 4.88936C19.8468 4.87845 20.5134 4.87299 20.9835 5.14281C21.3958 5.37949 21.7103 5.7553 21.8707 6.20287C22.0534 6.71311 21.9306 7.36834 21.685 8.67881L20.9894 12.3896C20.8153 13.3185 20.7282 13.783 20.4898 14.1308C20.2795 14.4375 19.9879 14.6796 19.6477 14.8297C19.2619 15 18.7893 15 17.8442 15H6.5M5 5L6.5 15M5 5L4.5 2H2M6.5 15L6.67123 16.0036C6.79228 16.7131 6.85281 17.0678 7.0308 17.3339C7.1877 17.5685 7.40759 17.754 7.66521 17.8693C7.95746 18 8.31732 18 9.03705 18H18.5001M16.5 21.5H16.51M8.5 21.5H8.51M17 21.5C17 21.7761 16.7761 22 16.5 22C16.2239 22 16 21.7761 16 21.5C16 21.2239 16.2239 21 16.5 21C16.7761 21 17 21.2239 17 21.5ZM9 21.5C9 21.7761 8.77614 22 8.5 22C8.22386 22 8 21.7761 8 21.5C8 21.2239 8.22386 21 8.5 21C8.77614 21 9 21.2239 9 21.5Z" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                                        </svg>
+                                        <span class="btn__text btn__text_big-card">Добавить в корзину</span>
+                                    </button>
+                                    <a href="" class="btn btn_light product-card-buttons_light-btn">
+                                        <span class="btn__text">Подробнее</span>
+                                    </a>
+                                </div>
+                                <div class="product-card-buttons__right">
+                                    <button class="product-mini-btn" aria-label="Кнопка добавить в сравнение">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6 19L6 12M12 19L12 5M18 19L18 8" stroke="#C8C9D2" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                    <button class="product-mini-btn product-mini-btn_active" aria-label="Кнопка добавить в избранное">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.1345 5.09013C12.0895 5.14124 12.067 5.1668 12.0425 5.17547C12.0202 5.18335 11.9981 5.18335 11.9758 5.17548C11.9513 5.16681 11.9288 5.14126 11.8838 5.09016C9.87593 2.80991 6.63276 2.23484 4.18342 4.3883C1.68244 6.58716 1.33034 10.2636 3.29437 12.8642C4.65195 14.6617 8.29652 18.1168 10.4178 20.0791C10.9669 20.5869 11.2414 20.8409 11.5679 20.9414C11.8499 21.0282 12.1684 21.0282 12.4504 20.9414C12.7769 20.8409 13.0514 20.5869 13.6005 20.0791C15.7218 18.1168 19.3664 14.6617 20.7239 12.8642C22.688 10.2636 22.3788 6.56403 19.8349 4.3883C17.3435 2.25751 14.1407 2.81083 12.1345 5.09013Z" stroke="#C8C9D2" stroke-width="2" stroke-linecap="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="product-slider__slide swiper-slide">
+                        <article class="product-card">
+                            <div class="stickers product-card__stickers">
+                                <div class="sticker sticker_green">
+                                    Новый
+                                </div>
+                            </div>
+                            <div class="product-card-preview">
+                                <div class="video-btn">
+                                    <div class="video-btn__icon">
+                                        <svg class="video-btn__icon-svg" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.11963 4.70917C3.11963 3.23053 3.11963 2.49122 3.42725 2.08817C3.69517 1.73714 4.10416 1.522 4.5452 1.50009C5.05161 1.47494 5.66084 1.89378 6.8793 2.73147L8.75689 4.02232C9.72245 4.68614 10.2052 5.01805 10.3747 5.43334C10.5229 5.79659 10.5229 6.20345 10.3747 6.5667C10.2052 6.98198 9.72245 7.31389 8.75689 7.97772L6.8793 9.26856C5.66084 10.1063 5.05161 10.5251 4.5452 10.4999C4.10416 10.478 3.69517 10.2629 3.42725 9.91187C3.11963 9.50882 3.11963 8.7695 3.11963 7.29086V4.70917Z" fill="white"/>
+                                        </svg>
+                                    </div>
+                                    Обзор от Макса
+                                </div>
+                                <a href="" class="product-card-preview__container">
+                                    <div class="product-card-preview__wrapper">
+                                        <div class="product-card-preview__track">
+                                            <img class="product-card-preview__slide product-card-preview__slide_active" src="images/products/search_product.png" data-image="0" alt="">
+                                            <img class="product-card-preview__slide" src="images/products/case.png" data-image="1" alt="">
+                                            <img class="product-card-preview__slide" src="images/products/search_product.png" data-image="2" alt="">
+                                        </div>
+                                        <div class="product-card-preview__separator">
+                                            <span class="product-card-preview__separator-item" data-image="0"></span>
+                                            <span class="product-card-preview__separator-item" data-image="1"></span>
+                                            <span class="product-card-preview__separator-item" data-image="2"></span>
+                                        </div>
+                                    </div>
+                                    <div class="product-card-preview__pagination">
+                                        <span class="bullet bullet_active" data-image="0"></span>
+                                        <span class="bullet" data-image="1"></span>
+                                        <span class="bullet" data-image="2"></span>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="product-card-info">
+                                <div class="product-card-info__item">
+                                    <span class="product-card-info__label">Диагональ экрана</span>
+                                    <span class="product-card-info__value">6.7"</span>
+                                </div>
+                                <div class="product-card-info__item">
+                                    <span class="product-card-info__label">Разрешение экрана в пикселях</span>
+                                    <span class="product-card-info__value">2796x1290</span>
+                                </div>
+                                <div class="product-card-info__item">
+                                    <span class="product-card-info__label">Встроенная память</span>
+                                    <span class="product-card-info__value">256 GB</span>
+                                </div>
+                                <div class="product-card-info__item">
+                                    <span class="product-card-info__label">Оперативная память</span>
+                                    <span class="product-card-info__value">8 GB</span>
+                                </div>
+                                <div class="product-card-info__item">
+                                    <span class="product-card-info__label">Емкость аккумулятора</span>
+                                    <span class="product-card-info__value">4400 мА-ч</span>
+                                </div>
+                                <div class="product-card-info__item">
+                                    <span class="product-card-info__label">Количество основных камер</span>
+                                    <span class="product-card-info__value">3</span>
+                                </div>
+                                <div class="product-card-info__item">
+                                    <span class="product-card-info__label">Год выхода</span>
+                                    <span class="product-card-info__value">2023</span>
+                                </div>
+                                <div class="product-card-info__item">
+                                    <span class="product-card-info__label">Тип дисплея</span>
+                                    <span class="product-card-info__value">OLED</span>
+                                </div>
+                                <a class="product-card-info__link" href="">
+                                    Все характеристики
+                                </a>
+                            </div>
+                            <div class="product-card__price-block">
+                                <div class="product-card__price-wrapper">
+                                    <span class="product-card__price">2 490 ₽</span>
+                                </div>
+                                <div class="stickers product-card__stickers product-card__stickers_in-price">
+                                    <div class="sticker-wrapper">
+                                        <div class="sticker sticker_gray">
+                                            630 ₽×4
+                                        </div>
+                                        в сплит
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="product-card__warning">Присутствуют следы экслуатации</span>
+                            <a class="product-card__name-link" href="">
+                                <h3 class="product-card__name">iPhone 15 Pro Max 256Gb Natural Titanium</h3>
+                            </a>
+                            <div class="product-card-buttons">
+                                <div class="product-card-buttons__left">
+                                    <button class="btn btn_min" aria-label="Кнопка добавить в корзину">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5 5L18.5136 4.88936C19.8468 4.87845 20.5134 4.87299 20.9835 5.14281C21.3958 5.37949 21.7103 5.7553 21.8707 6.20287C22.0534 6.71311 21.9306 7.36834 21.685 8.67881L20.9894 12.3896C20.8153 13.3185 20.7282 13.783 20.4898 14.1308C20.2795 14.4375 19.9879 14.6796 19.6477 14.8297C19.2619 15 18.7893 15 17.8442 15H6.5M5 5L6.5 15M5 5L4.5 2H2M6.5 15L6.67123 16.0036C6.79228 16.7131 6.85281 17.0678 7.0308 17.3339C7.1877 17.5685 7.40759 17.754 7.66521 17.8693C7.95746 18 8.31732 18 9.03705 18H18.5001M16.5 21.5H16.51M8.5 21.5H8.51M17 21.5C17 21.7761 16.7761 22 16.5 22C16.2239 22 16 21.7761 16 21.5C16 21.2239 16.2239 21 16.5 21C16.7761 21 17 21.2239 17 21.5ZM9 21.5C9 21.7761 8.77614 22 8.5 22C8.22386 22 8 21.7761 8 21.5C8 21.2239 8.22386 21 8.5 21C8.77614 21 9 21.2239 9 21.5Z" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                                        </svg>
+                                        <span class="btn__text btn__text_big-card">Добавить в корзину</span>
+                                    </button>
+                                    <a href="" class="btn btn_light product-card-buttons_light-btn">
+                                        <span class="btn__text">Подробнее</span>
+                                    </a>
+                                </div>
+                                <div class="product-card-buttons__right">
+                                    <button class="product-mini-btn" aria-label="Кнопка добавить в сравнение">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6 19L6 12M12 19L12 5M18 19L18 8" stroke="#C8C9D2" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                    <button class="product-mini-btn product-mini-btn_active" aria-label="Кнопка добавить в избранное">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.1345 5.09013C12.0895 5.14124 12.067 5.1668 12.0425 5.17547C12.0202 5.18335 11.9981 5.18335 11.9758 5.17548C11.9513 5.16681 11.9288 5.14126 11.8838 5.09016C9.87593 2.80991 6.63276 2.23484 4.18342 4.3883C1.68244 6.58716 1.33034 10.2636 3.29437 12.8642C4.65195 14.6617 8.29652 18.1168 10.4178 20.0791C10.9669 20.5869 11.2414 20.8409 11.5679 20.9414C11.8499 21.0282 12.1684 21.0282 12.4504 20.9414C12.7769 20.8409 13.0514 20.5869 13.6005 20.0791C15.7218 18.1168 19.3664 14.6617 20.7239 12.8642C22.688 10.2636 22.3788 6.56403 19.8349 4.3883C17.3435 2.25751 14.1407 2.81083 12.1345 5.09013Z" stroke="#C8C9D2" stroke-width="2" stroke-linecap="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="product-slider__slide swiper-slide">
+                        <article class="product-card">
+                            <div class="stickers product-card__stickers">
+                                <div class="sticker sticker_green">
+                                    Новый
+                                </div>
+                            </div>
+                            <div class="product-card-preview">
+                                <div class="video-btn">
+                                    <div class="video-btn__icon">
+                                        <svg class="video-btn__icon-svg" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.11963 4.70917C3.11963 3.23053 3.11963 2.49122 3.42725 2.08817C3.69517 1.73714 4.10416 1.522 4.5452 1.50009C5.05161 1.47494 5.66084 1.89378 6.8793 2.73147L8.75689 4.02232C9.72245 4.68614 10.2052 5.01805 10.3747 5.43334C10.5229 5.79659 10.5229 6.20345 10.3747 6.5667C10.2052 6.98198 9.72245 7.31389 8.75689 7.97772L6.8793 9.26856C5.66084 10.1063 5.05161 10.5251 4.5452 10.4999C4.10416 10.478 3.69517 10.2629 3.42725 9.91187C3.11963 9.50882 3.11963 8.7695 3.11963 7.29086V4.70917Z" fill="white"/>
+                                        </svg>
+                                    </div>
+                                    Обзор от Макса
+                                </div>
+                                <a href="" class="product-card-preview__container">
+                                    <div class="product-card-preview__wrapper">
+                                        <div class="product-card-preview__track">
+                                            <img class="product-card-preview__slide product-card-preview__slide_active" src="images/products/search_product.png" data-image="0" alt="">
+                                            <img class="product-card-preview__slide" src="images/products/case.png" data-image="1" alt="">
+                                            <img class="product-card-preview__slide" src="images/products/search_product.png" data-image="2" alt="">
+                                        </div>
+                                        <div class="product-card-preview__separator">
+                                            <span class="product-card-preview__separator-item" data-image="0"></span>
+                                            <span class="product-card-preview__separator-item" data-image="1"></span>
+                                            <span class="product-card-preview__separator-item" data-image="2"></span>
+                                        </div>
+                                    </div>
+                                    <div class="product-card-preview__pagination">
+                                        <span class="bullet bullet_active" data-image="0"></span>
+                                        <span class="bullet" data-image="1"></span>
+                                        <span class="bullet" data-image="2"></span>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="product-card-info">
+                                <div class="product-card-info__item">
+                                    <span class="product-card-info__label">Диагональ экрана</span>
+                                    <span class="product-card-info__value">6.7"</span>
+                                </div>
+                                <div class="product-card-info__item">
+                                    <span class="product-card-info__label">Разрешение экрана в пикселях</span>
+                                    <span class="product-card-info__value">2796x1290</span>
+                                </div>
+                                <div class="product-card-info__item">
+                                    <span class="product-card-info__label">Встроенная память</span>
+                                    <span class="product-card-info__value">256 GB</span>
+                                </div>
+                                <div class="product-card-info__item">
+                                    <span class="product-card-info__label">Оперативная память</span>
+                                    <span class="product-card-info__value">8 GB</span>
+                                </div>
+                                <div class="product-card-info__item">
+                                    <span class="product-card-info__label">Емкость аккумулятора</span>
+                                    <span class="product-card-info__value">4400 мА-ч</span>
+                                </div>
+                                <div class="product-card-info__item">
+                                    <span class="product-card-info__label">Количество основных камер</span>
+                                    <span class="product-card-info__value">3</span>
+                                </div>
+                                <div class="product-card-info__item">
+                                    <span class="product-card-info__label">Год выхода</span>
+                                    <span class="product-card-info__value">2023</span>
+                                </div>
+                                <div class="product-card-info__item">
+                                    <span class="product-card-info__label">Тип дисплея</span>
+                                    <span class="product-card-info__value">OLED</span>
+                                </div>
+                                <a class="product-card-info__link" href="">
+                                    Все характеристики
+                                </a>
+                            </div>
+                            <div class="product-card__price-block">
+                                <div class="product-card__price-wrapper">
+                                    <span class="product-card__price">2 490 ₽</span>
+                                </div>
+                                <div class="stickers product-card__stickers product-card__stickers_in-price">
+                                    <div class="sticker-wrapper">
+                                        <div class="sticker sticker_gray">
+                                            630 ₽×4
+                                        </div>
+                                        в сплит
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="product-card__warning">Присутствуют следы экслуатации</span>
+                            <a class="product-card__name-link" href="">
+                                <h3 class="product-card__name">iPhone 15 Pro Max 256Gb Natural Titanium</h3>
+                            </a>
+                            <div class="product-card-buttons">
+                                <div class="product-card-buttons__left">
+                                    <button class="btn btn_min" aria-label="Кнопка добавить в корзину">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5 5L18.5136 4.88936C19.8468 4.87845 20.5134 4.87299 20.9835 5.14281C21.3958 5.37949 21.7103 5.7553 21.8707 6.20287C22.0534 6.71311 21.9306 7.36834 21.685 8.67881L20.9894 12.3896C20.8153 13.3185 20.7282 13.783 20.4898 14.1308C20.2795 14.4375 19.9879 14.6796 19.6477 14.8297C19.2619 15 18.7893 15 17.8442 15H6.5M5 5L6.5 15M5 5L4.5 2H2M6.5 15L6.67123 16.0036C6.79228 16.7131 6.85281 17.0678 7.0308 17.3339C7.1877 17.5685 7.40759 17.754 7.66521 17.8693C7.95746 18 8.31732 18 9.03705 18H18.5001M16.5 21.5H16.51M8.5 21.5H8.51M17 21.5C17 21.7761 16.7761 22 16.5 22C16.2239 22 16 21.7761 16 21.5C16 21.2239 16.2239 21 16.5 21C16.7761 21 17 21.2239 17 21.5ZM9 21.5C9 21.7761 8.77614 22 8.5 22C8.22386 22 8 21.7761 8 21.5C8 21.2239 8.22386 21 8.5 21C8.77614 21 9 21.2239 9 21.5Z" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                                        </svg>
+                                        <span class="btn__text btn__text_big-card">Добавить в корзину</span>
+                                    </button>
+                                    <a href="" class="btn btn_light product-card-buttons_light-btn">
+                                        <span class="btn__text">Подробнее</span>
+                                    </a>
+                                </div>
+                                <div class="product-card-buttons__right">
+                                    <button class="product-mini-btn" aria-label="Кнопка добавить в сравнение">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6 19L6 12M12 19L12 5M18 19L18 8" stroke="#C8C9D2" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                    <button class="product-mini-btn product-mini-btn_active" aria-label="Кнопка добавить в избранное">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.1345 5.09013C12.0895 5.14124 12.067 5.1668 12.0425 5.17547C12.0202 5.18335 11.9981 5.18335 11.9758 5.17548C11.9513 5.16681 11.9288 5.14126 11.8838 5.09016C9.87593 2.80991 6.63276 2.23484 4.18342 4.3883C1.68244 6.58716 1.33034 10.2636 3.29437 12.8642C4.65195 14.6617 8.29652 18.1168 10.4178 20.0791C10.9669 20.5869 11.2414 20.8409 11.5679 20.9414C11.8499 21.0282 12.1684 21.0282 12.4504 20.9414C12.7769 20.8409 13.0514 20.5869 13.6005 20.0791C15.7218 18.1168 19.3664 14.6617 20.7239 12.8642C22.688 10.2636 22.3788 6.56403 19.8349 4.3883C17.3435 2.25751 14.1407 2.81083 12.1345 5.09013Z" stroke="#C8C9D2" stroke-width="2" stroke-linecap="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="product-slider__slide swiper-slide">
+                        <article class="product-card">
+                            <div class="stickers product-card__stickers">
+                                <div class="sticker sticker_green">
+                                    Новый
+                                </div>
+                            </div>
+                            <div class="product-card-preview">
+                                <div class="video-btn">
+                                    <div class="video-btn__icon">
+                                        <svg class="video-btn__icon-svg" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.11963 4.70917C3.11963 3.23053 3.11963 2.49122 3.42725 2.08817C3.69517 1.73714 4.10416 1.522 4.5452 1.50009C5.05161 1.47494 5.66084 1.89378 6.8793 2.73147L8.75689 4.02232C9.72245 4.68614 10.2052 5.01805 10.3747 5.43334C10.5229 5.79659 10.5229 6.20345 10.3747 6.5667C10.2052 6.98198 9.72245 7.31389 8.75689 7.97772L6.8793 9.26856C5.66084 10.1063 5.05161 10.5251 4.5452 10.4999C4.10416 10.478 3.69517 10.2629 3.42725 9.91187C3.11963 9.50882 3.11963 8.7695 3.11963 7.29086V4.70917Z" fill="white"/>
+                                        </svg>
+                                    </div>
+                                    Обзор от Макса
+                                </div>
+                                <a href="" class="product-card-preview__container">
+                                    <div class="product-card-preview__wrapper">
+                                        <div class="product-card-preview__track">
+                                            <img class="product-card-preview__slide product-card-preview__slide_active" src="images/products/search_product.png" data-image="0" alt="">
+                                            <img class="product-card-preview__slide" src="images/products/case.png" data-image="1" alt="">
+                                            <img class="product-card-preview__slide" src="images/products/search_product.png" data-image="2" alt="">
+                                        </div>
+                                        <div class="product-card-preview__separator">
+                                            <span class="product-card-preview__separator-item" data-image="0"></span>
+                                            <span class="product-card-preview__separator-item" data-image="1"></span>
+                                            <span class="product-card-preview__separator-item" data-image="2"></span>
+                                        </div>
+                                    </div>
+                                    <div class="product-card-preview__pagination">
+                                        <span class="bullet bullet_active" data-image="0"></span>
+                                        <span class="bullet" data-image="1"></span>
+                                        <span class="bullet" data-image="2"></span>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="product-card-info">
+                                <div class="product-card-info__item">
+                                    <span class="product-card-info__label">Диагональ экрана</span>
+                                    <span class="product-card-info__value">6.7"</span>
+                                </div>
+                                <div class="product-card-info__item">
+                                    <span class="product-card-info__label">Разрешение экрана в пикселях</span>
+                                    <span class="product-card-info__value">2796x1290</span>
+                                </div>
+                                <div class="product-card-info__item">
+                                    <span class="product-card-info__label">Встроенная память</span>
+                                    <span class="product-card-info__value">256 GB</span>
+                                </div>
+                                <div class="product-card-info__item">
+                                    <span class="product-card-info__label">Оперативная память</span>
+                                    <span class="product-card-info__value">8 GB</span>
+                                </div>
+                                <div class="product-card-info__item">
+                                    <span class="product-card-info__label">Емкость аккумулятора</span>
+                                    <span class="product-card-info__value">4400 мА-ч</span>
+                                </div>
+                                <div class="product-card-info__item">
+                                    <span class="product-card-info__label">Количество основных камер</span>
+                                    <span class="product-card-info__value">3</span>
+                                </div>
+                                <div class="product-card-info__item">
+                                    <span class="product-card-info__label">Год выхода</span>
+                                    <span class="product-card-info__value">2023</span>
+                                </div>
+                                <div class="product-card-info__item">
+                                    <span class="product-card-info__label">Тип дисплея</span>
+                                    <span class="product-card-info__value">OLED</span>
+                                </div>
+                                <a class="product-card-info__link" href="">
+                                    Все характеристики
+                                </a>
+                            </div>
+                            <div class="product-card__price-block">
+                                <div class="product-card__price-wrapper">
+                                    <span class="product-card__price">2 490 ₽</span>
+                                </div>
+                                <div class="stickers product-card__stickers product-card__stickers_in-price">
+                                    <div class="sticker-wrapper">
+                                        <div class="sticker sticker_gray">
+                                            630 ₽×4
+                                        </div>
+                                        в сплит
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="product-card__warning">Присутствуют следы экслуатации</span>
+                            <a class="product-card__name-link" href="">
+                                <h3 class="product-card__name">iPhone 15 Pro Max 256Gb Natural Titanium</h3>
+                            </a>
+                            <div class="product-card-buttons">
+                                <div class="product-card-buttons__left">
+                                    <button class="btn btn_min" aria-label="Кнопка добавить в корзину">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5 5L18.5136 4.88936C19.8468 4.87845 20.5134 4.87299 20.9835 5.14281C21.3958 5.37949 21.7103 5.7553 21.8707 6.20287C22.0534 6.71311 21.9306 7.36834 21.685 8.67881L20.9894 12.3896C20.8153 13.3185 20.7282 13.783 20.4898 14.1308C20.2795 14.4375 19.9879 14.6796 19.6477 14.8297C19.2619 15 18.7893 15 17.8442 15H6.5M5 5L6.5 15M5 5L4.5 2H2M6.5 15L6.67123 16.0036C6.79228 16.7131 6.85281 17.0678 7.0308 17.3339C7.1877 17.5685 7.40759 17.754 7.66521 17.8693C7.95746 18 8.31732 18 9.03705 18H18.5001M16.5 21.5H16.51M8.5 21.5H8.51M17 21.5C17 21.7761 16.7761 22 16.5 22C16.2239 22 16 21.7761 16 21.5C16 21.2239 16.2239 21 16.5 21C16.7761 21 17 21.2239 17 21.5ZM9 21.5C9 21.7761 8.77614 22 8.5 22C8.22386 22 8 21.7761 8 21.5C8 21.2239 8.22386 21 8.5 21C8.77614 21 9 21.2239 9 21.5Z" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                                        </svg>
+                                        <span class="btn__text btn__text_big-card">Добавить в корзину</span>
+                                    </button>
+                                    <a href="" class="btn btn_light product-card-buttons_light-btn">
+                                        <span class="btn__text">Подробнее</span>
+                                    </a>
+                                </div>
+                                <div class="product-card-buttons__right">
+                                    <button class="product-mini-btn" aria-label="Кнопка добавить в сравнение">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6 19L6 12M12 19L12 5M18 19L18 8" stroke="#C8C9D2" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                    <button class="product-mini-btn product-mini-btn_active" aria-label="Кнопка добавить в избранное">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.1345 5.09013C12.0895 5.14124 12.067 5.1668 12.0425 5.17547C12.0202 5.18335 11.9981 5.18335 11.9758 5.17548C11.9513 5.16681 11.9288 5.14126 11.8838 5.09016C9.87593 2.80991 6.63276 2.23484 4.18342 4.3883C1.68244 6.58716 1.33034 10.2636 3.29437 12.8642C4.65195 14.6617 8.29652 18.1168 10.4178 20.0791C10.9669 20.5869 11.2414 20.8409 11.5679 20.9414C11.8499 21.0282 12.1684 21.0282 12.4504 20.9414C12.7769 20.8409 13.0514 20.5869 13.6005 20.0791C15.7218 18.1168 19.3664 14.6617 20.7239 12.8642C22.688 10.2636 22.3788 6.56403 19.8349 4.3883C17.3435 2.25751 14.1407 2.81083 12.1345 5.09013Z" stroke="#C8C9D2" stroke-width="2" stroke-linecap="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="product-slider-pagination swiper-pagination"></div>
+                <div class="slider-btn slider-btn_prev swiper-button-prev product-slider__btn-prev">
+                    <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 8.92893L2.92889 8.92893M8.92893 1.85786L1.85786 8.92893L8.92893 16" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                    </svg> 
+                </div>
+                <div class="slider-btn slider-btn_next swiper-button-next product-slider__btn-next">
+                    <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 9.07107H14.0711M8.07107 16.1421L15.1421 9.07107L8.07107 2" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                    </svg>  
+                </div>
+            </div>
+        </section>
     </main>
 
 

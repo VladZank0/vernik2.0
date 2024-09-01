@@ -1727,208 +1727,393 @@
     
 
     <main class="main">
-
-        <section class="section m-t">
-            <div class="section__container container">
-                <div class="section-heading section-heading_m-min">
-                    <h1 class="section-title">Сравнение товаров</h1>
-                </div>
-            
-                <div class="comparison-page">
-                    
-                        <div class="comparison-settings">
-                            <div class="comparison-settings__radios">
-                                <label class="radio">
-                                    <input class="radio-input" checked type="radio" name="comparison-sort">
-                                    Все товары
-                                </label>
-                                <label class="radio">
-                                    <input class="radio-input" type="radio" name="comparison-sort">
-                                    Только различия
-                                </label>
-                            </div>
-                            <div class="comparison-settings__buttons">
-                                <button class="comparison-settings__btn">Добавить товары</button>
-                                <button class="comparison-settings__btn">Очистить список</button>
-                            </div>
-                        </div>
-                        <div class="comparison-slider">
-                            <div class="swiper-wrapper comparison-slider__wrapper">
-                                <div class="swiper-slide">
-                                    <div class="mini-product-card">
-                                        <div class="mini-product-card__main">
-                                            <a href="">
-                                                <img src="images/products/search_product.png" alt="" class="mini-product-card__img">
-                                            </a>
-                                            <div class="mini-product-card__content">
-                                                <a href="" class="mini-product-card__title">iPhone 15 Pro Max 256Gb Natural Titanium</a>
-                                                <div class="mini-product-card__prices">
-                                                    <span class="mini-product-card__price">2 490 ₽</span>
-                                                    <span class="mini-product-card__price mini-product-card__price_old">3 490 ₽</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="mini-product-card__buttons">
-                                            <button class="btn btn_min" aria-label="Кнопка добавить в корзину">
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M5 5L18.5136 4.88936C19.8468 4.87845 20.5134 4.87299 20.9835 5.14281C21.3958 5.37949 21.7103 5.7553 21.8707 6.20287C22.0534 6.71311 21.9306 7.36834 21.685 8.67881L20.9894 12.3896C20.8153 13.3185 20.7282 13.783 20.4898 14.1308C20.2795 14.4375 19.9879 14.6796 19.6477 14.8297C19.2619 15 18.7893 15 17.8442 15H6.5M5 5L6.5 15M5 5L4.5 2H2M6.5 15L6.67123 16.0036C6.79228 16.7131 6.85281 17.0678 7.0308 17.3339C7.1877 17.5685 7.40759 17.754 7.66521 17.8693C7.95746 18 8.31732 18 9.03705 18H18.5001M16.5 21.5H16.51M8.5 21.5H8.51M17 21.5C17 21.7761 16.7761 22 16.5 22C16.2239 22 16 21.7761 16 21.5C16 21.2239 16.2239 21 16.5 21C16.7761 21 17 21.2239 17 21.5ZM9 21.5C9 21.7761 8.77614 22 8.5 22C8.22386 22 8 21.7761 8 21.5C8 21.2239 8.22386 21 8.5 21C8.77614 21 9 21.2239 9 21.5Z" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
-                                                </svg>
-                                            </button>
-                                            <div class="mini-product-card__mini-buttons">
-                                                <button class="product-mini-btn product-mini-btn_delete" aria-label="Кнопка добавить в избранное">
-                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M3 6H21M10 11.6319V16.3681M14 11.6319V16.3681M5 6H19V17.2C19 18.8802 19 19.7202 18.673 20.362C18.3854 20.9265 17.9265 21.3854 17.362 21.673C16.7202 22 15.8802 22 14.2 22H9.8C8.11984 22 7.27976 22 6.63803 21.673C6.07354 21.3854 5.6146 20.9265 5.32698 20.362C5 19.7202 5 18.8802 5 17.2V6ZM16 6L8 6C8 5.07003 8 4.60504 8.10222 4.22354C8.37962 3.18827 9.18827 2.37962 10.2235 2.10222C10.605 2 11.07 2 12 2C12.93 2 13.395 2 13.7765 2.10222C14.8117 2.37962 15.6204 3.18827 15.8978 4.22354C16 4.60504 16 5.07003 16 6Z" stroke="#C8C9D2" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
-                                                    </svg>
-                                                </button>
-                                                <button class="product-mini-btn" aria-label="Кнопка добавить в избранное">
-                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.1345 5.09013C12.0895 5.14124 12.067 5.1668 12.0425 5.17547C12.0202 5.18335 11.9981 5.18335 11.9758 5.17548C11.9513 5.16681 11.9288 5.14126 11.8838 5.09016C9.87593 2.80991 6.63276 2.23484 4.18342 4.3883C1.68244 6.58716 1.33034 10.2636 3.29437 12.8642C4.65195 14.6617 8.29652 18.1168 10.4178 20.0791C10.9669 20.5869 11.2414 20.8409 11.5679 20.9414C11.8499 21.0282 12.1684 21.0282 12.4504 20.9414C12.7769 20.8409 13.0514 20.5869 13.6005 20.0791C15.7218 18.1168 19.3664 14.6617 20.7239 12.8642C22.688 10.2636 22.3788 6.56403 19.8349 4.3883C17.3435 2.25751 14.1407 2.81083 12.1345 5.09013Z" stroke="#C8C9D2" stroke-width="2" stroke-linecap="round"/>
-                                                    </svg>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="mini-product-card">
-                                        <div class="mini-product-card__main">
-                                            <a href="">
-                                                <img src="images/products/search_product.png" alt="" class="mini-product-card__img">
-                                            </a>
-                                            <div class="mini-product-card__content">
-                                                <a href="" class="mini-product-card__title">iPhone 15 Pro Max 256Gb Natural Titanium</a>
-                                                <div class="mini-product-card__prices">
-                                                    <span class="mini-product-card__price">2 490 ₽</span>
-                                                    <span class="mini-product-card__price mini-product-card__price_old">3 490 ₽</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="mini-product-card__buttons">
-                                            <button class="btn btn_min" aria-label="Кнопка добавить в корзину">
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M5 5L18.5136 4.88936C19.8468 4.87845 20.5134 4.87299 20.9835 5.14281C21.3958 5.37949 21.7103 5.7553 21.8707 6.20287C22.0534 6.71311 21.9306 7.36834 21.685 8.67881L20.9894 12.3896C20.8153 13.3185 20.7282 13.783 20.4898 14.1308C20.2795 14.4375 19.9879 14.6796 19.6477 14.8297C19.2619 15 18.7893 15 17.8442 15H6.5M5 5L6.5 15M5 5L4.5 2H2M6.5 15L6.67123 16.0036C6.79228 16.7131 6.85281 17.0678 7.0308 17.3339C7.1877 17.5685 7.40759 17.754 7.66521 17.8693C7.95746 18 8.31732 18 9.03705 18H18.5001M16.5 21.5H16.51M8.5 21.5H8.51M17 21.5C17 21.7761 16.7761 22 16.5 22C16.2239 22 16 21.7761 16 21.5C16 21.2239 16.2239 21 16.5 21C16.7761 21 17 21.2239 17 21.5ZM9 21.5C9 21.7761 8.77614 22 8.5 22C8.22386 22 8 21.7761 8 21.5C8 21.2239 8.22386 21 8.5 21C8.77614 21 9 21.2239 9 21.5Z" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
-                                                </svg>
-                                            </button>
-                                            <div class="mini-product-card__mini-buttons">
-                                                <button class="product-mini-btn product-mini-btn_delete" aria-label="Кнопка добавить в избранное">
-                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M3 6H21M10 11.6319V16.3681M14 11.6319V16.3681M5 6H19V17.2C19 18.8802 19 19.7202 18.673 20.362C18.3854 20.9265 17.9265 21.3854 17.362 21.673C16.7202 22 15.8802 22 14.2 22H9.8C8.11984 22 7.27976 22 6.63803 21.673C6.07354 21.3854 5.6146 20.9265 5.32698 20.362C5 19.7202 5 18.8802 5 17.2V6ZM16 6L8 6C8 5.07003 8 4.60504 8.10222 4.22354C8.37962 3.18827 9.18827 2.37962 10.2235 2.10222C10.605 2 11.07 2 12 2C12.93 2 13.395 2 13.7765 2.10222C14.8117 2.37962 15.6204 3.18827 15.8978 4.22354C16 4.60504 16 5.07003 16 6Z" stroke="#C8C9D2" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
-                                                    </svg>
-                                                </button>
-                                                <button class="product-mini-btn" aria-label="Кнопка добавить в избранное">
-                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.1345 5.09013C12.0895 5.14124 12.067 5.1668 12.0425 5.17547C12.0202 5.18335 11.9981 5.18335 11.9758 5.17548C11.9513 5.16681 11.9288 5.14126 11.8838 5.09016C9.87593 2.80991 6.63276 2.23484 4.18342 4.3883C1.68244 6.58716 1.33034 10.2636 3.29437 12.8642C4.65195 14.6617 8.29652 18.1168 10.4178 20.0791C10.9669 20.5869 11.2414 20.8409 11.5679 20.9414C11.8499 21.0282 12.1684 21.0282 12.4504 20.9414C12.7769 20.8409 13.0514 20.5869 13.6005 20.0791C15.7218 18.1168 19.3664 14.6617 20.7239 12.8642C22.688 10.2636 22.3788 6.56403 19.8349 4.3883C17.3435 2.25751 14.1407 2.81083 12.1345 5.09013Z" stroke="#C8C9D2" stroke-width="2" stroke-linecap="round"/>
-                                                    </svg>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="slider-btn slider-btn_prev swiper-button-prev comparison-slider__btn-prev">
-                                <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M16 8.92893L2.92889 8.92893M8.92893 1.85786L1.85786 8.92893L8.92893 16" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
-                                </svg> 
-                            </div>
-                            <div class="slider-btn slider-btn_next swiper-button-next comparison-slider__btn-next">
-                                <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 9.07107H14.0711M8.07107 16.1421L15.1421 9.07107L8.07107 2" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
-                                </svg>  
-                            </div>
-                        </div>
-                   
-                    <div class="comparison-table">
-                        <div class="comparison-table__section">
-                            <div class="comparison-table__name">Акции</div>
-                            <div class="comparison-row-slider">
-                                <div class="swiper-wrapper comparison-table__row">
-                                    <div class="comparison-table_cell swiper-slide">
-                                        <div class="stickers stickers_column">
-                                            <div class="sticker sticker_red sticker_gift">Стекло в подарок!</div>
-                                            <div class="sticker sticker_red sticker_sale sticker_has-value">Распродажа!<div class="sticker__value">-20%</div></div>
-                                        </div>
-                                    </div>
-                                    <div class="comparison-table_cell swiper-slide">—</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="comparison-table__section">
-                            <div class="comparison-table__name">Диагональ экрана</div>
-                            <div class="comparison-row-slider">
-                                <div class="swiper-wrapper comparison-table__row">
-                                    <div class="comparison-table_cell swiper-slide">6.7"</div>
-                                    <div class="comparison-table_cell swiper-slide">6.7"</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="comparison-table__section">
-                            <div class="comparison-table__name">Разрешение экрана в пикселях</div>
-                            <div class="comparison-row-slider">
-                                <div class="swiper-wrapper comparison-table__row">
-                                    <div class="comparison-table_cell swiper-slide">2796x1290</div>
-                                    <div class="comparison-table_cell swiper-slide">2796x1290</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="comparison-table__section">
-                            <div class="comparison-table__name">Встроенная память</div>
-                            <div class="comparison-row-slider">
-                                <div class="swiper-wrapper comparison-table__row">
-                                    <div class="comparison-table_cell swiper-slide">256 GB</div>
-                                    <div class="comparison-table_cell swiper-slide">256 GB</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="comparison-table__section">
-                            <div class="comparison-table__name">Оперативная память</div>
-                            <div class="comparison-row-slider">
-                                <div class="swiper-wrapper comparison-table__row">
-                                    <div class="comparison-table_cell swiper-slide">8 GB</div>
-                                    <div class="comparison-table_cell swiper-slide">8 GB</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="comparison-table__section">
-                            <div class="comparison-table__name">Емкость аккумулятора</div>
-                            <div class="comparison-row-slider">
-                                <div class="swiper-wrapper comparison-table__row">
-                                    <div class="comparison-table_cell swiper-slide">4400 мА-ч</div>
-                                    <div class="comparison-table_cell swiper-slide">4400 мА-ч</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="comparison-table__section">
-                            <div class="comparison-table__name">Количество основных камер</div>
-                            <div class="comparison-row-slider">
-                                <div class="swiper-wrapper comparison-table__row">
-                                    <div class="comparison-table_cell swiper-slide">3</div>
-                                    <div class="comparison-table_cell swiper-slide">3</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="comparison-table__section">
-                            <div class="comparison-table__name">Год выхода</div>
-                            <div class="comparison-row-slider">
-                                <div class="swiper-wrapper comparison-table__row">
-                                    <div class="comparison-table_cell swiper-slide">2023</div>
-                                    <div class="comparison-table_cell swiper-slide">2023</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="comparison-table__section">
-                            <div class="comparison-table__name">Тип дисплея</div>
-                            <div class="comparison-row-slider">
-                                <div class="swiper-wrapper comparison-table__row">
-                                    <div class="comparison-table_cell swiper-slide">OLED</div>
-                                    <div class="comparison-table_cell swiper-slide">OLED</div>
-                                </div>
-                            </div>
-                        </div>
+        <div class="breadcrumbs">
+            <div class="container">
+                <div class="breadcrumbs-slider">
+                    <div class="breadcrumbs-list swiper-wrapper">
+                        <a class="breadcrumbs-list__item swiper-slide" href="">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.8285 2.79647C6.59424 2.08903 6.97711 1.73531 7.41214 1.60153C7.79519 1.48373 8.20481 1.48373 8.58786 1.60153C9.02289 1.73531 9.40576 2.08903 10.1715 2.79647L12.6287 5.06656C13.1339 5.53334 13.3865 5.76673 13.5676 6.04463C13.7281 6.29094 13.8467 6.5621 13.9188 6.84712C14 7.16869 14 7.51263 14 8.20049V10.8001C14 11.9202 14 12.4803 13.782 12.9081C13.5903 13.2844 13.2843 13.5904 12.908 13.7821C12.4802 14.0001 11.9201 14.0001 10.8 14.0001H5.2C4.0799 14.0001 3.51984 14.0001 3.09202 13.7821C2.71569 13.5904 2.40973 13.2844 2.21799 12.9081C2 12.4803 2 11.9202 2 10.8001L2 8.20049C2 7.51263 2 7.16869 2.08125 6.84712C2.15327 6.5621 2.27192 6.29094 2.4324 6.04463C2.61347 5.76673 2.86609 5.53334 3.37134 5.06656L5.8285 2.79647Z" stroke="#9B9EB6" stroke-width="1.5" stroke-linecap="round"/>
+                                <path d="M6 10.6668C6 10.0455 6 9.73491 6.10149 9.48988C6.23682 9.16317 6.49638 8.90361 6.82309 8.76828C7.06812 8.66679 7.37874 8.66679 8 8.66679C8.62126 8.66679 8.93188 8.66679 9.17691 8.76828C9.50362 8.90361 9.76318 9.16317 9.89851 9.48988C10 9.73491 10 10.0455 10 10.6668V14.0001H6V10.6668Z" stroke="#9B9EB6" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                        </a>     
+                        <span class="breadcrumbs-list__item swiper-slide">
+                            Оформление заказа
+                        </span>    
                     </div>
                 </div>
-
+            </div>
+        </div>
+        <section class="section">
+            <div class="container section__container">
+                <form id="order-form" action="#" class="order-form">
+                    <div class="layout layout_late-wrap m-t">
+                        <div class="form-layout">
+                            <h1 class="section-title">Оформление заказа</h1>
+                            <div class="form-section">
+                                <div class="form-section__subtitle">
+                                    Войдите в личный кабинет или укажите ваши контактные данные
+                                </div>
+                                <div class="form-group">
+                                    <div class="form-item form-item_size_default">
+                                        <label class="input-label">
+                                            Имя*
+                                            <input class="input" type="text">
+                                        </label>
+                                    </div>
+                                    <div class="form-item form-item_size_default">
+                                        <label class="input-label">
+                                            Телефон*
+                                            <input class="input phone-input" type="text" placeholder="+7">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="btn-wrapper">
+                                        <button class="form-group__btn btn">Вход / Регистрация</button>
+                                        <div class="form-warning-text">Даю согласие на обработку своих <a class="blue-link form-warning-text__blue-text" href="">персональных данных</a> в соответствии с законом</div>
+                                    </div>
+                                    <div class="hr"></div>
+                                    <button class="form-group__btn btn btn_black">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.00004 0C4.02946 0 0 4.02946 0 8.99996C0 13.9705 4.02938 18 8.99996 18C13.9705 18 18 13.9706 18 9.00004C18 4.02955 13.9705 0 9.00004 0Z" fill="#FC3F1D"/>
+                                            <path d="M10.2678 14.4086H12.148V3.60864H9.41303C6.66258 3.60864 5.21738 5.02274 5.21738 7.10506C5.21738 8.76779 6.00991 9.74675 7.42401 10.7568L4.96875 14.4086H7.00442L9.73941 10.3218L8.79146 9.68464C7.64154 8.90765 7.08217 8.30155 7.08217 6.9963C7.08217 5.84638 7.89017 5.06939 9.42858 5.06939H10.2678V14.4086Z" fill="white"/>
+                                        </svg>                                            
+                                        Войти с Яндекс ID
+                                    </button>
+                                </div>
+                               
+                            </div>
+                            <div class="form-section">
+                                <div class="form-section-title">
+                                    Оплата
+                                </div>
+                                <div class="form-group form-group_grid">
+                                    <label class="radio-box form-group__radio-box">
+                                        <input class="radio-box-input" type="radio" name="pay">
+                                        <div class="radio-box__mark"></div>
+                                        <div class="info-box">
+                                            <img class="info-box__icon" src="images/product-page/icon-1.png" alt="Иконка">
+                                            <div class="info-box__main">
+                                                <span class="info-box__title">Наличными при получении</span>
+                                                <span class="info-box__description info-box__description_red">Самая низкая цена</span>
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <label class="radio-box form-group__radio-box">
+                                        <input class="radio-box-input" type="radio" name="pay">
+                                        <div class="radio-box__mark"></div>
+                                        <div class="info-box">
+                                            <img class="info-box__icon" src="images/product-page/icon-3.png" alt="Иконка">
+                                            <div class="info-box__main">
+                                                <span class="info-box__title">Картой на сайте / СБП</span>
+                                                <span class="info-box__description">+10%</span>
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <label class="radio-box form-group__radio-box">
+                                        <input class="radio-box-input" type="radio" name="pay">
+                                        <div class="radio-box__mark"></div>
+                                        <div class="info-box">
+                                            <img class="info-box__icon" src="images/product-page/icon-2.png" alt="">
+                                            <div class="info-box__main">
+                                                <span class="info-box__title">Кредит</span>
+                                                <span class="info-box__description">+10%</span>
+                                            </div>
+                                            <div class="tooltip-block">
+                                                <svg class="tooltip-block__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M12.0871 17V11M12.0871 6.99997H12.0771M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#656771" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                                                </svg>
+                                                <div class="tooltip">
+                                                    Мы продаем новые и Б/У устройства, все они проходят проверку, вы можете быть уверены в работоспособности устройства. Обменное — новый товар, который был выдан в официальном сервисе при поломке гарантийного устройства.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <label class="radio-box form-group__radio-box">
+                                        <input class="radio-box-input" type="radio" name="pay">
+                                        <div class="radio-box__mark"></div>
+                                        <div class="info-box">
+                                            <img class="info-box__icon" src="images/product-page/icon-4.png" alt="Иконка">
+                                            <div class="info-box__main">
+                                                <span class="info-box__title">Оплата для юридических лиц</span>
+                                                <span class="info-box__description">+15%</span>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="form-section__subtitle">
+                                    Реквизиты организации
+                                </div>
+                                <div class="form-group form-group_two-columns">
+                                    <div class="form-item">
+                                        <label class="input-label">
+                                            ИНН*
+                                            <input class="input input_error" type="text">
+                                        </label>
+                                        <div class="error-text">
+                                            Обязательное поле
+                                        </div>
+                                    </div>
+                                    <div class="form-item">
+                                        <label class="input-label">
+                                            КПП
+                                            <input class="input" type="text">
+                                        </label>
+                                    </div>
+                                    <div class="form-item">
+                                        <label class="input-label">
+                                            БИК
+                                            <input class="input" type="text">
+                                        </label>
+                                    </div>
+                                    <div class="form-item">
+                                        <label class="input-label">
+                                            Номер расчетного счета
+                                            <input class="input" type="text">
+                                        </label>
+                                    </div>
+                                </div>
+                                <button class="btn form-section__btn">Найти</button>
+                            </div>
+                            <div class="form-section">
+                                <div class="form-section-title">
+                                    Доставка
+                                </div>
+                                <div class="form-group form-group_grid">
+                                    <label class="radio-box form-group__radio-box">
+                                        <input class="radio-box-input" type="radio" name="delivery">
+                                        <div class="radio-box__mark"></div>
+                                        <div class="info-box">
+                                            <img class="info-box__icon" src="images/product-page/marker.png" alt="">
+                                            <div class="info-box__main">
+                                                <span class="info-box__title">Забрать в Лавке</span>
+                                                <span class="info-box__description">Москва, Глинищевский пер. д.3, подъезд 4 офис 102. Работаем с 100:000 до 211:000</span>
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <label class="radio-box form-group__radio-box">
+                                        <input class="radio-box-input" type="radio" name="delivery">
+                                        <div class="radio-box__mark"></div>
+                                        <div class="info-box">
+                                            <img class="info-box__icon" src="images/product-page/truck-delivery.png" alt="">
+                                            <div class="info-box__main">
+                                                <span class="info-box__title">Доставка по Москве</span>
+                                                <span class="info-box__description">В пределах МКАД — 500₽</span>
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <label class="radio-box radio-box_yandex form-group__radio-box">
+                                        <input class="radio-box-input" type="radio" name="delivery">
+                                        <div class="radio-box__mark"></div>
+                                        <div class="info-box">
+                                            <img class="info-box__icon" src="images/product-page/icon-5.png" alt="">
+                                            <div class="info-box__main">
+                                                <span class="info-box__title">Доставка по России</span>
+                                                <span class="info-box__description">Стоимость доставки в ваш регион — 2000₽</span>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="form-section__subtitle">
+                                    Адрес доставки
+                                </div>
+                                <div class="form-section__limited-box">
+                                    <div class="form-group">
+                                        <div class="form-item">
+                                            <label class="input-label">
+                                                Город
+                                                <input class="input" type="text" placeholder="г. Челябинск, Челябинская обл.">
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group form-group_min">
+                                        <label class="radio-btn">
+                                            <input class="radio-btn__input" checked type="radio" name="delivery-option">
+                                            <div class="radio-btn__text">
+                                                Курьером
+                                            </div>
+                                        </label>
+                                        <label class="radio-btn">
+                                            <input class="radio-btn__input" type="radio" name="delivery-option">
+                                            <div class="radio-btn__text">
+                                                Пункт выдачи
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="blue-box blue-box_p-min">
+                                            <div class="blue-box__text">
+                                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M12 12.5002L12 21.5002M12 12.5002L3.5 8.00017M12 12.5002L20.5 8.00017M16.5 10.0002L7.5 5.00017M13.5541 21.6368L19.3541 18.4146C19.9531 18.0818 20.2526 17.9154 20.4707 17.6787C20.6637 17.4693 20.8097 17.2212 20.899 16.9508C21 16.6452 21 16.3026 21 15.6173V9.38306C21 8.69777 21 8.35513 20.899 8.04953C20.8097 7.77918 20.6637 7.53102 20.4707 7.32164C20.2526 7.08496 19.9531 6.91856 19.3541 6.58576L13.5541 3.36353C12.9868 3.04842 12.7032 2.89086 12.4029 2.82909C12.1371 2.77442 11.8629 2.77442 11.5971 2.82909C11.2968 2.89086 11.0132 3.04842 10.4459 3.36353L4.64594 6.58576C4.04689 6.91856 3.74737 7.08496 3.52927 7.32164C3.33632 7.53102 3.19029 7.77918 3.10097 8.04953C3 8.35513 3 8.69777 3 9.38306V15.6173C3 16.3026 3 16.6452 3.10097 16.9508C3.19029 17.2212 3.33632 17.4693 3.52927 17.6787C3.74737 17.9154 4.0469 18.0818 4.64594 18.4146L10.4459 21.6368C11.0132 21.9519 11.2968 22.1095 11.5971 22.1712C11.8629 22.2259 12.1371 22.2259 12.4029 22.1712C12.7032 22.1095 12.9868 21.9519 13.5541 21.6368Z" stroke="#047FFF" stroke-width="2" stroke-linecap="round"/>
+                                                </svg>
+                                                22 июля (Пн)
+                                            </div>
+                                            <div class="blue-box__text">500 ₽</div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-item">
+                                            <label class="input-label">
+                                                Улица
+                                                <input class="input" type="text">
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group form-group_four-columns">
+                                        <div class="form-item">
+                                            <label class="input-label">
+                                                Квартира
+                                                <input class="input" type="text">
+                                            </label>
+                                        </div>
+                                        <div class="form-item">
+                                            <label class="input-label">
+                                                Подъезд
+                                                <input class="input" type="text">
+                                            </label>
+                                        </div>
+                                        <div class="form-item">
+                                            <label class="input-label">
+                                                Квартира
+                                                <input class="input" type="text">
+                                            </label>
+                                        </div>
+                                        <div class="form-item">
+                                            <label class="input-label">
+                                                Домофон
+                                                <input class="input" type="text">
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-item">
+                                            <label class="input-label">
+                                                Комментарий для курьера
+                                                <textarea class="textarea textarea_order" type="text"></textarea>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ordered-products">
+                                <div class="form-section-title">Товары</div>
+                                <div class="ordered-products__list">
+                                    <div class="ordered-product">
+                                        <a href="">
+                                            <img class="ordered-product__img" src="images/products/search_product.png" width="64" height="64" alt="Фото продукта" >
+                                        </a>
+                                        <div class="ordered-product__main">
+                                            <a href="" class="ordered-product__title">iPhone 15 Pro Max 256Gb Natural Titanium</a>
+                                            <span class="ordered-product__count">1 шт.</span>
+                                        </div>
+                                    </div>
+                                    <div class="ordered-product">
+                                        <a href="">
+                                            <img class="ordered-product__img" src="images/products/search_product.png" width="64" height="64" alt="Фото продукта" >
+                                        </a>
+                                        <div class="ordered-product__main">
+                                            <a href="" class="ordered-product__title">iPhone 15 Pro Max 256Gb Natural Titanium</a>
+                                            <span class="ordered-product__count">1 шт.</span>
+                                        </div>
+                                    </div>
+                                    <div class="ordered-product">
+                                        <a href="">
+                                            <img class="ordered-product__img" src="images/products/search_product.png" width="64" height="64" alt="Фото продукта" >
+                                        </a>
+                                        <div class="ordered-product__main">
+                                            <a href="" class="ordered-product__title">iPhone 15 Pro Max 256Gb Natural Titanium</a>
+                                            <span class="ordered-product__count">1 шт.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="totals-wrapper">
+                            <div class="totals-wrapper__block">
+                                <div class="totals">
+                                    <div class="totals__inner">
+                                        <button class="btn btn_big totals__btn">Оформить заказ</button>
+                                        <div class="form-warning-text form-warning-text_black">Нажимая на кнопку, вы соглашаетесь с нашей <a class="blue-link" href="">Политикой конфиденциальности</a> и <a class="blue-link" href="">Пользовательским соглашением</a>, а также предоставляете <a class="blue-link" href="">согласие на обработку ваших данных</a></div>
+                                        <div class="totals__line"></div>
+                                        <div class="totals__title">
+                                            Ваша корзина
+                                            <div class="totals-text totals-text_gray totals-text_min">3 товара • 620 гр</div>
+                                        </div>
+                                        <div class="totals-list">
+                                            <div class="totals-item">
+                                                <div class="totals-text">Товары (3)</div>
+                                                <div class="totals-text totals-text_min">362 970 ₽</div>
+                                            </div>
+                                            <div class="totals-item">
+                                                <div class="totals-text">Установка защитного стекла</div>
+                                                <div class="totals-text totals-text_red totals-text_min">Бесплатно</div>
+                                            </div>
+                                            <div class="totals-item">
+                                                <div class="totals-text">Перенос данных на новое устройство</div>
+                                                <div class="totals-text totals-text_red totals-text_min">Бесплатно</div>
+                                            </div>
+                                            <div class="totals-item">
+                                                <div class="totals-text">Доставка по Москве</div>
+                                                <div class="totals-text totals-text_min">500 ₽</div>
+                                            </div>
+                                        </div>
+                                        <div class="totals__title">
+                                            Общая стоимость
+                                            <div class="totals-price">
+                                                <div class="totals-text totals-text_price">
+                                                    363 470 ₽
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="totals__line"></div>
+                                        <div class="split-block">
+                                            <div class="split-block__top">
+                                                <div class="split-block__title">27 500 ₽×4 <span class="split-block__text">платежа в сплит</span></div>
+                                                <div class="split-block__description">на 4 месяца, включая комиссию 249 ₽</div>
+                                            </div>
+                                            <div class="split-block__parts">
+                                                <div class="split-part">
+                                                    <span class="split-part__indicator split-part__indicator_active"></span>
+                                                    <span class="split-part__name split-part__name_active">Сегодня</span>
+                                                </div>
+                                                <div class="split-part">
+                                                    <span class="split-part__indicator"></span>
+                                                    <span class="split-part__name">14 авг</span>
+                                                </div>
+                                                <div class="split-part">
+                                                    <span class="split-part__indicator"></span>
+                                                    <span class="split-part__name">14 сен</span>
+                                                </div>
+                                                <div class="split-part">
+                                                    <span class="split-part__indicator"></span>
+                                                    <span class="split-part__name">14 окт</span>
+                                                </div>
+                                            </div>
+                                            <div class="split-block__bottom">
+                                                <button class="btn btn_light split-block__btn">Оформить сплит</button>
+                                                <div class="split-block__tooltip-icon">
+                                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M9.81537 10.2522C9.90621 9.994 10.0427 9.75664 10.2163 9.55041C10.3794 9.35662 10.5753 9.1903 10.7971 9.05998C11.2549 8.79095 11.7931 8.6926 12.3164 8.78237C12.8397 8.87213 13.3144 9.14421 13.6563 9.55041C13.9983 9.95661 14.1854 10.4707 14.1846 11.0017C14.1846 12.5006 11.9363 13.25 11.9363 13.25V13.457M11.9654 16.25H11.9754M22 12.5C22 18.0228 17.5228 22.5 12 22.5C6.47715 22.5 2 18.0228 2 12.5C2 6.97715 6.47715 2.5 12 2.5C17.5228 2.5 22 6.97715 22 12.5Z" stroke="#656771" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="switch switch_reverse">
+                                    <span class="switch__text switch__text_min">Сохранить мои данные в личном кабинете, чтобы отслеживать статус гарантии на товары и удобнее совершать покупки в будущем</span>
+                                    <input checked="" id="new" name="новый" type="checkbox" class="switch__input">
+                                    <label for="new" class="switch__label"></label>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </form>
+            </div>
         </section>
-        
     </main>
 
 
@@ -2093,5 +2278,7 @@
     <script src="js/dropdown.js"></script>
     <script src="js/view-mode.js"></script>
     <script src="js/filter.js"></script>
+    <script src="js/lib/imask.js"></script>
+    <script src="js/validation.js"></script>
 </body>
 </html>
