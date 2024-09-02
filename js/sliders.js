@@ -234,7 +234,10 @@ if(document.querySelector('.banner-slider')){
             type: 'bullets',
             bullets: true,
         },
-      
+        navigation: {
+            nextEl: '.banner-slider__btn-next',
+            prevEl: '.banner-slider__btn-prev',
+        },
         breakpoints: {
             0: {
                 spaceBetween: 8,
@@ -244,10 +247,6 @@ if(document.querySelector('.banner-slider')){
             },
             1100: {
                 spaceBetween: 24,
-                navigation: {
-                    nextEl: '.banner-slider__btn-next',
-                    prevEl: '.banner-slider__btn-prev',
-                },
             }
         },
             

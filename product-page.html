@@ -1891,12 +1891,12 @@
                                 <span class="product-card-info__value">OLED</span>
                             </div>
                         </div>
-                        <a class="product-card-info__link" href="">
+                        <button class="product-card-info__link" data-modal="product-characteristics">
                             Все характеристики
-                        </a>
-                        <a class="product-card-info__link product-card-info__link_m-t" href="">
+                        </button>
+                        <button class="product-card-info__link product-card-info__link_m-t" data-modal="description">
                             Описание товара
-                        </a>
+                        </button>
                     </div>
                 </div>
                 <div class="product-page-options">
@@ -1997,14 +1997,14 @@
                                     <span class="info-box__title">Кредит</span>
                                     <span class="info-box__description">+10%</span>
                                 </div>
-                                <div class="tooltip-block">
+                                <span class="tooltip-block">
                                     <svg class="tooltip-block__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M12.0871 17V11M12.0871 6.99997H12.0771M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#656771" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
                                     </svg>
-                                    <div class="tooltip">
-                                        Мы продаем новые и Б/У устройства, все они проходят проверку, вы можете быть уверены в работоспособности устройства. Обменное — новый товар, который был выдан в официальном сервисе при поломке гарантийного устройства.
-                                    </div>
-                                </div>
+                                    <span class="tooltip">
+                                        Услуга предоставляется нашими партнерами — кредитной платформой PosCredit, они обеспечивают работу сервиса для покупки товаров в рассрочку и кредит.
+                                    </span>
+                                </span>
                             </div>
                             <div class="info-box">
                                 <img class="info-box__icon" src="images/product-page/icon-3.png" alt="">
@@ -2107,11 +2107,14 @@
                         </div>
                         <div class="split-block__bottom">
                             <button class="btn btn_light split-block__btn">Оформить сплит</button>
-                            <div class="split-block__tooltip-icon">
-                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <span class="tooltip-block">
+                                <svg class="tooltip-block__svg" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M9.81537 10.2522C9.90621 9.994 10.0427 9.75664 10.2163 9.55041C10.3794 9.35662 10.5753 9.1903 10.7971 9.05998C11.2549 8.79095 11.7931 8.6926 12.3164 8.78237C12.8397 8.87213 13.3144 9.14421 13.6563 9.55041C13.9983 9.95661 14.1854 10.4707 14.1846 11.0017C14.1846 12.5006 11.9363 13.25 11.9363 13.25V13.457M11.9654 16.25H11.9754M22 12.5C22 18.0228 17.5228 22.5 12 22.5C6.47715 22.5 2 18.0228 2 12.5C2 6.97715 6.47715 2.5 12 2.5C17.5228 2.5 22 6.97715 22 12.5Z" stroke="#656771" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
                                 </svg>
-                            </div>
+                                <span class="tooltip">
+                                    Мы продаем новые и Б/У устройства, все они проходят проверку, вы можете быть уверены в работоспособности устройства. Обменное — новый товар, который был выдан в официальном сервисе при поломке гарантийного устройства.
+                                </span>
+                            </span>
                         </div>
                     </div>
                     <div class="product-page-buttons">
@@ -4206,6 +4209,84 @@
             </div>
         </div>
 </footer>
+
+    <div id="description" class="modal" style="display: none;">
+        <div class="modal__container modal__container_max">
+            <button class="modal__close">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 6L12 12M12 12L18 18M12 12L18 6M12 12L6 18" stroke="#9B9EB6" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+            <div class="modal-box">
+                <div class="modal-title">Описание</div>
+                <p>Пока в Москве в серых предгрозовых завихрениях рождаются слепые слезы желания, после ежегодного зрелища с помпой прошедшего на дубовой сцене Елизаветинского театра имени Стивена Абдуловича Джобса в поселке городского типа Купер-тино, компания из десятка состоятельных господ Калифорнии уже положила кусочек сыра на кончик смертоносной кредитной пружинки.</p>
+                <p>Вновь дан старт очередному всенародному психозу! Кто-то бросив гадание на холодном клинке Луны понес в лодочке ладоней свое сердце на кредитную паперть. Кто-то уже ищет покупателя на свой безнадежно устаревший айфон 13 про, ну, а кто-то бросился выковыривать холодными пальчиками из клавиш лэп-топовъ предзаказ родившийся на презентации.</p>
+                <p>Прожгите свои руки холодным сплавом желания и технологий, вдохнув полной грудью кислород животворного образа, родившегося осенью 22 года. Доведенный до совершенства технологиями и человеческим мастерством, он вобрал в себя все, что смог придумать живой человек, вдохновившись мечтой. Телефон созданный с единственной целью – соответствовать вашим ожидания.</p>
+            </div>
+        </div>
+    </div>
+    <div id="product-characteristics" class="modal" style="display: none;">
+        <div class="modal__container modal__container_max">
+            <button class="modal__close">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 6L12 12M12 12L18 18M12 12L18 6M12 12L6 18" stroke="#9B9EB6" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+            <div class="modal-box">
+                <div class="modal-title">Описание</div>
+                <div class="comparison-table modal__comparison-table">
+                    <div class="comparison-table__section comparison-table__section_modal ">
+                        <div class="comparison-table__name">Диагональ экрана</div>
+                        <div class="comparison-table__row">
+                            <div class="comparison-table__cell comparison-table__cell_modal">6.7"</div>
+                        </div>
+                    </div>
+                    <div class="comparison-table__section comparison-table__section_modal ">
+                        <div class="comparison-table__name">Разрешение экрана в пикселях</div>
+                        <div class="comparison-table__row">
+                            <div class="comparison-table__cell comparison-table__cell_modal">2796x1290</div>
+                        </div>
+                    </div>
+                    <div class="comparison-table__section comparison-table__section_modal ">
+                        <div class="comparison-table__name">Встроенная память</div>
+                        <div class="comparison-table__row">
+                            <div class="comparison-table__cell comparison-table__cell_modal">256 GB</div>
+                        </div>
+                    </div>
+                    <div class="comparison-table__section comparison-table__section_modal" >
+                        <div class="comparison-table__name">Оперативная память</div>
+                            <div class="comparison-table__row">
+                                <div class="comparison-table__cell comparison-table__cell_modal swiper-slide">8 GB</div>
+                            </div>
+                        </div>
+                    <div class="comparison-table__section comparison-table__section_modal ">
+                        <div class="comparison-table__name">Емкость аккумулятора</div>
+                        <div class="comparison-table__row">
+                            <div class="comparison-table__cell comparison-table__cell_modal swiper-slide">4400 мА-ч</div>
+                        </div>
+                    </div>
+                    <div class="comparison-table__section comparison-table__section_modal ">
+                        <div class="comparison-table__name">Количество основных камер</div>
+                        <div class="comparison-table__row">
+                            <div class="comparison-table__cell comparison-table__cell_modal swiper-slide">3</div>
+                        </div>
+                    </div>
+                    <div class="comparison-table__section comparison-table__section_modal ">
+                        <div class="comparison-table__name">Год выхода</div>
+                        <div class="comparison-table__row">
+                            <div class="comparison-table__cell comparison-table__cell_modal swiper-slide">2023</div>
+                        </div>
+                    </div>
+                    <div class="comparison-table__section comparison-table__section_modal ">
+                        <div class="comparison-table__name">Тип дисплея</div>
+                        <div class="comparison-table__row">
+                            <div class="comparison-table__cell comparison-table__cell_modal">OLED</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     
     <script src="js/header.js"></script>
     <script src="js/lib/tabs.js"></script>
@@ -4219,5 +4300,6 @@
     <script src="js/dropdown.js"></script>
     <script src="js/view-mode.js"></script>
     <script src="js/filter.js"></script>
+    <script src="js/modals.js"></script>
 </body>
 </html>

@@ -9,6 +9,15 @@
     <link rel="stylesheet" href="css/lib/tabs.css">
     <link rel="stylesheet" href="css/lib/fancybox.css">
     <link rel="stylesheet" href="css/lib/accordion.css">
+    <style>
+        main{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            row-gap: 50px;
+        }
+    </style>
 </head>
 <body>
     
@@ -94,6 +103,21 @@
                 </div>
             </div>
         </div>
+        <!-- <div id="busket" class="modal" style="display: none;">
+            <div class="modal__container modal__container_max">
+                <button class="modal__close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 6L12 12M12 12L18 18M12 12L18 6M12 12L6 18" stroke="#9B9EB6" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+                <div class="modal-box">
+                    <div class="modal-title">Описание</div>
+                    <p>Пока в Москве в серых предгрозовых завихрениях рождаются слепые слезы желания, после ежегодного зрелища с помпой прошедшего на дубовой сцене Елизаветинского театра имени Стивена Абдуловича Джобса в поселке городского типа Купер-тино, компания из десятка состоятельных господ Калифорнии уже положила кусочек сыра на кончик смертоносной кредитной пружинки.</p>
+                    <p>Вновь дан старт очередному всенародному психозу! Кто-то бросив гадание на холодном клинке Луны понес в лодочке ладоней свое сердце на кредитную паперть. Кто-то уже ищет покупателя на свой безнадежно устаревший айфон 13 про, ну, а кто-то бросился выковыривать холодными пальчиками из клавиш лэп-топовъ предзаказ родившийся на презентации.</p>
+                    <p>Прожгите свои руки холодным сплавом желания и технологий, вдохнув полной грудью кислород животворного образа, родившегося осенью 22 года. Доведенный до совершенства технологиями и человеческим мастерством, он вобрал в себя все, что смог придумать живой человек, вдохновившись мечтой. Телефон созданный с единственной целью – соответствовать вашим ожидания.</p>
+                </div>
+            </div>
+        </div> -->
         <div id="description" class="modal" style="display: none;">
             <div class="modal__container modal__container_max">
                 <button class="modal__close">
@@ -109,7 +133,7 @@
                 </div>
             </div>
         </div>
-        <div id="product-description" class="modal" style="display: none;">
+        <div id="product-characteristics" class="modal" style="display: none;">
             <div class="modal__container modal__container_max">
                 <button class="modal__close">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -119,52 +143,52 @@
                 <div class="modal-box">
                     <div class="modal-title">Описание</div>
                     <div class="comparison-table modal__comparison-table">
-                        <div class="comparison-table__section">
+                        <div class="comparison-table__section comparison-table__section_modal ">
                             <div class="comparison-table__name">Диагональ экрана</div>
                             <div class="comparison-table__row">
-                                <div class="comparison-table_cell">6.7"</div>
+                                <div class="comparison-table__cell comparison-table__cell_modal">6.7"</div>
                             </div>
                         </div>
-                        <div class="comparison-table__section">
+                        <div class="comparison-table__section comparison-table__section_modal ">
                             <div class="comparison-table__name">Разрешение экрана в пикселях</div>
                             <div class="comparison-table__row">
-                                <div class="comparison-table_cell">2796x1290</div>
+                                <div class="comparison-table__cell comparison-table__cell_modal">2796x1290</div>
                             </div>
                         </div>
-                        <div class="comparison-table__section">
+                        <div class="comparison-table__section comparison-table__section_modal ">
                             <div class="comparison-table__name">Встроенная память</div>
                             <div class="comparison-table__row">
-                                <div class="comparison-table_cell">256 GB</div>
+                                <div class="comparison-table__cell comparison-table__cell_modal">256 GB</div>
                             </div>
                         </div>
-                        <div class="comparison-table__section">
+                        <div class="comparison-table__section comparison-table__section_modal" >
                             <div class="comparison-table__name">Оперативная память</div>
                                 <div class="comparison-table__row">
-                                    <div class="comparison-table_cell swiper-slide">8 GB</div>
+                                    <div class="comparison-table__cell comparison-table__cell_modal swiper-slide">8 GB</div>
                                 </div>
                             </div>
-                        <div class="comparison-table__section">
+                        <div class="comparison-table__section comparison-table__section_modal ">
                             <div class="comparison-table__name">Емкость аккумулятора</div>
                             <div class="comparison-table__row">
-                                <div class="comparison-table_cell swiper-slide">4400 мА-ч</div>
+                                <div class="comparison-table__cell comparison-table__cell_modal swiper-slide">4400 мА-ч</div>
                             </div>
                         </div>
-                        <div class="comparison-table__section">
+                        <div class="comparison-table__section comparison-table__section_modal ">
                             <div class="comparison-table__name">Количество основных камер</div>
                             <div class="comparison-table__row">
-                                <div class="comparison-table_cell swiper-slide">3</div>
+                                <div class="comparison-table__cell comparison-table__cell_modal swiper-slide">3</div>
                             </div>
                         </div>
-                        <div class="comparison-table__section">
+                        <div class="comparison-table__section comparison-table__section_modal ">
                             <div class="comparison-table__name">Год выхода</div>
                             <div class="comparison-table__row">
-                                <div class="comparison-table_cell swiper-slide">2023</div>
+                                <div class="comparison-table__cell comparison-table__cell_modal swiper-slide">2023</div>
                             </div>
                         </div>
-                        <div class="comparison-table__section">
+                        <div class="comparison-table__section comparison-table__section_modal ">
                             <div class="comparison-table__name">Тип дисплея</div>
                             <div class="comparison-table__row">
-                                <div class="comparison-table_cell">OLED</div>
+                                <div class="comparison-table__cell comparison-table__cell_modal">OLED</div>
                             </div>
                         </div>
                     </div>
@@ -177,7 +201,8 @@
         <button data-modal="login">Логин</button>
         <button data-modal="info">Информация</button>
         <button data-modal="description">Описание</button>
-        <button data-modal="product-description">Описание товара</button>
+        <button data-modal="product-characteristics">Описание товара</button>
+        <!-- <button data-modal="product-characteristics">Корзина</button> -->
     </main>
 
     

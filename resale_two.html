@@ -1749,8 +1749,8 @@
         </div>
         <section class="section">
             <div class="section__container container">
-                <div class="layout layout_late-wrap m-t">
-                    <form action="#">
+                <form action="#" class="layout layout_late-wrap m-t">
+                    <div>
                         <h1 class="section-title resale-quiz__title">Скупка iPhone в Москве. <br>
                             Оценка стоимости онлайн
                         </h1>
@@ -1761,7 +1761,7 @@
                             <div class="resale-quiz-item">
                                 <div class="resale-quiz-item__label">Укажите модель iPhone</div>
                                 <div class="dropdown select"> 
-                                    <input type="text" class="select__input" hidden>
+                                    <input type="text" class="select__input" name="model" hidden>
                                     <button type="button" class="dropdown__btn"></button>
                                     <div class="dropdown__menu">
                                         <div class="dropdown__item">
@@ -1855,14 +1855,14 @@
                             </div>
                             
                         </div>
-                    </form>
+                    </div>
                     <div class="sticky-box">
                         <div class="totals sticky-box__inner">
                             <div class="totals__inner totals__inner_min-gap">
                                 <div class="totals__title">
                                     Предварительная оценка
                                 </div>
-                                <div class="totals__title">
+                                <div class="totals__title totals__title_column">
                                     <div class="totals-text">
                                         Мы готовы заплатить за ваш iPhone
                                     </div>
@@ -1886,13 +1886,37 @@
                                         от 19 500 до 22 500 ₽
                                     </div>
                                     <div class="form-warning-text">Цена актуальна для аккумуляторов от 83% ёмкости, не в сервисном режиме</div>
-                                    <button class="btn btn_big totals__btn">Продать</button>
+                                    <button type="submit" class="btn btn_big totals__btn">Продать</button>
+                                    <div class="fast-contact">
+                                        <div class="fast-contact__text">Быстрая связь с нами:</div>
+                                        <div class="fast-contact__links">
+                                            <a href="" class="contact-icon contact-icon_blue" aria-label="Ссылка связаться в телеграм">
+                                                <svg class="contact-icon__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_178_6555)">
+                                                    <path d="M15.5 10.5L11 14L17 20L21 4L3 11L7 13L9 19L12.5 16" stroke="#047FFF" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                                                    </g>
+                                                    <defs>
+                                                    <clipPath id="clip0_178_6555">
+                                                    <rect width="24" height="24" fill="white"/>
+                                                    </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </a>
+                                            <a class="contact-icon contact-icon_green" href="" aria-label="Ссылка связаться в вотсап">
+                                                <svg class="contact-icon__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M3 20.9822L4.74092 16.9711C3.40902 15.0796 2.8129 12.7668 3.06441 10.4668C3.31592 8.16687 4.39779 6.03777 6.10698 4.47912C7.81616 2.92047 10.0352 2.03941 12.3476 2.00129C14.66 1.96317 16.9068 2.77061 18.6664 4.27208C20.426 5.77355 21.5774 7.86583 21.9045 10.1563C22.2316 12.4467 21.712 14.7778 20.4431 16.7122C19.1742 18.6466 17.2433 20.0512 15.0128 20.6625C12.7822 21.2737 10.4054 21.0496 8.32828 20.0322L3 20.9822Z" stroke="#32BE59" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M9 9.61538C9 9.75819 9.05673 9.89515 9.15771 9.99613C9.25869 10.0971 9.39565 10.1538 9.53846 10.1538C9.68127 10.1538 9.81823 10.0971 9.91921 9.99613C10.0202 9.89515 10.0769 9.75819 10.0769 9.61538V8.53846C10.0769 8.39565 10.0202 8.25869 9.91921 8.15771C9.81823 8.05673 9.68127 8 9.53846 8C9.39565 8 9.25869 8.05673 9.15771 8.15771C9.05673 8.25869 9 8.39565 9 8.53846V9.61538ZM9 9.61538C9 11.0435 9.56731 12.4131 10.5771 13.4229C11.5869 14.4327 12.9565 15 14.3846 15M14.3846 15H15.4615C15.6043 15 15.7413 14.9433 15.8423 14.8423C15.9433 14.7413 16 14.6043 16 14.4615C16 14.3187 15.9433 14.1818 15.8423 14.0808C15.7413 13.9798 15.6043 13.9231 15.4615 13.9231H14.3846C14.2418 13.9231 14.1048 13.9798 14.0039 14.0808C13.9029 14.1818 13.8462 14.3187 13.8462 14.4615C13.8462 14.6043 13.9029 14.7413 14.0039 14.8423C14.1048 14.9433 14.2418 15 14.3846 15Z" stroke="#32BE59" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg> 
+                                            </a> 
+                                        </div>
+                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
                         
                     </div>
-                </div>
+                </form>
             </div>
         </section>
         <section class="section">

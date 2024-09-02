@@ -1744,7 +1744,7 @@
                 </div>
             </div>
         </div>
-        <section class="section m-t">
+        <section class="section section_banner-slider">
             <div class="section__container">
                 <div class="banner-slider-overlay">
                     <div class="banner-slider">
@@ -1784,6 +1784,7 @@
                                 </picture>
                             </a>
                         </div>
+                        <div class="swiper-pagination banner-slider-pagination"></div>
                     </div>
                     <div class="slider-btn slider-btn_prev swiper-button-prev banner-slider__btn-prev">
                         <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1798,7 +1799,7 @@
                 </div>
             </div>
         </section> 
-        <div class="section">
+        <div class="section m-t">
             <div class="categories-slider categories-slider_catalog container">
                 <div class="categories-slider__wrapper swiper-wrapper">
                     <div class="swiper-slide">
@@ -1939,7 +1940,7 @@
                                     </svg>
                                 </button>
                             </div>
-                            <div class="dropdown">
+                            <div class="dropdown dropdown_catalog">
                                 <button type="button" class="dropdown__btn">Сначала популярные</button>
                                 <div class="dropdown__menu">
                                     <a class="dropdown__item" href="">
@@ -2017,12 +2018,12 @@
                                     <div class="filter-box__list filter-box__list_row">
                                         <label class="price-input">
                                             <span class="price-input__text">от</span>
-                                            <input class="price-input__input" name="min-price" placeholder="0" type="text">
+                                            <input class="price-input__input number-input" name="min-price" placeholder="0" type="text">
                                             <span class="price-input__text price-input__text_black">₽</span>
                                         </label>
                                         <label class="price-input">
                                             <span class="price-input__text">до</span>
-                                            <input  class="price-input__input" name="max-price" placeholder="180000" type="text">
+                                            <input  class="price-input__input number-input" name="max-price" placeholder="180000" type="text">
                                             <span class="price-input__text price-input__text_black">₽</span>
                                         </label>
                                     </div>
@@ -2708,7 +2709,7 @@
                                     </div>
                                 </div>
                             </article>
-                            <!-- <a class="banner banner_horizontal product-grid__banner" href="">
+                            <a class="banner banner_horizontal product-grid__banner" href="">
                                 <div class="banner__inner">
                                     <h3 class="banner-title">Заголовок баннера до трёх строчек 1/1</h3>
                                     <div class="banner-text">Подзаголовок в одну строку</div>
@@ -2718,18 +2719,7 @@
                                     <source srcset="images/banners/banner_horizontal-tablet.png" media="(min-width: 700px)">
                                     <img class="banner__img" src="images/banners/banner_horizontal-mob.png" alt="Картинка баннера">
                                 </picture>
-                            </a> -->
-                            <!-- <a class="banner  " href="">
-                                <div class="banner__inner">
-                                    <h3 class="banner-title">Заголовок баннера до трёх строчек 1/1</h3>
-                                    <div class="banner-text">Подзаголовок в одну строку</div>
-                                </div>
-                                <picture class="banner__picture">
-                                    <source srcset="images/banners/banner_horizontal.png" media="(min-width: 1100px)">
-                                    <source srcset="images/banners/banner_horizontal-tablet.png" media="(min-width: 700px)">
-                                    <img class="banner__img" src="images/banners/banner_horizontal-mob.png" alt="Картинка баннера">
-                                </picture>
-                            </a> -->
+                            </a>
                             <article class="product-card">
                                 <div class="stickers product-card__stickers">
                                     <div class="sticker sticker_green">
@@ -2900,9 +2890,6 @@
                             </li>
                             <li class="pagination__item">
                                 <a href="" class="pagination__item-link">4</a>
-                            </li>
-                            <li class="pagination__item">
-                                <a href="" class="pagination__item-link">5</a>
                             </li>
                             <li class="pagination__item">
                                 <button class="pagination__button">
@@ -3081,5 +3068,7 @@
     <script src="js/dropdown.js"></script>
     <script src="js/view-mode.js"></script>
     <script src="js/filter.js"></script>
+    <script src="js/lib/imask.js"></script>
+    <script src="js/validation.js"></script>
 </body>
 </html>

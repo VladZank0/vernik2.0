@@ -1758,13 +1758,13 @@
                                     <div class="form-item form-item_size_default">
                                         <label class="input-label">
                                             Имя*
-                                            <input class="input" type="text">
+                                            <input class="input" type="text" name="name">
                                         </label>
                                     </div>
                                     <div class="form-item form-item_size_default">
                                         <label class="input-label">
                                             Телефон*
-                                            <input class="input phone-input" type="text" placeholder="+7">
+                                            <input class="input phone-input" type="text" placeholder="+7" name="tel">
                                         </label>
                                     </div>
                                 </div>
@@ -1802,7 +1802,7 @@
                                     </label>
                                     <label class="radio-box form-group__radio-box">
                                         <input class="radio-box-input" type="radio" name="pay">
-                                        <div class="radio-box__mark"></div>
+                                        <span class="radio-box__mark"></span>
                                         <span class="info-box">
                                             <img class="info-box__icon" src="images/product-page/icon-3.png" alt="Иконка">
                                             <span class="info-box__main">
@@ -1816,29 +1816,29 @@
                                         <span class="radio-box__mark"></span>
                                         <span class="info-box">
                                             <img class="info-box__icon" src="images/product-page/icon-2.png" alt="">
-                                            <div class="info-box__main">
+                                            <span class="info-box__main">
                                                 <span class="info-box__title">Кредит</span>
                                                 <span class="info-box__description">+10%</span>
-                                            </div>
-                                            <div class="tooltip-block">
+                                            </span>
+                                            <span class="tooltip-block">
                                                 <svg class="tooltip-block__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M12.0871 17V11M12.0871 6.99997H12.0771M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#656771" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
                                                 </svg>
-                                                <div class="tooltip">
-                                                    Мы продаем новые и Б/У устройства, все они проходят проверку, вы можете быть уверены в работоспособности устройства. Обменное — новый товар, который был выдан в официальном сервисе при поломке гарантийного устройства.
-                                                </div>
-                                            </div>
+                                                <span class="tooltip">
+                                                    Услуга предоставляется нашими партнерами — кредитной платформой PosCredit, они обеспечивают работу сервиса для покупки товаров в рассрочку и кредит.
+                                                </span>
+                                            </span>
                                         </span>
                                     </label>
                                     <label class="radio-box form-group__radio-box">
                                         <input class="radio-box-input" type="radio" name="pay">
-                                        <div class="radio-box__mark"></div>
+                                        <span class="radio-box__mark"></span>
                                         <span class="info-box">
                                             <img class="info-box__icon" src="images/product-page/icon-4.png" alt="Иконка">
-                                            <div class="info-box__main">
+                                            <span class="info-box__main">
                                                 <span class="info-box__title">Оплата для юридических лиц</span>
                                                 <span class="info-box__description">+15%</span>
-                                            </div>
+                                            </span>
                                         </span>
                                     </label>
                                 </div>
@@ -1886,10 +1886,10 @@
                                         <span class="radio-box__mark"></span>
                                         <span class="info-box">
                                             <img class="info-box__icon" src="images/product-page/marker.png" alt="">
-                                            <div class="info-box__main">
+                                            <span class="info-box__main">
                                                 <span class="info-box__title">Забрать в Лавке</span>
                                                 <span class="info-box__description">Москва, Глинищевский пер. д.3, подъезд 4 офис 102. Работаем с 100:000 до 211:000</span>
-                                            </div>
+                                            </span>
                                         </span>
                                     </label>
                                     <label class="radio-box form-group__radio-box">
@@ -1897,21 +1897,21 @@
                                         <span class="radio-box__mark"></span>
                                         <span class="info-box">
                                             <img class="info-box__icon" src="images/product-page/truck-delivery.png" alt="">
-                                            <div class="info-box__main">
+                                            <span class="info-box__main">
                                                 <span class="info-box__title">Доставка по Москве</span>
                                                 <span class="info-box__description">В пределах МКАД — 500₽</span>
-                                            </div>
+                                            </span>
                                         </span>
                                     </label>
-                                    <label class="radio-box radio-box_yandex form-group__radio-box">
-                                        <input class="radio-box-input" type="radio" name="delivery">
+                                    <label class="radio-box form-group__radio-box">
+                                        <input class="radio-box-input radio-box-input_yandex" disabled type="radio" name="delivery">
                                         <span class="radio-box__mark"></span>
                                         <span class="info-box">
                                             <img class="info-box__icon" src="images/product-page/icon-5.png" alt="">
-                                            <div class="info-box__main">
+                                            <span class="info-box__main">
                                                 <span class="info-box__title">Доставка по России</span>
                                                 <span class="info-box__description">Стоимость доставки в ваш регион — 2000₽</span>
-                                            </div>
+                                            </span>
                                         </span>
                                     </label>
                                 </div>
@@ -2064,40 +2064,18 @@
                                                 <div class="totals-text totals-text_price">
                                                     363 470 ₽
                                                 </div>
-                                                
                                             </div>
                                         </div>
                                         <div class="totals__line"></div>
-                                        <div class="split-block">
+                                        <div class="split-block split-block_switch">
                                             <div class="split-block__top">
-                                                <div class="split-block__title">27 500 ₽×4 <span class="split-block__text">платежа в сплит</span></div>
+                                                <span class="split-block__text">Разбить в сплит</span>
+                                                <div class="split-block__title">27 500 ₽×4</div>
                                                 <div class="split-block__description">на 4 месяца, включая комиссию 249 ₽</div>
                                             </div>
-                                            <div class="split-block__parts">
-                                                <div class="split-part">
-                                                    <span class="split-part__indicator split-part__indicator_active"></span>
-                                                    <span class="split-part__name split-part__name_active">Сегодня</span>
-                                                </div>
-                                                <div class="split-part">
-                                                    <span class="split-part__indicator"></span>
-                                                    <span class="split-part__name">14 авг</span>
-                                                </div>
-                                                <div class="split-part">
-                                                    <span class="split-part__indicator"></span>
-                                                    <span class="split-part__name">14 сен</span>
-                                                </div>
-                                                <div class="split-part">
-                                                    <span class="split-part__indicator"></span>
-                                                    <span class="split-part__name">14 окт</span>
-                                                </div>
-                                            </div>
-                                            <div class="split-block__bottom">
-                                                <button class="btn btn_light split-block__btn">Оформить сплит</button>
-                                                <div class="split-block__tooltip-icon">
-                                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M9.81537 10.2522C9.90621 9.994 10.0427 9.75664 10.2163 9.55041C10.3794 9.35662 10.5753 9.1903 10.7971 9.05998C11.2549 8.79095 11.7931 8.6926 12.3164 8.78237C12.8397 8.87213 13.3144 9.14421 13.6563 9.55041C13.9983 9.95661 14.1854 10.4707 14.1846 11.0017C14.1846 12.5006 11.9363 13.25 11.9363 13.25V13.457M11.9654 16.25H11.9754M22 12.5C22 18.0228 17.5228 22.5 12 22.5C6.47715 22.5 2 18.0228 2 12.5C2 6.97715 6.47715 2.5 12 2.5C17.5228 2.5 22 6.97715 22 12.5Z" stroke="#656771" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
-                                                    </svg>
-                                                </div>
+                                            <div class="switch">
+                                                <input checked="" id="split" name="split" type="checkbox" class="switch__input">
+                                                <label for="split" class="switch__label"></label>
                                             </div>
                                         </div>
                                     </div>
@@ -2280,5 +2258,6 @@
     <script src="js/filter.js"></script>
     <script src="js/lib/imask.js"></script>
     <script src="js/validation.js"></script>
+    <script src="js/modals.js"></script>
 </body>
 </html>
