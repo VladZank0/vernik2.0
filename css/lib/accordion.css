@@ -1,9 +1,0 @@
-.accordion-btn:hover {
-  cursor: pointer;
-}
-
-.accordion-content {
-  transition: 0.5s ease;
-  max-height: 0px;
-  overflow-y: hidden;
-}
