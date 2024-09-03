@@ -12,14 +12,7 @@
 </head>
 <body>
     
-    <div class="preloader preloader_loaded" id="preloader">
-    <div class="preloader__row">
-        <div class="preloader__item"></div>
-        <div class="preloader__item"></div>
-    </div>
-</div>
-
-<header class="header">
+    <header class="header">
         <div class="container">
             <div class="header__inner">
                 <button class="burger-btn" aria-label="Кнопка открыть мобильное меню">
@@ -61,7 +54,7 @@
                             </a>
                         </div>
                         <div class="header__contacts">
-                            <button class="header-btn header-btn_mobile" data-modal="login">
+                            <button class="header-btn header-btn_mobile">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M20 21V20.5714C20 17.4944 17.5056 15 14.4286 15H9.57142C6.49441 15 4 17.4944 4 20.5714V21M16.5 7.5C16.5 9.98528 14.4853 12 12 12C9.51472 12 7.5 9.98528 7.5 7.5C7.5 5.01472 9.51472 3 12 3C14.4853 3 16.5 5.01472 16.5 7.5Z" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
                                 </svg>
@@ -267,7 +260,7 @@
                     </div>
                 </div>
                 <div class="header__customer-block">
-                    <button class="header-btn header-btn_min" data-modal="login">
+                    <button class="header-btn header-btn_min">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M20 21V20.5714C20 17.4944 17.5056 15 14.4286 15H9.57142C6.49441 15 4 17.4944 4 20.5714V21M16.5 7.5C16.5 9.98528 14.4853 12 12 12C9.51472 12 7.5 9.98528 7.5 7.5C7.5 5.01472 9.51472 3 12 3C14.4853 3 16.5 5.01472 16.5 7.5Z" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
                         </svg>
@@ -1744,273 +1737,28 @@
                                 <path d="M6 10.6668C6 10.0455 6 9.73491 6.10149 9.48988C6.23682 9.16317 6.49638 8.90361 6.82309 8.76828C7.06812 8.66679 7.37874 8.66679 8 8.66679C8.62126 8.66679 8.93188 8.66679 9.17691 8.76828C9.50362 8.90361 9.76318 9.16317 9.89851 9.48988C10 9.73491 10 10.0455 10 10.6668V14.0001H6V10.6668Z" stroke="#9B9EB6" stroke-width="1.5" stroke-linecap="round"/>
                             </svg>
                         </a>     
-                        <a class="breadcrumbs-list__item swiper-slide" href="">
-                            Ресейл
-                        </a>     
                         <span class="breadcrumbs-list__item swiper-slide">
-                            Москва
+                            О Лавке
                         </span>    
                     </div>
                 </div>
             </div>
         </div>
+        <div class="hero section">
+            <picture>
+                <source srcset="images/about-banner.png" media="(min-width:1100px)">
+                <source srcset="images/about-banner_tablet.png" media="(min-width:700px)">
+                <img class="hero__img" src="images/about-banner_mob.png" alt="Баннер">
+            </picture>
+        </div>
         <section class="section">
-            <div class="section__container container">
-                <form action="#" class="layout layout_late-wrap m-t">
-                    <div>
-                        <h1 class="section-title resale-quiz__title">Скупка iPhone в Москве. <br>
-                            Оценка стоимости онлайн
-                        </h1>
-                        <div class="resale-quiz__subtitle">
-                            Давайте оценим ваш iPhone
-                        </div>
-                        <div class="resale-quiz">
-                            <div class="resale-quiz-item">
-                                <div class="resale-quiz-item__label">Укажите модель iPhone</div>
-                                <div class="dropdown select"> 
-                                    <input type="text" class="select__input" name="model" hidden>
-                                    <button type="button" class="dropdown__btn"></button>
-                                    <div class="dropdown__menu">
-                                        <div class="dropdown__item">
-                                            Сначала популярные
-                                        </div>
-                                        <div class="dropdown__item">
-                                            Сначала свежие
-                                        </div>
-                                        <div class="dropdown__item">
-                                            По возрастанию цены
-                                        </div>
-                                        <div class="dropdown__item">
-                                            По убыванию цены
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="resale-quiz-item">
-                                <div class="resale-quiz-item__label">Укажите память вашего iPhone</div>
-                                <div class="resale-quiz-item__group"> 
-                                    <label class="radio-btn radio-btn_quiz">
-                                        <input class="radio-btn__input"  type="radio" value="256" name="memory">
-                                        <span class="radio-btn__text">
-                                            256 GB
-                                        </span>
-                                    </label>
-                                    <label class="radio-btn radio-btn_quiz">
-                                        <input class="radio-btn__input"  type="radio" value="512" name="memory">
-                                        <span class="radio-btn__text">
-                                            512 GB
-                                        </span>
-                                    </label>
-                                    <label class="radio-btn radio-btn_quiz">
-                                        <input class="radio-btn__input"  type="radio" value="1000" name="memory">
-                                        <span class="radio-btn__text">
-                                            1TB
-                                        </span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="resale-quiz-item">
-                                <div class="resale-quiz-item__label">Смартфон включается и заряжается, Вы можете совершать исходящие вызовы?</div>
-                                <div class="resale-quiz-item__group"> 
-                                    <label class="radio-btn radio-btn_quiz">
-                                        <input class="radio-btn__input"  type="radio" value="yes" name="turn-on">
-                                        <span class="radio-btn__text">
-                                            Да
-                                        </span>
-                                    </label>
-                                    <label class="radio-btn radio-btn_quiz">
-                                        <input class="radio-btn__input"  type="radio" value="no" name="turn-on">
-                                        <span class="radio-btn__text">
-                                            Нет
-                                        </span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="resale-quiz-item">
-                                <div class="resale-quiz-item__label">Экран целый, сенсор работает, отсутствуют дефекты изображения (битые пиксели, полосы, пятна)</div>
-                                <div class="resale-quiz-item__group"> 
-                                    <label class="radio-btn radio-btn_quiz">
-                                        <input class="radio-btn__input"  type="radio" value="yes" name="working-display">
-                                        <span class="radio-btn__text">
-                                            Да
-                                        </span>
-                                    </label>
-                                    <label class="radio-btn radio-btn_quiz">
-                                        <input class="radio-btn__input"  type="radio" value="no" name="working-display">
-                                        <span class="radio-btn__text">
-                                            Нет
-                                        </span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="resale-quiz-item">
-                                <div class="resale-quiz-item__label">Корпус целый, деформация отсутствует?</div>
-                                <div class="resale-quiz-item__group"> 
-                                    <label class="radio-btn radio-btn_quiz">
-                                        <input class="radio-btn__input"  type="radio" value="yes" name="good-condition">
-                                        <span class="radio-btn__text">
-                                            Да
-                                        </span>
-                                    </label>
-                                    <label class="radio-btn radio-btn_quiz">
-                                        <input class="radio-btn__input"  type="radio" value="no" name="good-condition">
-                                        <span class="radio-btn__text">
-                                            Нет
-                                        </span>
-                                    </label>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <div class="sticky-box">
-                        <div class="totals sticky-box__inner">
-                            <div class="totals__inner totals__inner_min-gap">
-                                <div class="totals__title">
-                                    Предварительная оценка
-                                </div>
-                                <div class="totals__title totals__title_column">
-                                    <div class="totals-text">
-                                        Мы готовы заплатить за ваш iPhone
-                                    </div>
-                                    от 19 500 до 22 500 ₽
-                                </div>
-                                <div class="form-warning-text">Цена актуальна для аккумуляторов от 83% ёмкости, не в сервисном режиме</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="totals-wrapper">
-                        <div class="totals-wrapper__block">
-                            <div class="totals" data-sticky-box="">
-                                <div class="totals__inner totals__inner_min-gap">
-                                    <div class="totals__title">
-                                        Предварительная оценка
-                                    </div>
-                                    <div class="totals__title">
-                                        <div class="totals-text">
-                                            Мы готовы заплатить за ваш iPhone
-                                        </div>
-                                        от 19 500 до 22 500 ₽
-                                    </div>
-                                    <div class="form-warning-text">Цена актуальна для аккумуляторов от 83% ёмкости, не в сервисном режиме</div>
-                                    <button type="submit" class="btn btn_big totals__btn">Продать</button>
-                                    <div class="fast-contact">
-                                        <div class="fast-contact__text">Быстрая связь с нами:</div>
-                                        <div class="fast-contact__links">
-                                            <a href="" class="contact-icon contact-icon_blue" aria-label="Ссылка связаться в телеграм">
-                                                <svg class="contact-icon__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <g clip-path="url(#clip0_178_6555)">
-                                                    <path d="M15.5 10.5L11 14L17 20L21 4L3 11L7 13L9 19L12.5 16" stroke="#047FFF" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
-                                                    </g>
-                                                    <defs>
-                                                    <clipPath id="clip0_178_6555">
-                                                    <rect width="24" height="24" fill="white"/>
-                                                    </clipPath>
-                                                    </defs>
-                                                </svg>
-                                            </a>
-                                            <a class="contact-icon contact-icon_green" href="" aria-label="Ссылка связаться в вотсап">
-                                                <svg class="contact-icon__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M3 20.9822L4.74092 16.9711C3.40902 15.0796 2.8129 12.7668 3.06441 10.4668C3.31592 8.16687 4.39779 6.03777 6.10698 4.47912C7.81616 2.92047 10.0352 2.03941 12.3476 2.00129C14.66 1.96317 16.9068 2.77061 18.6664 4.27208C20.426 5.77355 21.5774 7.86583 21.9045 10.1563C22.2316 12.4467 21.712 14.7778 20.4431 16.7122C19.1742 18.6466 17.2433 20.0512 15.0128 20.6625C12.7822 21.2737 10.4054 21.0496 8.32828 20.0322L3 20.9822Z" stroke="#32BE59" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path d="M9 9.61538C9 9.75819 9.05673 9.89515 9.15771 9.99613C9.25869 10.0971 9.39565 10.1538 9.53846 10.1538C9.68127 10.1538 9.81823 10.0971 9.91921 9.99613C10.0202 9.89515 10.0769 9.75819 10.0769 9.61538V8.53846C10.0769 8.39565 10.0202 8.25869 9.91921 8.15771C9.81823 8.05673 9.68127 8 9.53846 8C9.39565 8 9.25869 8.05673 9.15771 8.15771C9.05673 8.25869 9 8.39565 9 8.53846V9.61538ZM9 9.61538C9 11.0435 9.56731 12.4131 10.5771 13.4229C11.5869 14.4327 12.9565 15 14.3846 15M14.3846 15H15.4615C15.6043 15 15.7413 14.9433 15.8423 14.8423C15.9433 14.7413 16 14.6043 16 14.4615C16 14.3187 15.9433 14.1818 15.8423 14.0808C15.7413 13.9798 15.6043 13.9231 15.4615 13.9231H14.3846C14.2418 13.9231 14.1048 13.9798 14.0039 14.0808C13.9029 14.1818 13.8462 14.3187 13.8462 14.4615C13.8462 14.6043 13.9029 14.7413 14.0039 14.8423C14.1048 14.9433 14.2418 15 14.3846 15Z" stroke="#32BE59" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg> 
-                                            </a> 
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </form>
-            </div>
-        </section>
-        <section class="section">
-            <div class="section__container container">
-                <div class="section-heading section-heading_m-min">
-                    <h2 class="section-title section-title_center">Как мы работаем</h2>
-                </div>
-                <div class="content-grid content-grid_four-columns">
-                    <div class="content-box">
-                        <div class="content-box__heaing content-box__heaing_column">
-                            <div class="content-icon content-icon_big content-icon_blue">
-                               <img class="content-icon__img content-icon__img_big" src="images/icons/work-1.svg" width="24" height="24" alt="Иконка">
-                            </div>
-                            Заполните заявку
-                        </div>
-                        <div class="article">
-                            Укажите данные о вашей вещи, 
-                            а мы ее точно оценим</div>
-                    </div>
-                    <div class="content-box">
-                        <div class="content-box__heaing content-box__heaing_column">
-                            <div class="content-icon content-icon_big content-icon_blue">
-                               <img class="content-icon__img content-icon__img_big" src="images/icons/work-2.svg" width="24" height="24" alt="Иконка">
-                            </div>
-                            Ожидайте звонка менеджера
-                        </div>
-                        <div class="article">
-                            Наши менеджеры свяжутся с вами в течении 20 минут
-                        </div>
-                    </div>
-                    <div class="content-box">
-                        <div class="content-box__heaing content-box__heaing_column">
-                            <div class="content-icon content-icon_big content-icon_blue">
-                               <img class="content-icon__img content-icon__img_big" src="images/icons/work-3.svg" width="24" height="24" alt="Иконка">
-                            </div>
-                            Встретьтесь с нашим курьером
-                        </div>
-                        <div class="article">
-                            Наш курьер приедет в течении двух часов в удобное вам место
-                        </div>
-                    </div>
-                    <div class="content-box">
-                        <div class="content-box__heaing content-box__heaing_column">
-                            <div class="content-icon content-icon_big content-icon_blue">
-                               <img class="content-icon__img content-icon__img_big" src="images/icons/work-4.png" width="24" height="24" alt="Иконка">
-                            </div>
-                            Получите деньги сразу
-                        </div>
-                        <div class="article">
-                            Курьер проверит товар, и отдаст наличные
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section">
-            <div class="section__container container">
-                <div class="text-block text-block_reverse">
-                    <input id="expand-checkbox" class="expand-checkbox-input" type="checkbox">
-                    <label for="expand-checkbox" class="expand-checkbox">
-                        <span class="expand-checkbox__text">Показать больше</span>
-                        <span class="expand-checkbox__text">Скрыть</span>
-                        <svg class="expand-checkbox__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M16.9997 9.17019C16.8123 8.98394 16.5589 8.87939 16.2947 8.87939C16.0305 8.87939 15.7771 8.98394 15.5897 9.17019L11.9997 12.7102L8.4597 9.17019C8.27234 8.98394 8.01889 8.87939 7.7547 8.87939C7.49052 8.87939 7.23707 8.98394 7.0497 9.17019C6.95598 9.26315 6.88158 9.37375 6.83081 9.49561C6.78004 9.61747 6.75391 9.74818 6.75391 9.88019C6.75391 10.0122 6.78004 10.1429 6.83081 10.2648C6.88158 10.3866 6.95598 10.4972 7.0497 10.5902L11.2897 14.8302C11.3827 14.9239 11.4933 14.9983 11.6151 15.0491C11.737 15.0998 11.8677 15.126 11.9997 15.126C12.1317 15.126 12.2624 15.0998 12.3843 15.0491C12.5061 14.9983 12.6167 14.9239 12.7097 14.8302L16.9997 10.5902C17.0934 10.4972 17.1678 10.3866 17.2186 10.2648C17.2694 10.1429 17.2955 10.0122 17.2955 9.88019C17.2955 9.74818 17.2694 9.61747 17.2186 9.49561C17.1678 9.37375 17.0934 9.26315 16.9997 9.17019Z" fill="#1A1C1E"/>
-                        </svg>
-                    </label>
-                    <div class="text-block__content" data-expandable-text="">
-                        <h1 class="section-title text-block__title">Продажа iPhone в Москве: Получите выгоду от скупки вашего старого устройства</h1>
-                        <p class="text-block__subtitle">Хотите получить деньги за свой старый iPhone? Обратитесь к нам!</p>
-                        <div class="article text-block__box">
-                            <h4>Выгодная скупка iPhone в Москве</h4>
-                            <p>Если у вас есть старый iPhone, который больше не приносит вам пользы, то почему бы не продать его и получить за него деньги? В Москве существует множество комиссионных магазинов и ломбардов, где можно сдать свой айфон и получить за него хорошую цену. Выкуп б/у смартфонов Apple стал популярным решением для тех, кто хочет избавиться от ненужных устройств и получить за них деньги.</p>
-                            <h4>Преимущества продажи iPhone через нашу скупку «Второй Шанс»</h4>
-                            <p>Продажа айфона через Второй Шанс имеет свои преимущества. Во-первых, это быстро и удобно. Вам не нужно тратить время на поиск покупателя или размещение объявлений.</p>
-                            <p>Во-вторых, вы получите за свой девайс деньги сразу. Нет необходимости ждать, пока кто-то откликнется на ваше объявление или сделает предложение. Наши специалисты оценивают ваше устройство и предлагают сумму, которую готовы заплатить прямо сейчас.</p>
-                            <h4>Выгодная скупка iPhone в Москве</h4>
-                            <p>Если у вас есть старый iPhone, который больше не приносит вам пользы, то почему бы не продать его и получить за него деньги? В Москве существует множество комиссионных магазинов и ломбардов, где можно сдать свой айфон и получить за него хорошую цену. Выкуп б/у смартфонов Apple стал популярным решением для тех, кто хочет избавиться от ненужных устройств и получить за них деньги.</p>
-                            <h4>Преимущества продажи iPhone через нашу скупку «Второй Шанс»</h4>
-                            <p>Продажа айфона через Второй Шанс имеет свои преимущества. Во-первых, это быстро и удобно. Вам не нужно тратить время на поиск покупателя или размещение объявлений.</p>
-                            <p>Во-вторых, вы получите за свой девайс деньги сразу. Нет необходимости ждать, пока кто-то откликнется на ваше объявление или сделает предложение. Наши специалисты оценивают ваше устройство и предлагают сумму, которую готовы заплатить прямо сейчас.</p>
-                            <h4>Выгодная скупка iPhone в Москве</h4>
-                            <p>Если у вас есть старый iPhone, который больше не приносит вам пользы, то почему бы не продать его и получить за него деньги? В Москве существует множество комиссионных магазинов и ломбардов, где можно сдать свой айфон и получить за него хорошую цену. Выкуп б/у смартфонов Apple стал популярным решением для тех, кто хочет избавиться от ненужных устройств и получить за них деньги.</p>
-                            <h4>Преимущества продажи iPhone через нашу скупку «Второй Шанс»</h4>
-                            <p>Продажа айфона через Второй Шанс имеет свои преимущества. Во-первых, это быстро и удобно. Вам не нужно тратить время на поиск покупателя или размещение объявлений.</p>
-                            <p>Во-вторых, вы получите за свой девайс деньги сразу. Нет необходимости ждать, пока кто-то откликнется на ваше объявление или сделает предложение. Наши специалисты оценивают ваше устройство и предлагают сумму, которую готовы заплатить прямо сейчас.</p>
-                        </div>
- 
+            <div class="container section__container">
+                <div class="about-page">
+                    <h2 class="section-title about-page__title">Пара слов о Лавке Макса верника</h2>
+                    <div class="article">
+                        <p>Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности обеспечивает широкому кругу (специалистов) участие в формировании модели развития. Идейные соображения высшего порядка, а также консультация с широким активом играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям. Повседневная практика показывает, что сложившаяся структура организации играет важную роль в формировании существенных финансовых и административных условий. Не следует, однако забывать, что укрепление и развитие структуры требуют определения и уточнения новых предложений. С другой стороны сложившаяся структура организации требуют определения и уточнения соответствующий условий активизации.</p>
+                        <p>Разнообразный и богатый опыт реализация намеченных плановых заданий позволяет оценить значение модели развития. Задача организации, в особенности же рамки и место обучения кадров позволяет выполнять важные задания по разработке новых предложений.</p>
+                        <p>Разнообразный и богатый опыт начало повседневной работы по формированию позиции способствует подготовки и реализации дальнейших направлений развития. Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации новых предложений. Разнообразный и богатый опыт постоянное информационно-пропагандистское обеспечение нашей деятельности представляет собой интересный эксперимент проверки новых предложений.</p>
                     </div>
                 </div>
             </div>
@@ -2281,69 +2029,6 @@
                 </div>
             </div>
         </section>
-        <section class="section">
-            <div class="section__container container">
-                <div class="question-block">
-                    <h2 class="section-title section-title_center question-block__title">FAQ</h2>
-                    <div class="question-list">
-                        <div class="default-accordion">
-                            <div class="accordion-btn default-accordion-btn ">Процесс продажи б/у техники</div>
-                            <div class="accordion-content default-accordion-content">
-                                <div class="article">
-                                    <p>
-                                        Сегодня практически каждый дом – это скопление достижений самых современных технологий. Техника живёт на кухне, в гостиных, спальнях и ванных. Но иногда её бывает слишком много (или вместо телевизора, который всё равно никто не смотрит, требуются живые деньги). Для таких случаев существует скупка электроники.
-                                    </p>
-                                    <p>
-                                        Основная специализация buy.vernik.me – скупка бу техники. Скупка электроники в Москве позволит избавиться от ненужной техники и хорошо на этом заработать, причём с минимальными усилиями с вашей стороны. Быстрая продажа с мгновенными выплатами.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="default-accordion">
-                            <div class="accordion-btn default-accordion-btn">От чего зависит стоимость выкупа бытовой техники б/у?</div>
-                            <div class="accordion-content default-accordion-content">
-                                <div class="article">
-                                    <p>
-                                        Сегодня практически каждый дом – это скопление достижений самых современных технологий. Техника живёт на кухне, в гостиных, спальнях и ванных. Но иногда её бывает слишком много (или вместо телевизора, который всё равно никто не смотрит, требуются живые деньги). Для таких случаев существует скупка электроники.
-                                    </p>
-                                    <p>
-                                        Основная специализация buy.vernik.me – скупка бу техники. Скупка электроники в Москве позволит избавиться от ненужной техники и хорошо на этом заработать, причём с минимальными усилиями с вашей стороны. Быстрая продажа с мгновенными выплатами.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="default-accordion">
-                            <div class="accordion-btn default-accordion-btn">Преимущества выкупа электроники</div>
-                            <div class="accordion-content default-accordion-content">
-                                <div class="article">
-                                    <p>
-                                        Сегодня практически каждый дом – это скопление достижений самых современных технологий. Техника живёт на кухне, в гостиных, спальнях и ванных. Но иногда её бывает слишком много (или вместо телевизора, который всё равно никто не смотрит, требуются живые деньги). Для таких случаев существует скупка электроники.
-                                    </p>
-                                    <p>
-                                        Основная специализация buy.vernik.me – скупка бу техники. Скупка электроники в Москве позволит избавиться от ненужной техники и хорошо на этом заработать, причём с минимальными усилиями с вашей стороны. Быстрая продажа с мгновенными выплатами.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="default-accordion">
-                            <div class="accordion-btn default-accordion-btn">Где продать дорого и выгодно технику и электронику в Москве?</div>
-                            <div class="accordion-content default-accordion-content">
-                                <div class="article">
-                                    <p>
-                                        Сегодня практически каждый дом – это скопление достижений самых современных технологий. Техника живёт на кухне, в гостиных, спальнях и ванных. Но иногда её бывает слишком много (или вместо телевизора, который всё равно никто не смотрит, требуются живые деньги). Для таких случаев существует скупка электроники.
-                                    </p>
-                                    <p>
-                                        Основная специализация buy.vernik.me – скупка бу техники. Скупка электроники в Москве позволит избавиться от ненужной техники и хорошо на этом заработать, причём с минимальными усилиями с вашей стороны. Быстрая продажа с мгновенными выплатами.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                         
-                       
-                    </div>
-                </div>
-            </div>
-        </section>
     </main>
 
 
@@ -2495,33 +2180,6 @@
             </div>
         </div>
 </footer>
-
-<div id="login" class="modal" style="display: none;">
-    <div class="modal__container modal__container_min">
-        <button class="modal__close">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M6 6L12 12M12 12L18 18M12 12L18 6M12 12L6 18" stroke="#9B9EB6" stroke-width="2" stroke-linecap="round"/>
-            </svg>
-        </button>
-        <div class="modal-box">
-            <div class="modal-title">Войти в личный кабинет</div>
-            <label class="input-label modal-box__label">
-                Телефон*
-                <input class="input" type="text" placeholder="+7">
-            </label>
-            <button class="btn modal-box__btn">Войти</button>
-            <div class="modal-text modal-text_center modal-text_gray">или</div>
-            <button class="btn btn_black modal-box__btn">
-                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M11.0001 0C4.9249 0 0 4.9249 0 11C0 17.0751 4.9248 22 11 22C17.075 22 22 17.0752 22 11.0001C22 4.925 17.0751 0 11.0001 0Z" fill="#FC3F1D"/>
-                    <path d="M12.5503 17.6106H14.8484V4.41064H11.5056C8.14396 4.41064 6.37761 6.13899 6.37761 8.68405C6.37761 10.7163 7.34626 11.9128 9.0746 13.1473L6.07373 17.6106H8.56177L11.9045 12.6156L10.7459 11.8369C9.34047 10.8872 8.6568 10.1464 8.6568 8.55111C8.6568 7.14565 9.64435 6.19601 11.5246 6.19601H12.5503V17.6106Z" fill="white"/>
-                </svg> 
-                Войти с Яндекс ID
-            </button>
-            <div class="modal-text modal-text_gray">Нажимая на кнопку, Я принимаю условия <a href="">пользовательского соглашения</a></div>
-        </div>
-    </div>
-</div>
     
     <script src="js/header.js"></script>
     <script src="js/lib/tabs.js"></script>
@@ -2535,6 +2193,5 @@
     <script src="js/dropdown.js"></script>
     <script src="js/view-mode.js"></script>
     <script src="js/filter.js"></script>
-    <script src="js/modals.js"></script>
 </body>
 </html>

@@ -28,7 +28,6 @@
                     dropdown_btn.textContent = e.target.textContent;
                     if(el.classList.contains('select')){
                         el.querySelector('.select__input').value = e.target.textContent.trim();
-                        console.log(el.querySelector('.select__input').value)
                     }
                     clear();
                 }
