@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fewfw</title>
+    <link rel="stylesheet" href="css/fonts.css"> 
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lib/tabs.css">
+    <link rel="stylesheet" href="css/lib/fancybox.css">
+    <link rel="stylesheet" href="css/lib/accordion.css">
+    <style>
+        main{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            row-gap: 50px;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <main class="main">
+       
+        <!-- <div class="modal">
+            <div class="modal__container">
+                <button class="modal__close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 6L12 12M12 12L18 18M12 12L18 6M12 12L6 18" stroke="#9B9EB6" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+               
+            </div>
+        </div> -->
+        <div id="subscribe-thanks" class="modal" style="display: none;">
+            <div class="modal__container modal__container_min">
+                <button class="modal__close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 6L12 12M12 12L18 18M12 12L18 6M12 12L6 18" stroke="#9B9EB6" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+                <div class="modal-box modal-box_align_center">
+                    <img class="success-img" src="images/modals/thanks.png" alt="">
+                    <div class="modal-title">Спасибо!</div>
+                    <div class="modal-text">Теперь вы подписаны на наши новости</div>
+                </div>
+            </div>
+        </div>
+        <div id="order-thanks" class="modal" style="display: none;">
+            <div class="modal__container modal__container_min">
+                <button class="modal__close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 6L12 12M12 12L18 18M12 12L18 6M12 12L6 18" stroke="#9B9EB6" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+                <div class="modal-box modal-box_align_center">
+                    <img class="success-img" src="images/modals/thanks.png" alt="">
+                    <div class="modal-title">Спасибо!</div>
+                    <div class="modal-text">Ваш заказ оформлен</div>
+                </div>
+            </div>
+        </div>
+        <div id="login" class="modal" style="display: none;">
+            <div class="modal__container modal__container_min">
+                <button class="modal__close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 6L12 12M12 12L18 18M12 12L18 6M12 12L6 18" stroke="#9B9EB6" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+                <div class="modal-box">
+                    <div class="modal-title">Войти в личный кабинет</div>
+                    <label class="input-label modal-box__label">
+                        Телефон*
+                        <input class="input" type="text" placeholder="+7">
+                    </label>
+                    <button class="btn modal-box__btn">Войти</button>
+                    <div class="modal-text modal-text_center modal-text_gray">или</div>
+                    <button class="btn btn_black modal-box__btn">
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.0001 0C4.9249 0 0 4.9249 0 11C0 17.0751 4.9248 22 11 22C17.075 22 22 17.0752 22 11.0001C22 4.925 17.0751 0 11.0001 0Z" fill="#FC3F1D"/>
+                            <path d="M12.5503 17.6106H14.8484V4.41064H11.5056C8.14396 4.41064 6.37761 6.13899 6.37761 8.68405C6.37761 10.7163 7.34626 11.9128 9.0746 13.1473L6.07373 17.6106H8.56177L11.9045 12.6156L10.7459 11.8369C9.34047 10.8872 8.6568 10.1464 8.6568 8.55111C8.6568 7.14565 9.64435 6.19601 11.5246 6.19601H12.5503V17.6106Z" fill="white"/>
+                        </svg> 
+                        Войти с Яндекс ID
+                    </button>
+                    <div class="modal-text modal-text_gray">Нажимая на кнопку, Я принимаю условия <a href="">пользовательского соглашения</a></div>
+                </div>
+            </div>
+        </div>
+        <div id="info" class="modal" style="display: none;">
+            <div class="modal__container modal__container_min">
+                <button class="modal__close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 6L12 12M12 12L18 18M12 12L18 6M12 12L6 18" stroke="#9B9EB6" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+                <div class="modal-box">
+                    <div class="modal-text modal-text_max">Мы запустили в пробном режиме возможность безналичной оплаты части аксессуаров и б/у электроники прямо на сайте. У нас не очень большие лимиты со стороны банка, поэтому пока есть некоторые ограничения на количество таких оплат в день.</div>
+                    <a href="" class="blue-link">Подробнее</a>
+                </div>
+            </div>
+        </div>
+        <div id="description" class="modal" style="display: none;">
+            <div class="modal__container modal__container_max">
+                <button class="modal__close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 6L12 12M12 12L18 18M12 12L18 6M12 12L6 18" stroke="#9B9EB6" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+                <div class="modal-box">
+                    <div class="modal-title">Описание</div>
+                    <p>Пока в Москве в серых предгрозовых завихрениях рождаются слепые слезы желания, после ежегодного зрелища с помпой прошедшего на дубовой сцене Елизаветинского театра имени Стивена Абдуловича Джобса в поселке городского типа Купер-тино, компания из десятка состоятельных господ Калифорнии уже положила кусочек сыра на кончик смертоносной кредитной пружинки.</p>
+                    <p>Вновь дан старт очередному всенародному психозу! Кто-то бросив гадание на холодном клинке Луны понес в лодочке ладоней свое сердце на кредитную паперть. Кто-то уже ищет покупателя на свой безнадежно устаревший айфон 13 про, ну, а кто-то бросился выковыривать холодными пальчиками из клавиш лэп-топовъ предзаказ родившийся на презентации.</p>
+                    <p>Прожгите свои руки холодным сплавом желания и технологий, вдохнув полной грудью кислород животворного образа, родившегося осенью 22 года. Доведенный до совершенства технологиями и человеческим мастерством, он вобрал в себя все, что смог придумать живой человек, вдохновившись мечтой. Телефон созданный с единственной целью – соответствовать вашим ожидания.</p>
+                </div>
+            </div>
+        </div>
+        <div id="product-characteristics" class="modal" style="display: none;">
+            <div class="modal__container modal__container_max">
+                <button class="modal__close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 6L12 12M12 12L18 18M12 12L18 6M12 12L6 18" stroke="#9B9EB6" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+                <div class="modal-box">
+                    <div class="modal-title">Описание</div>
+                    <div class="comparison-table modal__comparison-table">
+                        <div class="comparison-table__section comparison-table__section_modal ">
+                            <div class="comparison-table__name">Диагональ экрана</div>
+                            <div class="comparison-table__row">
+                                <div class="comparison-table__cell comparison-table__cell_modal">6.7"</div>
+                            </div>
+                        </div>
+                        <div class="comparison-table__section comparison-table__section_modal ">
+                            <div class="comparison-table__name">Разрешение экрана в пикселях</div>
+                            <div class="comparison-table__row">
+                                <div class="comparison-table__cell comparison-table__cell_modal">2796x1290</div>
+                            </div>
+                        </div>
+                        <div class="comparison-table__section comparison-table__section_modal ">
+                            <div class="comparison-table__name">Встроенная память</div>
+                            <div class="comparison-table__row">
+                                <div class="comparison-table__cell comparison-table__cell_modal">256 GB</div>
+                            </div>
+                        </div>
+                        <div class="comparison-table__section comparison-table__section_modal" >
+                            <div class="comparison-table__name">Оперативная память</div>
+                                <div class="comparison-table__row">
+                                    <div class="comparison-table__cell comparison-table__cell_modal swiper-slide">8 GB</div>
+                                </div>
+                            </div>
+                        <div class="comparison-table__section comparison-table__section_modal ">
+                            <div class="comparison-table__name">Емкость аккумулятора</div>
+                            <div class="comparison-table__row">
+                                <div class="comparison-table__cell comparison-table__cell_modal swiper-slide">4400 мА-ч</div>
+                            </div>
+                        </div>
+                        <div class="comparison-table__section comparison-table__section_modal ">
+                            <div class="comparison-table__name">Количество основных камер</div>
+                            <div class="comparison-table__row">
+                                <div class="comparison-table__cell comparison-table__cell_modal swiper-slide">3</div>
+                            </div>
+                        </div>
+                        <div class="comparison-table__section comparison-table__section_modal ">
+                            <div class="comparison-table__name">Год выхода</div>
+                            <div class="comparison-table__row">
+                                <div class="comparison-table__cell comparison-table__cell_modal swiper-slide">2023</div>
+                            </div>
+                        </div>
+                        <div class="comparison-table__section comparison-table__section_modal ">
+                            <div class="comparison-table__name">Тип дисплея</div>
+                            <div class="comparison-table__row">
+                                <div class="comparison-table__cell comparison-table__cell_modal">OLED</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="busket" class="modal" style="display: none;">
+            <div class="modal__container modal__container_avg">
+                <button class="modal__close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 6L12 12M12 12L18 18M12 12L18 6M12 12L6 18" stroke="#9B9EB6" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+                <div class="modal-box">
+                    <div class="modal-title">Положить в корзину</div>
+                    <div class="modal-product-grid">
+                        <div class="modal-product">
+                            <a href="" class="modal-product__img-wrapper">
+                                <img class="modal-product__img" src="images/products/search_product.png" alt="Фото товара" >
+                            </a>
+                            <a href="" class="modal-product__title">iPhone 15 Pro Max 256Gb Natural Titanium</a>
+                            <div class="modal-product__price-wrapper">
+                                <div class="price-block modal-product__price-block">
+                                    <div class="stickers">
+                                        <div class="sticker sticker_red sticker_sale">Акция</div>
+                                    </div>
+                                    <span class="price-block__price price-block__price_modal">
+                                        109 990 ₽
+                                    </span>
+                                    <span class="price-block__desctiption price-block__desctiption_red">При оплате наличными</span>
+                                </div>
+                                <div class="price-block modal-product__price-block">
+                                    <span class="price-block__price price-block__price_modal price-block__price_gray">
+                                        120 990 ₽
+                                    </span>
+                                    <span class="price-block__desctiption price-block__desctiption_gray">Оплата другими способами (+10%)</span>
+                                </div>
+                            </div>
+                            <div class="quantity-switch modal-product__quantity-switch">
+                                <div class="quantity-switch__btn quantity-switch__btn_disabled">-</div>
+                                <input class="quantity-switch__input" type="text" value="1">
+                                <div class="quantity-switch__btn">+</div>
+                            </div>
+                            <div class="form-warning-text modal-product__warning">Доступное количество товара, для комплекта: 1</div>
+                        </div>
+                        <div class="modal-product">
+                            <a href="" class="modal-product__img-wrapper">
+                                <img class="modal-product__img" src="images/products/search_product.png" alt="Фото товара" >
+                            </a>
+                            <a href="" class="modal-product__title">iPhone 15 Pro Max 256Gb Natural Titanium</a>
+                            <div class="modal-product__price-wrapper">
+                                <div class="price-block modal-product__price-block">
+                                    <div class="stickers">
+                                        <div class="sticker sticker_red sticker_sale">Акция</div>
+                                    </div>
+                                    <span class="price-block__price price-block__price_modal">
+                                        109 990 ₽
+                                    </span>
+                                    <span class="price-block__desctiption price-block__desctiption_red">При оплате наличными</span>
+                                </div>
+                                <div class="price-block modal-product__price-block">
+                                    <span class="price-block__price price-block__price_modal price-block__price_gray">
+                                        120 990 ₽
+                                    </span>
+                                    <span class="price-block__desctiption price-block__desctiption_gray">Оплата другими способами (+10%)</span>
+                                </div>
+                            </div>
+                            <div class="quantity-switch modal-product__quantity-switch">
+                                <div class="quantity-switch__btn quantity-switch__btn_disabled">-</div>
+                                <input class="quantity-switch__input" type="text" value="1">
+                                <div class="quantity-switch__btn">+</div>
+                            </div>
+                            <div class="form-warning-text modal-product__warning">Доступное количество товара, для комплекта: 1</div>
+                        </div>
+                        <div class="modal-product">
+                            <a href="" class="modal-product__img-wrapper">
+                                <img class="modal-product__img" src="images/products/search_product.png" alt="Фото товара" >
+                            </a>
+                            <a href="" class="modal-product__title">iPhone 15 Pro Max 256Gb Natural Titanium</a>
+                            <div class="modal-product__price-wrapper">
+                                <div class="price-block modal-product__price-block">
+                                    <div class="stickers">
+                                        <div class="sticker sticker_red sticker_sale">Акция</div>
+                                    </div>
+                                    <span class="price-block__price price-block__price_modal">
+                                        109 990 ₽
+                                    </span>
+                                    <span class="price-block__desctiption price-block__desctiption_red">При оплате наличными</span>
+                                </div>
+                                <div class="price-block modal-product__price-block">
+                                    <span class="price-block__price price-block__price_modal price-block__price_gray">
+                                        120 990 ₽
+                                    </span>
+                                    <span class="price-block__desctiption price-block__desctiption_gray">Оплата другими способами (+10%)</span>
+                                </div>
+                            </div>
+                            <div class="quantity-switch modal-product__quantity-switch">
+                                <div class="quantity-switch__btn quantity-switch__btn_disabled">-</div>
+                                <input class="quantity-switch__input" type="text" value="1">
+                                <div class="quantity-switch__btn">+</div>
+                            </div>
+                            <div class="form-warning-text modal-product__warning">Доступное количество товара, для комплекта: 1</div>
+                        </div>
+                    </div>
+                    <div class="modal-box__buttons">
+                        <button class="btn btn_light modal-box__btn">Продолжить покупки</button>
+                        <button class="btn modal-box__btn">Оформить заказ</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div id="contact" class="modal" style="display: none;">
+            <div class="modal__container modal__container_min">
+                <button class="modal__close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 6L12 12M12 12L18 18M12 12L18 6M12 12L6 18" stroke="#9B9EB6" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+                <form action="#" class="modal-box">
+                    <div class="modal-title">Контактные данные</div>
+                    <div class="modal-text modal-text_max">Заполните форму и дождитесь звонка нашего менеджера он сообщит все детали выкупа и договорится с вами о встрече.</div>
+                    <div class="form-item">
+                        <label class="input-label">
+                            Имя*
+                            <input class="input" type="text">
+                        </label>
+                    </div>
+                    <div class="form-item">
+                        <label class="input-label">
+                            Телефон*
+                            <input class="input phone-input" type="text" placeholder="+7">
+                        </label>
+                    </div>
+                    <label class="input-label">
+                        Дополнительная информация
+                        <textarea class="textarea"></textarea>
+                    </label>
+                    <div class="form-item">
+                        <div class="input-label">
+                            Способ связи:
+                        </div>
+                        <div class="modal-checkboxes">
+                            <label class="checkbox">
+                                <input checked  class="checkbox__input" name="Телефон" type="checkbox">
+                                Телефон
+                            </label>
+                            <label class="checkbox">
+                                <input checked  class="checkbox__input" name="СМС" type="checkbox">
+                                СМС
+                            </label>
+                            <label class="checkbox">
+                                <input checked  class="checkbox__input" name="Telegram" type="checkbox">
+                                Telegram
+                            </label>
+                            <label class="checkbox">
+                                <input checked  class="checkbox__input" name="WhatsApp" type="checkbox">
+                                WhatsApp
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <button class="btn modal-box__btn">Отправить</button>
+                    <div class="modal-text modal-text_gray">Нажимая на кнопку, Я принимаю условия <a href="">пользовательского соглашения</a></div>
+                </form>
+                
+            </div>
+        </div>
+
+        <button data-modal="subscribe-thanks">Спасибо за подписку</button>
+        <button data-modal="order-thanks">Спасибо за заказ</button>
+        <button data-modal="login">Логин</button>
+        <button data-modal="info">Информация</button>
+        <button data-modal="description">Описание</button>
+        <button data-modal="product-characteristics">Описание товара</button>
+        <button data-modal="busket">Корзина</button>
+        <button data-modal="contact">Контактные данные</button>
+    </main>
+
+    
+    <script src="js/header.js"></script>
+    <script src="js/lib/tabs.js"></script>
+    <script src="js/lib/swiper.min.js"></script>
+    <script src="js/sliders.js"></script>
+    <script src="js/product-card-preview.js"></script>
+    <script src="js/show-more.js"></script>
+    <script src="js/lib/fancybox.umd.js"></script>
+    <script src="js/fancybox.js"></script>
+    <script src="js/accordion.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/view-mode.js"></script>
+    <script src="js/filter.js"></script>
+    <script src="js/modals.js"></script>
+</body>
+</html>
