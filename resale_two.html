@@ -1893,7 +1893,7 @@
                                         от 19 500 до 22 500 ₽
                                     </div>
                                     <div class="form-warning-text">Цена актуальна для аккумуляторов от 83% ёмкости, не в сервисном режиме</div>
-                                    <button type="submit" class="btn btn_big totals__btn">Продать</button>
+                                    <button class="btn btn_big totals__btn" data-modal="contact">Продать</button>
                                     <div class="fast-contact">
                                         <div class="fast-contact__text">Быстрая связь с нами:</div>
                                         <div class="fast-contact__links">
@@ -2346,7 +2346,6 @@
         </section>
     </main>
 
-
     <footer class="footer">
         <div class="footer-top">
             <div class="container">
@@ -2522,6 +2521,63 @@
         </div>
     </div>
 </div>
+
+    <div id="contact" class="modal" style="display: none;">
+        <div class="modal__container modal__container_min">
+            <button class="modal__close">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 6L12 12M12 12L18 18M12 12L18 6M12 12L6 18" stroke="#9B9EB6" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+            <form action="#" class="modal-box">
+                <div class="modal-title">Контактные данные</div>
+                <div class="modal-text modal-text_max">Заполните форму и дождитесь звонка нашего менеджера он сообщит все детали выкупа и договорится с вами о встрече.</div>
+                <div class="form-item">
+                    <label class="input-label">
+                        Имя*
+                        <input class="input" required type="text">
+                    </label>
+                </div>
+                <div class="form-item">
+                    <label class="input-label">
+                        Телефон*
+                        <input class="input phone-input" required type="text" placeholder="+7">
+                    </label>
+                </div>
+                <label class="input-label">
+                    Дополнительная информация
+                    <textarea class="textarea"></textarea>
+                </label>
+                <div class="form-item">
+                    <div class="input-label">
+                        Способ связи:
+                    </div>
+                    <div class="modal-checkboxes">
+                        <label class="checkbox">
+                            <input checked  class="checkbox__input" name="Телефон" type="checkbox">
+                            Телефон
+                        </label>
+                        <label class="checkbox">
+                            <input checked  class="checkbox__input" name="СМС" type="checkbox">
+                            СМС
+                        </label>
+                        <label class="checkbox">
+                            <input checked  class="checkbox__input" name="Telegram" type="checkbox">
+                            Telegram
+                        </label>
+                        <label class="checkbox">
+                            <input checked  class="checkbox__input" name="WhatsApp" type="checkbox">
+                            WhatsApp
+                        </label>
+                    </div>
+                </div>
+                
+                <button class="btn modal-box__btn">Отправить</button>
+                <div class="modal-text modal-text_gray">Нажимая на кнопку, Я принимаю условия <a href="">пользовательского соглашения</a></div>
+            </form>
+            
+        </div>
+    </div>
     
     <script src="js/header.js"></script>
     <script src="js/lib/tabs.js"></script>

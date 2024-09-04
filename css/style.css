@@ -43,6 +43,12 @@ body {
     padding-top: 160px;
   }
 }
+body[with-smartbanner=true] {
+  padding-top: 0;
+}
+body[with-smartbanner=true] .header {
+  position: sticky;
+}
 
 header {
   scrollbar-gutter: stable;
@@ -746,6 +752,7 @@ header {
   height: 620px !important;
   border-radius: 32px;
   position: static !important;
+  background: transparent !important;
 }
 
 .fancybox__track {
@@ -849,6 +856,7 @@ header {
   .dropdown__item:hover {
     background: var(--main-blue);
     color: var(--white);
+    cursor: pointer;
   }
   .dropdown__item:hover::after {
     content: none;
@@ -1694,6 +1702,10 @@ header {
 }
 .preloader_loaded {
   display: none;
+}
+
+.smartbanner {
+  z-index: 200;
 }
 
 .header {
