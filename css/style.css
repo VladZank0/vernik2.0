@@ -619,6 +619,13 @@ header {
   padding: 2px 2px 2px 8px;
 }
 
+.sticker__icon {
+  width: 16px;
+  height: 16px;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
 .sticker__value {
   display: flex;
   justify-content: center;
@@ -747,7 +754,20 @@ header {
   }
 }
 
-.fancybox__content {
+.modal.fancybox__content {
+  padding: 0;
+  border-radius: 32px;
+}
+
+.modal .f-button.is-close-btn {
+  width: 24px;
+  height: 24px;
+}
+.modal .f-button.is-close-btn svg {
+  color: var(--gray);
+}
+
+.fancybox__content:not(.modal) {
   width: 388px !important;
   height: 620px !important;
   border-radius: 32px;
@@ -761,6 +781,10 @@ header {
 
 .fancybox__iframe {
   border-radius: 32px;
+}
+
+.fancybox__slide {
+  padding: 0 !important;
 }
 
 .f-button.is-close-btn {
@@ -7423,16 +7447,27 @@ a.order-title {
   object-fit: contain;
 }
 
-.modal {
-  position: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(0, 0, 0, 0.6);
-  top: 0;
-  height: 100vh;
-  width: 100vw;
-  z-index: 1000;
+.modal_min.fancybox__content {
+  max-width: 374px;
+  width: 100%;
+}
+@media (min-width: 700px) {
+  .modal_min.fancybox__content {
+    max-width: 460px;
+  }
+}
+.modal_avg.fancybox__content {
+  max-width: 374px;
+  width: 100%;
+}
+@media (min-width: 700px) {
+  .modal_avg.fancybox__content {
+    max-width: 600px;
+  }
+}
+.modal_max.fancybox__content {
+  max-width: 800px;
+  width: 100%;
 }
 .modal p {
   margin: 0;
@@ -7461,34 +7496,8 @@ a.order-title {
   border-radius: 32px;
   border: 1px solid #EEEEF4;
   padding: 24px;
-  animation: modal_animation 0.5s forwards;
   max-height: 100vh;
   overflow: auto;
-}
-.modal__container:not(.modal__container_active) {
-  animation: modal_close_animation 0.5s;
-}
-.modal__container_min {
-  max-width: 374px;
-  width: 100%;
-}
-@media (min-width: 700px) {
-  .modal__container_min {
-    max-width: 460px;
-  }
-}
-.modal__container_avg {
-  max-width: 374px;
-  width: 100%;
-}
-@media (min-width: 700px) {
-  .modal__container_avg {
-    max-width: 600px;
-  }
-}
-.modal__container_max {
-  max-width: 800px;
-  width: 100%;
 }
 
 .modal-title {
@@ -7536,22 +7545,6 @@ a.order-title {
   }
 }
 
-@keyframes modal_close_animation {
-  to {
-    transform: translateY(-50px);
-    opacity: 0;
-  }
-}
-@keyframes modal_animation {
-  0% {
-    transform: translateY(-50px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
 .modal-text {
   font-size: 14px;
   font-weight: 400;
