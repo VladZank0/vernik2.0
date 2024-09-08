@@ -31,6 +31,8 @@ if(document.querySelector('.categories-slider')){
                 clickable: true,
                 type: 'bullets',
                 bullets: true,
+                dynamicBullets: true, //включаем поддержку динамических буллетов
+                dynamicMainBullets: 5, //максимальное количество отображаемых буллетов
             },
             navigation: {
                 nextEl: '.categories-slider__btn-next',
@@ -49,6 +51,7 @@ if(document.querySelector('.categories-slider')){
                 }
             },
             
+            
         })
     }
     if(document.querySelector('.categories-slider').hasAttribute('data-destroy')){
@@ -62,12 +65,10 @@ if(document.querySelector('.categories-slider')){
                     categories_slider.destroy(true, true);
                     categories_slider = null;
                     document.querySelector('.categories-slider').classList.add('categories-slider_destroyed');
-                    console.log('сброс');
                 }
             }else if(categories_slider == null && checkWidth() >= 1101){
                 initializeSlider();
                 document.querySelector('.categories-slider').classList.remove('categories-slider_destroyed');
-                console.log('инициализация');
             }
         }
         window.addEventListener('resize', handleCategoriesSlider);
