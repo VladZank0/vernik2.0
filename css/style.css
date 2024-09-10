@@ -1941,6 +1941,30 @@ button.swiper-pagination-bullet {
   z-index: 200;
 }
 
+.insta-products__product-gallery .swiper-wrapper {
+  display: flex;
+}
+
+.insta-gallery__stacks .swiper-wrapper {
+  display: flex;
+}
+
+.insta-circles__list .swiper-wrapper {
+  display: flex;
+}
+
+.insta-stack__content .swiper-wrapper {
+  display: flex;
+}
+
+.insta-circles__list {
+  overflow: hidden;
+}
+
+.insta-stack__content {
+  overflow: hidden;
+}
+
 .header {
   position: fixed;
   top: 0px;
