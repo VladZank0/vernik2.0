@@ -460,17 +460,20 @@ div[id^=wait_comp_] {
   }
 }
 
-.categories-slider:not(.categories-slider_catalog) .category-card:nth-child(4n+1) {
+.categories-slider:not(.categories-slider_catalog) .swiper-slide:nth-child(4n+1) .category-card__img-wrapper {
   background: #FFE8EF;
 }
-.categories-slider:not(.categories-slider_catalog) .category-card:nth-child(4n+2) {
+.categories-slider:not(.categories-slider_catalog) .swiper-slide:nth-child(4n+2) .category-card__img-wrapper {
   background: #E9F1FE;
 }
-.categories-slider:not(.categories-slider_catalog) .category-card:nth-child(4n+3) {
+.categories-slider:not(.categories-slider_catalog) .swiper-slide:nth-child(4n+3) .category-card__img-wrapper {
   background: #D9F8FA;
 }
-.categories-slider:not(.categories-slider_catalog) .category-card:nth-child(4n+4) {
+.categories-slider:not(.categories-slider_catalog) .swiper-slide:nth-child(4n+4) .category-card__img-wrapper {
   background: #F1E7FF;
+}
+.categories-slider:not(.categories-slider_catalog) .category-card__img {
+  mix-blend-mode: unset;
 }
 
 .categories-slider__wrapper {
