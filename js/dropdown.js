@@ -48,8 +48,8 @@ function handleDropdown(e){
     }
     if(e.target.closest('.dropdown__item')){
         dropdown_btn.textContent = e.target.textContent;
-        if(el.classList.contains('select')){
-            el.querySelector('.select__input').value = e.target.textContent.trim();
+        if(e.target.classList.contains('select')){
+            e.target.querySelector('.select__input').value = e.target.textContent.trim();
         }
         document.querySelectorAll('.dropdown__btn').forEach((el) => {
             el.classList.remove('dropdown__btn_active');

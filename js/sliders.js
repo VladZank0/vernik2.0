@@ -31,8 +31,8 @@ if(document.querySelector('.categories-slider')){
                 clickable: true,
                 type: 'bullets',
                 bullets: true,
-                dynamicBullets: true, //включаем поддержку динамических буллетов
-                dynamicMainBullets: 5, //максимальное количество отображаемых буллетов
+                dynamicBullets: true,
+                dynamicMainBullets: 4
             },
             navigation: {
                 nextEl: '.categories-slider__btn-next',
@@ -50,8 +50,6 @@ if(document.querySelector('.categories-slider')){
                     spaceBetween: 24,
                 }
             },
-            
-            
         })
     }
     if(document.querySelector('.categories-slider').hasAttribute('data-destroy')){
@@ -92,6 +90,8 @@ if(document.querySelector('.review-slider')){
             clickable: true,
             type: 'bullets',
             bullets: true,
+            dynamicBullets: true,
+            dynamicMainBullets: 4
         },
         navigation: {
             nextEl: '.review-slider__btn-next',
@@ -129,6 +129,8 @@ if(document.querySelector('.journal-slider')){
             clickable: true,
             type: 'bullets',
             bullets: true,
+            dynamicBullets: true,
+            dynamicMainBullets: 4
         },
         navigation: {
             nextEl: '.journal-slider__btn-next',
@@ -155,6 +157,8 @@ if(document.querySelector('.product-slider')){
             clickable: true,
             type: 'bullets',
             bullets: true,
+            dynamicBullets: true,
+            dynamicMainBullets: 4
         },
         navigation: {
             nextEl: '.product-slider__btn-next',
@@ -234,6 +238,8 @@ if(document.querySelector('.banner-slider')){
             clickable: true,
             type: 'bullets',
             bullets: true,
+            dynamicBullets: true,
+            dynamicMainBullets: 4
         },
         navigation: {
             nextEl: '.banner-slider__btn-next',
