@@ -6884,7 +6884,6 @@ div[id^=wait_comp_] {
   row-gap: 12px;
   border-radius: 16px;
   background: var(--light-blue);
-  padding: 16px;
 }
 .split-block_switch {
   flex-direction: row;
@@ -8880,6 +8879,9 @@ a.order-title {
   .sticky-box {
     display: none;
   }
+}
+.sticky-box .totals {
+  padding: 24px;
 }
 
 .question-block {
