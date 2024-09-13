@@ -8,6 +8,7 @@ if(document.querySelector('.result-slider')){
         observeParents: true,
         speed: 1000,
         spaceBetween: 24,
+        watchSlidesProgress: true,
         navigation: {
             nextEl: '.result-slider__btn-next',
             prevEl: '.result-slider__btn-prev',
@@ -26,6 +27,7 @@ if(document.querySelector('.categories-slider')){
             observeParents: true,
             speed: 1000,
             spaceBetween: 8,
+            watchSlidesProgress: true,
             pagination: {
                 el: '.categories-slider-pagination',
                 clickable: true,
@@ -124,6 +126,7 @@ if(document.querySelector('.journal-slider')){
         observeParents: true,
         speed: 1000,
         spaceBetween: 24,
+        watchSlidesProgress: true,
         pagination: {
             el: '.journal-slider-pagination',
             clickable: true,
@@ -150,8 +153,8 @@ if(document.querySelector('.product-slider')){
         observeParents: true,
         speed: 1000,
         spaceBetween: 8,
-        freeMode: true,
         slidesOffsetAfter: -20, 
+        watchSlidesProgress: true,
         pagination: {
             el: '.product-slider-pagination',
             clickable: true,
@@ -215,6 +218,7 @@ if(document.querySelector('.videos-slider')){
         centeredSlides: true, 
         speed: 200,
         loop: true,
+        watchSlidesProgress: true,
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
@@ -233,6 +237,7 @@ if(document.querySelector('.banner-slider')){
         slidesPerView: 1,
         spaceBetween: 24,  
         speed: 1000,
+        watchSlidesProgress: true,
         pagination: {
             el: '.banner-slider-pagination',
             clickable: true,
@@ -293,6 +298,7 @@ if(document.querySelector('.comparison-slider')){
         spaceBetween: 6,
         observer: true,
         observeParents: true,
+        watchSlidesProgress: true,
         navigation: {
             nextEl: '.comparison-slider__btn-next',
             prevEl: '.comparison-slider__btn-prev',
