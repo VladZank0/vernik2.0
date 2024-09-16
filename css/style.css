@@ -1574,7 +1574,7 @@ div[id^=wait_comp_] {
   flex-wrap: wrap;
   font-size: 18px;
   font-weight: 500;
-  line-height: 20px;
+  line-height: 120%;
   color: var(--black);
 }
 .totals__title_column {
@@ -8561,6 +8561,12 @@ a.order-title {
   display: flex;
   column-gap: 16px;
 }
+@media (min-width: 1100px) {
+  .ordered-product {
+    width: 200px;
+    flex-grow: 1;
+  }
+}
 
 .ordered-product__main {
   display: flex;
@@ -8578,6 +8584,7 @@ a.order-title {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  flex-wrap: wrap;
 }
 @media (min-width: 1100px) {
   .ordered-products__list {
@@ -8882,6 +8889,19 @@ a.order-title {
 }
 .sticky-box .totals {
   padding: 24px;
+}
+
+.cart__error {
+  background: #ffe6c0;
+  border-radius: 8px;
+  padding: min(max(10px, 2vw), 12px) min(max(17px, 2vw), 20px);
+  font-weight: 500;
+  font-size: min(max(11px, 3.5vw), 12px);
+  line-height: 140%;
+  display: none;
+}
+.cart__error p {
+  margin: 0;
 }
 
 .question-block {
