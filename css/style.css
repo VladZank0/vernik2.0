@@ -51,6 +51,12 @@ body[with-smartbanner=true] .header {
 }
 
 @media (min-width: 1100px) {
+  .data-smartbanner-original-margin-top {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1100px) {
   .smartbanner {
     display: none;
   }
@@ -1366,7 +1372,7 @@ div[id^=wait_comp_] {
   }
 }
 
-.content-box__heaing {
+.content-box__heading {
   display: flex;
   -moz-column-gap: 15px;
   column-gap: 15px;
@@ -1374,7 +1380,7 @@ div[id^=wait_comp_] {
   font-family: "ALS Gorizont";
   font-size: 18px;
 }
-.content-box__heaing_column {
+.content-box__heading_column {
   font-family: unset;
   font-weight: 500;
   align-items: start;
@@ -8064,11 +8070,6 @@ div[id^=wait_bx_] {
   grid-row: 1;
   grid-column: 2;
 }
-@media (min-width: 700px) {
-  .order-text-box {
-    flex-wrap: nowrap;
-  }
-}
 
 .order-card__img {
   width: 80px;
@@ -8551,6 +8552,27 @@ a.order-title {
 .article ul {
   padding-left: 23px;
   margin: 12px 0;
+}
+.article h2 {
+  font-size: 24px;
+  font-family: "ALS Gorizont";
+  font-weight: 800;
+  margin: 0 auto;
+  margin-bottom: 36px;
+  line-height: 26px;
+  max-width: 1000px;
+  color: var(--black);
+}
+@media (min-width: 700px) {
+  .article h2 {
+    text-align: center;
+  }
+}
+@media (min-width: 1100px) {
+  .article h2 {
+    font-size: 32px;
+    line-height: 34px;
+  }
 }
 .article h3 {
   margin-top: 36px;
@@ -9125,7 +9147,21 @@ a.order-title {
   line-height: 140%;
   display: none;
 }
-.cart__error p {
+.cart__error * {
+  margin: 0;
+}
+
+.login-error {
+  background: #ffe6c0;
+  border-radius: 8px;
+  padding: min(max(10px, 2vw), 12px) min(max(17px, 2vw), 20px);
+  font-weight: 500;
+  font-size: min(max(11px, 3.5vw), 12px);
+  line-height: 140%;
+  display: none;
+}
+.login-error * {
+  color: var(--black);
   margin: 0;
 }
 
@@ -9532,6 +9568,27 @@ a.order-title {
   .select__item:hover::after {
     content: none;
   }
+}
+
+.select__field-text {
+  min-width: 12.5rem;
+  width: 18.75rem;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 8px;
+  padding: 12px 16px;
+  border: none;
+  background: var(--light-blue);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--black);
+  border-radius: 12px;
+  cursor: pointer;
+}
+.select__field-text:focus {
+  outline: none;
 }
 
 .about-card {
