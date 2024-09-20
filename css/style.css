@@ -33,10 +33,10 @@ body {
   min-height: 100vh;
   padding: 0;
   margin: 0;
-  padding-top: 80px;
   font-weight: 500;
   background-color: var(--white);
   font-weight: 400;
+  padding-top: 80px;
 }
 @media (min-width: 1100px) {
   body {
@@ -48,6 +48,14 @@ body[with-smartbanner=true] {
 }
 body[with-smartbanner=true] .header {
   position: sticky;
+}
+@media (min-width: 1100px) {
+  body[with-smartbanner=true] {
+    padding-top: 80px;
+  }
+  body[with-smartbanner=true] .header {
+    position: fixed;
+  }
 }
 
 div[id^=wait_comp_] {
@@ -1946,7 +1954,7 @@ div[id^=wait_comp_] {
 }
 
 .smartbanner {
-  z-index: 200;
+  z-index: 9;
 }
 
 .insta-circle {
@@ -2039,6 +2047,41 @@ div[id^=wait_comp_] {
 
 div[id^=wait_bx_] {
   display: none !important;
+}
+
+.back-btn {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 4px;
+  column-gap: 4px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  color: var(--black);
+  text-decoration: none;
+  transition: var(--transition);
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+@media (hover: hover) {
+  .back-btn:hover {
+    color: var(--main-blue);
+  }
+  .back-btn:hover .back-btn__svg {
+    transform: translateX(-5px);
+  }
+  .back-btn:hover .back-btn__svg path {
+    fill: var(--main-blue);
+  }
+}
+
+.back-btn__svg {
+  transition: var(--transition);
+}
+
+.back-btn__svg path {
+  transition: var(--transition);
 }
 
 .header {
@@ -8217,6 +8260,7 @@ a.order-title {
 .modal-text {
   font-size: 14px;
   font-weight: 400;
+  color: var(--black);
 }
 .modal-text_gray {
   color: var(--gray);
