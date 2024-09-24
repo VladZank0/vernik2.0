@@ -9641,12 +9641,8 @@ a.order-title {
 
 .select {
   position: relative;
+  max-width: 300px;
   width: 100%;
-}
-@media (min-width: 700px) {
-  .select {
-    max-width: 300px;
-  }
 }
 
 .select__error {
@@ -9726,6 +9722,10 @@ a.order-title {
 .selects:not(:has(*)) {
   padding: 0 !important;
   margin: 0 !important;
+}
+
+.split-block .ya-pay-widget, .product-page_split-block .ya-pay-widget {
+  border: 1px solid var(--light-blue);
 }
 
 .about-card {
