@@ -5586,16 +5586,16 @@ div[id^=wait_bx_] {
   }
 }
 
-.price-block__desctiption:hover .info-block__text {
+.price-block__description:hover .info-block__text {
   display: block;
 }
 @media (min-width: 1100px) {
-  .price-block__desctiption:hover .info-block__text {
+  .price-block__description:hover .info-block__text {
     bottom: 30px;
   }
 }
 
-.price-block__desctiption {
+.price-block__description {
   position: relative;
 }
 
@@ -7391,15 +7391,15 @@ div[id^=wait_bx_] {
   font-size: 24px;
 }
 
-.price-block__desctiption {
+.price-block__description {
   font-size: 12px;
   font-weight: 500;
   color: var(--black);
 }
-.price-block__desctiption_red {
+.price-block__description_red {
   color: var(--red);
 }
-.price-block__desctiption_gray {
+.price-block__description_gray {
   color: var(--gray);
 }
 
