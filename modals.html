@@ -359,8 +359,51 @@
                 
             </div>
         </div>
-         
 
+        <div id="geo-search" class="modal modal_min" style="display: none;">
+            <div class="modal__container">
+                <div class="modal-box">
+                    <div class="modal-title">Выберите город</div>
+                    <label class="search-box">
+                        <svg class="search-box__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 21L17 17M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z" stroke="#9B9EB6" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                        </svg>
+                        <input class="search-box__input" type="text" placeholder="Модель" id="">
+                    </label>
+                    <div class="modal-search-result">
+                        <button class="modal-search-result__item modal-search-result__item_active" data-modal-close="" onclick="buyElementCity.selectModalOption('ATTR_MODEL', 'iphonexr', 'iPhone Xr')">Москва</button>
+                        <button class="modal-search-result__item" data-modal-close="" onclick="buyElementCity.selectModalOption('ATTR_MODEL', 'iphonexr', 'iPhone Xr')">iPhone Xr</button>
+                        <button class="modal-search-result__item" data-modal-close="" onclick="buyElementCity.selectModalOption('ATTR_MODEL', 'iphonexr', 'iPhone Xr')">iPhone Xr</button>
+                        <button class="modal-search-result__item" data-modal-close="" onclick="buyElementCity.selectModalOption('ATTR_MODEL', 'iphonexr', 'iPhone Xr')">iPhone Xr</button>
+                        <button class="modal-search-result__item" data-modal-close="" onclick="buyElementCity.selectModalOption('ATTR_MODEL', 'iphonexr', 'iPhone Xr')">iPhone Xr</button>
+                        <button class="modal-search-result__item" data-modal-close="" onclick="buyElementCity.selectModalOption('ATTR_MODEL', 'iphonexr', 'iPhone Xr')">iPhone Xr</button>
+                        <button class="modal-search-result__item" data-modal-close="" onclick="buyElementCity.selectModalOption('ATTR_MODEL', 'iphonexr', 'iPhone Xr')">iPhone Xr</button>
+                        <button class="modal-search-result__item" data-modal-close="" onclick="buyElementCity.selectModalOption('ATTR_MODEL', 'iphonexr', 'iPhone Xr')">iPhone Xr</button>
+                        <button class="modal-search-result__item" data-modal-close="" onclick="buyElementCity.selectModalOption('ATTR_MODEL', 'iphonexr', 'iPhone Xr')">iPhone Xr</button>
+                        <button class="modal-search-result__item" data-modal-close="" onclick="buyElementCity.selectModalOption('ATTR_MODEL', 'iphonexr', 'iPhone Xr')">iPhone Xr</button>
+                        <button class="modal-search-result__item" data-modal-close="" onclick="buyElementCity.selectModalOption('ATTR_MODEL', 'iphonexr', 'iPhone Xr')">iPhone Xr</button>
+                        <button class="modal-search-result__item" data-modal-close="" onclick="buyElementCity.selectModalOption('ATTR_MODEL', 'iphonexr', 'iPhone Xr')">iPhone Xr</button>
+                        <button class="modal-search-result__item" data-modal-close="" onclick="buyElementCity.selectModalOption('ATTR_MODEL', 'iphonexr', 'iPhone Xr')">iPhone Xr</button>
+                    </div>
+                    <div class="modal-city-result">
+                        <div class="modal-city-result__text">Текущий город: Москва</div>
+                        <div class="modal-city-result__btn btn">Готово</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="geo" class="modal  modal_geo" style="display: none;">
+            <div class="modal__container">
+                <div class="modal-box">
+                    <div class="modal-text modal-text_avg">Вы находитесь в городе <b>Москва</b>?</div>
+                    <div class="modal-box__geo-buttons">
+                        <button class="btn">Да</button>
+                        <button class="btn btn_light">Изменить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <a href="" data-src="#subscribe-thanks" data-fancybox>Спасибо за подписку</a>
         <a href="" data-src="#order-thanks" data-fancybox>Спасибо за заказ</a>
         <a href="" data-src="#login" data-fancybox>Логин</a>
@@ -371,9 +414,11 @@
         <a href="" data-src="#contact" data-fancybox>Контактные данные</a>
         <a href="" data-src="#search" data-fancybox>Поиск</a>
         <a href="" data-src="#call" data-fancybox>СМС</a>
+        <a href="" data-src="#geo-search" data-fancybox>Выбор города</a>
+        <a href="" data-src="#geo" data-fancybox>Проверка города</a>
     </main>
 
-    
+
     <script src="js/header.js"></script>
     <script src="js/lib/tabs.js"></script>
     <script src="js/lib/swiper.min.js"></script>
